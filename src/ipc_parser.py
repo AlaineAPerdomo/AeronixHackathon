@@ -8,6 +8,7 @@ Provides options to keep or remove pad dimensions
 import re
 import sys
 import os
+import argparse
 
 def parse_ipc_file(input_file_path, output_file_path=None, keep_pad_dimensions=True):
     if not os.path.exists(input_file_path):
@@ -16,7 +17,7 @@ def parse_ipc_file(input_file_path, output_file_path=None, keep_pad_dimensions=T
 
     if output_file_path is None:
         base_name = os.path.splitext(input_file_path)[0]
-        suffix = "_with_dims" if keep_pad_dimensions else "_clean"
+        suffix = "_parsed"
         output_file_path = f"{base_name}{suffix}.ipc"
     
     try:
@@ -137,20 +138,20 @@ def process_through_hole_line(line, keep_pad_dimensions=True):
         return line
 
 def main():
-    """Main function with hardcoded input/output file paths"""
+    """Main function to handle command-line arguments."""
+    parser = argparse.ArgumentParser(description="Enhanced IPC-D-356A file parser.")
+    parser.add_argument("input_file", help="Path to the input IPC file.")
+    parser.add_argument("-o", "--output_file", help="Path to the output file. If not provided, it will be auto-generated.", default=None)
+    parser.add_argument("--remove-dims", action="store_false", dest="keep_pad_dimensions", help="Remove pad dimensions from the output.")
     
-    # Hardcoded file paths
-    input_file = "/Users/anivenkat/AeronixHackathon/public/Assembly Testpoint Report for Car-PCB1.ipc"
-    output_file = "/Users/anivenkat/AeronixHackathon/public/Assembly Testpoint Report for Car-PCB1_parsed.ipc"
+    args = parser.parse_args()
 
-    # Hardcoded option - set to True to keep pad dimensions, False to remove them
-    keep_pad_dimensions = True
+    print(f"Processing input file: {args.input_file}")
+    if args.output_file:
+        print(f"Output will be saved to: {args.output_file}")
+    print(f"Pad dimensions will be: {'kept' if args.keep_pad_dimensions else 'removed'}")
     
-    print(f"Processing hardcoded input file: {input_file}")
-    print(f"Output will be saved to: {output_file}")
-    print(f"Pad dimensions will be: {'kept' if keep_pad_dimensions else 'removed'}")
-    
-    success = parse_ipc_file(input_file, output_file, keep_pad_dimensions)
+    success = parse_ipc_file(args.input_file, args.output_file, args.keep_pad_dimensions)
     
     if not success:
         sys.exit(1)

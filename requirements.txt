@@ -1,0 +1,10 @@
+google-generativeai
+langchain
+langchain-google-genai
+chromadb
+tavily-python
+pandas
+python-docx
+Pillow
+unstructured
+python-dotenv
