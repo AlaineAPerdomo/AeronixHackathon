@@ -16,6 +16,7 @@ const FileUpload: React.FC = () => {
   const [netlist, setNetlist] = useState<File | null>(null);
   const [csv, setcsv] = useState<File | null>(null);
   const [message, setMessage] = useState<string>("");
+  const [download, setDownload] = useState<boolean>(false);
 
   const handleNetlistChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     const selected = Array.from(e.target.files || []);
@@ -45,6 +46,7 @@ const FileUpload: React.FC = () => {
         }
       );
       setMessage(response.data.message);
+      setDownload(true);
     } catch (err) {
       setMessage("Upload failed");
     }
@@ -86,62 +88,72 @@ const FileUpload: React.FC = () => {
       >
         <ThemeProvider theme={theme}>
           <Stack spacing={3}>
-            <input
-              type="file"
-              id="netlist-upload"
-              accept=".d356,.ipc"
-              multiple={false}
-              style={{ display: "none" }}
-              onChange={handleNetlistChange}
-            />
-            <label htmlFor="netlist-upload">
-              <Stack spacing={3}>
+            <Stack spacing={3}>
+              <input
+                type="file"
+                id="netlist-upload"
+                accept=".d356,.ipc"
+                multiple={false}
+                style={{ display: "none" }}
+                onChange={handleNetlistChange}
+              />
+              <label htmlFor="netlist-upload">
+                <Stack spacing={3}>
+                  <Button
+                    variant="contained"
+                    component="span"
+                    startIcon={<CloudUploadIcon />}
+                    sx={{ mb: 2 }}
+                  >
+                    Netlist File (.d356 or .ipc)
+                  </Button>
+                  {netlist && <Typography>{netlist.name}</Typography>}
+                </Stack>
+              </label>
+              <input
+                type="file"
+                id="csv-upload"
+                accept=".csv,.xlsx"
+                multiple={false}
+                style={{ display: "none" }}
+                onChange={handlecsvChange}
+              />
+              <label htmlFor="csv-upload">
+                <Stack spacing={3}>
+                  <Button
+                    variant="contained"
+                    component="span"
+                    startIcon={<CloudUploadIcon />}
+                    sx={{ mb: 2 }}
+                  >
+                    Altium CSV Bill of Materials File (.csv)
+                  </Button>
+                  {csv && <Typography>{csv.name}</Typography>}
+                </Stack>
+              </label>
+            </Stack>
+            <Stack spacing={3}>
+              <Box mt={2}>
                 <Button
                   variant="contained"
-                  component="span"
-                  startIcon={<CloudUploadIcon />}
-                  sx={{ mb: 2 }}
+                  color="primary"
+                  onClick={handleUpload}
+                  disabled={!netlist}
                 >
-                  Netlist File (.d356 or .ipc)
+                  Run Tool
                 </Button>
-                {netlist && <Typography>{netlist.name}</Typography>}
-              </Stack>
-            </label>
-            <input
-              type="file"
-              id="csv-upload"
-              accept=".csv"
-              multiple={false}
-              style={{ display: "none" }}
-              onChange={handlecsvChange}
-            />
-            <label htmlFor="csv-upload">
-              <Stack spacing={3}>
+              </Box>
+              {download && (
                 <Button
                   variant="contained"
-                  component="span"
-                  startIcon={<CloudUploadIcon />}
-                  sx={{ mb: 2 }}
+                  color="primary"
+                  href="http://localhost:5000/outputs/final.docx"
                 >
-                  Altium CSV Bill of Materials File (.csv)
+                  Download Results
                 </Button>
-                {csv && <Typography>{csv.name}</Typography>}
-              </Stack>
-            </label>
+              )}
+            </Stack>
           </Stack>
-
-          <Box mt={2}>
-            <Button
-              variant="contained"
-              color="primary"
-              onClick={handleUpload}
-              disabled={!netlist}
-            >
-              Run Tool
-            </Button>
-          </Box>
-
-          {message && <Typography sx={{ mt: 2 }}>{message}</Typography>}
         </ThemeProvider>
       </Paper>
     </Box>
