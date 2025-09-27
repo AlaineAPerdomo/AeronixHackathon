@@ -1,0 +1,1738 @@
+{
+  "board_info": {
+    "name": "UNO-TH Rev3e",
+    "total_nets": 63,
+    "total_connections": 245,
+    "total_components": 53,
+    "physical_components": 41,
+    "virtual_components": 12,
+    "components_with_values": 41,
+    "bom_components_found": 120
+  },
+  "nets": {
+    "UGND": [
+      {
+        "component": "L1",
+        "pad": "1",
+        "type": "surface_mount"
+      },
+      {
+        "component": "C8",
+        "pad": "2",
+        "type": "surface_mount"
+      },
+      {
+        "component": "U3",
+        "pad": "28",
+        "type": "surface_mount"
+      },
+      {
+        "component": "X2",
+        "pad": "4    D037",
+        "type": "through_hole"
+      },
+      {
+        "component": "GROUND",
+        "pad": "2",
+        "type": "surface_mount"
+      }
+    ],
+    "USHIELD": [
+      {
+        "component": "L1",
+        "pad": "2",
+        "type": "surface_mount"
+      },
+      {
+        "component": "Z1",
+        "pad": "2",
+        "type": "surface_mount"
+      },
+      {
+        "component": "Z2",
+        "pad": "2",
+        "type": "surface_mount"
+      },
+      {
+        "component": "X2",
+        "pad": "P$1  D086",
+        "type": "through_hole"
+      },
+      {
+        "component": "X2",
+        "pad": "P$2  D086",
+        "type": "through_hole"
+      }
+    ],
+    "IO8": [
+      {
+        "component": "IOH0",
+        "pad": "1    D033",
+        "type": "through_hole"
+      },
+      {
+        "component": "ZU4",
+        "pad": "14   D033",
+        "type": "through_hole"
+      }
+    ],
+    "IO9": [
+      {
+        "component": "IOH0",
+        "pad": "2    D033",
+        "type": "through_hole"
+      },
+      {
+        "component": "ZU4",
+        "pad": "15   D033",
+        "type": "through_hole"
+      }
+    ],
+    "SS": [
+      {
+        "component": "IOH0",
+        "pad": "3    D033",
+        "type": "through_hole"
+      },
+      {
+        "component": "ZU4",
+        "pad": "16   D033",
+        "type": "through_hole"
+      }
+    ],
+    "MOSI": [
+      {
+        "component": "IOH0",
+        "pad": "4    D033",
+        "type": "through_hole"
+      },
+      {
+        "component": "ZU4",
+        "pad": "17   D033",
+        "type": "through_hole"
+      },
+      {
+        "component": "ICSP0",
+        "pad": "4    D037",
+        "type": "through_hole"
+      }
+    ],
+    "MISO": [
+      {
+        "component": "IOH0",
+        "pad": "5    D033",
+        "type": "through_hole"
+      },
+      {
+        "component": "ZU4",
+        "pad": "18   D033",
+        "type": "through_hole"
+      },
+      {
+        "component": "ICSP0",
+        "pad": "1    D037",
+        "type": "through_hole"
+      }
+    ],
+    "SCK": [
+      {
+        "component": "IOH0",
+        "pad": "6    D033",
+        "type": "through_hole"
+      },
+      {
+        "component": "U5",
+        "pad": "5",
+        "type": "surface_mount"
+      },
+      {
+        "component": "ZU4",
+        "pad": "19   D033",
+        "type": "through_hole"
+      },
+      {
+        "component": "ICSP0",
+        "pad": "3    D037",
+        "type": "through_hole"
+      }
+    ],
+    "GND": [
+      {
+        "component": "IOH0",
+        "pad": "7    D033",
+        "type": "through_hole"
+      },
+      {
+        "component": "C6",
+        "pad": "1",
+        "type": "surface_mount"
+      },
+      {
+        "component": "C2",
+        "pad": "1",
+        "type": "surface_mount"
+      },
+      {
+        "component": "ON0",
+        "pad": "C",
+        "type": "surface_mount"
+      },
+      {
+        "component": "PC1",
+        "pad": "",
+        "type": "surface_mount"
+      },
+      {
+        "component": "PC2",
+        "pad": "",
+        "type": "surface_mount"
+      },
+      {
+        "component": "U5",
+        "pad": "4",
+        "type": "surface_mount"
+      },
+      {
+        "component": "RN2",
+        "pad": "5",
+        "type": "surface_mount"
+      },
+      {
+        "component": "U1",
+        "pad": "1",
+        "type": "surface_mount"
+      },
+      {
+        "component": "C3",
+        "pad": "1",
+        "type": "surface_mount"
+      },
+      {
+        "component": "RN1",
+        "pad": "7",
+        "type": "surface_mount"
+      },
+      {
+        "component": "C1",
+        "pad": "1",
+        "type": "surface_mount"
+      },
+      {
+        "component": "X1",
+        "pad": "1    D051",
+        "type": "through_hole"
+      },
+      {
+        "component": "X1",
+        "pad": "3    D051",
+        "type": "through_hole"
+      },
+      {
+        "component": "C4",
+        "pad": "1",
+        "type": "surface_mount"
+      },
+      {
+        "component": "C7",
+        "pad": "2",
+        "type": "surface_mount"
+      },
+      {
+        "component": "ZU4",
+        "pad": "8    D033",
+        "type": "through_hole"
+      },
+      {
+        "component": "ZU4",
+        "pad": "22   D033",
+        "type": "through_hole"
+      },
+      {
+        "component": "L0",
+        "pad": "C",
+        "type": "surface_mount"
+      },
+      {
+        "component": "Y2",
+        "pad": "2",
+        "type": "surface_mount"
+      },
+      {
+        "component": "U3",
+        "pad": "3",
+        "type": "surface_mount"
+      },
+      {
+        "component": "U3",
+        "pad": "33",
+        "type": "surface_mount"
+      },
+      {
+        "component": "C10",
+        "pad": "1",
+        "type": "surface_mount"
+      },
+      {
+        "component": "POWER0",
+        "pad": "6    D033",
+        "type": "through_hole"
+      },
+      {
+        "component": "POWER0",
+        "pad": "7    D033",
+        "type": "through_hole"
+      },
+      {
+        "component": "C11",
+        "pad": "2",
+        "type": "surface_mount"
+      },
+      {
+        "component": "ICSP1",
+        "pad": "6    D037",
+        "type": "through_hole"
+      },
+      {
+        "component": "ICSP0",
+        "pad": "6    D037",
+        "type": "through_hole"
+      },
+      {
+        "component": "RESET0",
+        "pad": "1",
+        "type": "surface_mount"
+      },
+      {
+        "component": "RESET0",
+        "pad": "2",
+        "type": "surface_mount"
+      },
+      {
+        "component": "C9",
+        "pad": "2",
+        "type": "surface_mount"
+      },
+      {
+        "component": "U2",
+        "pad": "2",
+        "type": "surface_mount"
+      },
+      {
+        "component": "GROUND",
+        "pad": "1",
+        "type": "surface_mount"
+      }
+    ],
+    "AREF": [
+      {
+        "component": "IOH0",
+        "pad": "8    D033",
+        "type": "through_hole"
+      },
+      {
+        "component": "C4",
+        "pad": "2",
+        "type": "surface_mount"
+      },
+      {
+        "component": "ZU4",
+        "pad": "21   D033",
+        "type": "through_hole"
+      }
+    ],
+    "AD4/SDA": [
+      {
+        "component": "IOH0",
+        "pad": "9    D033",
+        "type": "through_hole"
+      },
+      {
+        "component": "ZU4",
+        "pad": "27   D033",
+        "type": "through_hole"
+      },
+      {
+        "component": "AD0",
+        "pad": "5    D033",
+        "type": "through_hole"
+      }
+    ],
+    "AD5/SCL": [
+      {
+        "component": "IOH0",
+        "pad": "10   D033",
+        "type": "through_hole"
+      },
+      {
+        "component": "ZU4",
+        "pad": "28   D033",
+        "type": "through_hole"
+      },
+      {
+        "component": "AD0",
+        "pad": "6    D033",
+        "type": "through_hole"
+      }
+    ],
+    "+5V": [
+      {
+        "component": "C6",
+        "pad": "2",
+        "type": "surface_mount"
+      },
+      {
+        "component": "C2",
+        "pad": "2",
+        "type": "surface_mount"
+      },
+      {
+        "component": "PC2",
+        "pad": "+",
+        "type": "surface_mount"
+      },
+      {
+        "component": "U5",
+        "pad": "8",
+        "type": "surface_mount"
+      },
+      {
+        "component": "RN2",
+        "pad": "2",
+        "type": "surface_mount"
+      },
+      {
+        "component": "RN2",
+        "pad": "3",
+        "type": "surface_mount"
+      },
+      {
+        "component": "U1",
+        "pad": "2",
+        "type": "surface_mount"
+      },
+      {
+        "component": "U1",
+        "pad": "4",
+        "type": "surface_mount"
+      },
+      {
+        "component": "RN1",
+        "pad": "3",
+        "type": "surface_mount"
+      },
+      {
+        "component": "RN1",
+        "pad": "5",
+        "type": "surface_mount"
+      },
+      {
+        "component": "D2",
+        "pad": "C",
+        "type": "surface_mount"
+      },
+      {
+        "component": "C1",
+        "pad": "2",
+        "type": "surface_mount"
+      },
+      {
+        "component": "T1",
+        "pad": "2",
+        "type": "surface_mount"
+      },
+      {
+        "component": "D3",
+        "pad": "C",
+        "type": "surface_mount"
+      },
+      {
+        "component": "C7",
+        "pad": "1",
+        "type": "surface_mount"
+      },
+      {
+        "component": "ZU4",
+        "pad": "7    D033",
+        "type": "through_hole"
+      },
+      {
+        "component": "L2",
+        "pad": "1",
+        "type": "surface_mount"
+      },
+      {
+        "component": "RN4",
+        "pad": "3",
+        "type": "surface_mount"
+      },
+      {
+        "component": "RN4",
+        "pad": "4",
+        "type": "surface_mount"
+      },
+      {
+        "component": "U3",
+        "pad": "4",
+        "type": "surface_mount"
+      },
+      {
+        "component": "U3",
+        "pad": "32",
+        "type": "surface_mount"
+      },
+      {
+        "component": "POWER0",
+        "pad": "2    D033",
+        "type": "through_hole"
+      },
+      {
+        "component": "POWER0",
+        "pad": "5    D033",
+        "type": "through_hole"
+      },
+      {
+        "component": "ICSP1",
+        "pad": "2    D037",
+        "type": "through_hole"
+      },
+      {
+        "component": "ICSP0",
+        "pad": "2    D037",
+        "type": "through_hole"
+      },
+      {
+        "component": "U2",
+        "pad": "1",
+        "type": "surface_mount"
+      },
+      {
+        "component": "U2",
+        "pad": "3",
+        "type": "surface_mount"
+      }
+    ],
+    "XT2": [
+      {
+        "component": "Y1",
+        "pad": "1    D033",
+        "type": "through_hole"
+      },
+      {
+        "component": "R1",
+        "pad": "2",
+        "type": "surface_mount"
+      },
+      {
+        "component": "U3",
+        "pad": "2",
+        "type": "surface_mount"
+      },
+      {
+        "component": "C11",
+        "pad": "1",
+        "type": "surface_mount"
+      }
+    ],
+    "XT1": [
+      {
+        "component": "Y1",
+        "pad": "2    D033",
+        "type": "through_hole"
+      },
+      {
+        "component": "R1",
+        "pad": "1",
+        "type": "surface_mount"
+      },
+      {
+        "component": "U3",
+        "pad": "1",
+        "type": "surface_mount"
+      },
+      {
+        "component": "C9",
+        "pad": "1",
+        "type": "surface_mount"
+      }
+    ],
+    "IO0": [
+      {
+        "component": "IOL0",
+        "pad": "1    D033",
+        "type": "through_hole"
+      },
+      {
+        "component": "ZU4",
+        "pad": "2    D033",
+        "type": "through_hole"
+      },
+      {
+        "component": "RN4",
+        "pad": "2",
+        "type": "surface_mount"
+      }
+    ],
+    "IO1": [
+      {
+        "component": "IOL0",
+        "pad": "2    D033",
+        "type": "through_hole"
+      },
+      {
+        "component": "ZU4",
+        "pad": "3    D033",
+        "type": "through_hole"
+      },
+      {
+        "component": "RN4",
+        "pad": "1",
+        "type": "surface_mount"
+      }
+    ],
+    "IO2": [
+      {
+        "component": "IOL0",
+        "pad": "3    D033",
+        "type": "through_hole"
+      },
+      {
+        "component": "ZU4",
+        "pad": "4    D033",
+        "type": "through_hole"
+      }
+    ],
+    "IO3": [
+      {
+        "component": "IOL0",
+        "pad": "4    D033",
+        "type": "through_hole"
+      },
+      {
+        "component": "ZU4",
+        "pad": "5    D033",
+        "type": "through_hole"
+      }
+    ],
+    "IO4": [
+      {
+        "component": "IOL0",
+        "pad": "5    D033",
+        "type": "through_hole"
+      },
+      {
+        "component": "ZU4",
+        "pad": "6    D033",
+        "type": "through_hole"
+      }
+    ],
+    "IO5": [
+      {
+        "component": "IOL0",
+        "pad": "6    D033",
+        "type": "through_hole"
+      },
+      {
+        "component": "ZU4",
+        "pad": "11   D033",
+        "type": "through_hole"
+      }
+    ],
+    "IO6": [
+      {
+        "component": "IOL0",
+        "pad": "7    D033",
+        "type": "through_hole"
+      },
+      {
+        "component": "ZU4",
+        "pad": "12   D033",
+        "type": "through_hole"
+      }
+    ],
+    "IO7": [
+      {
+        "component": "IOL0",
+        "pad": "8    D033",
+        "type": "through_hole"
+      },
+      {
+        "component": "ZU4",
+        "pad": "13   D033",
+        "type": "through_hole"
+      }
+    ],
+    "N$3": [
+      {
+        "component": "ON0",
+        "pad": "A",
+        "type": "surface_mount"
+      },
+      {
+        "component": "RN4",
+        "pad": "5",
+        "type": "surface_mount"
+      },
+      {
+        "component": "RN4",
+        "pad": "6",
+        "type": "surface_mount"
+      }
+    ],
+    "D+": [
+      {
+        "component": "Z1",
+        "pad": "1",
+        "type": "surface_mount"
+      },
+      {
+        "component": "RN3",
+        "pad": "5",
+        "type": "surface_mount"
+      },
+      {
+        "component": "X2",
+        "pad": "3    D037",
+        "type": "through_hole"
+      }
+    ],
+    "VIN": [
+      {
+        "component": "PC1",
+        "pad": "+",
+        "type": "surface_mount"
+      },
+      {
+        "component": "U1",
+        "pad": "3",
+        "type": "surface_mount"
+      },
+      {
+        "component": "RN1",
+        "pad": "8",
+        "type": "surface_mount"
+      },
+      {
+        "component": "D1",
+        "pad": "C",
+        "type": "surface_mount"
+      },
+      {
+        "component": "POWER0",
+        "pad": "8    D033",
+        "type": "through_hole"
+      }
+    ],
+    "GATE_CMD": [
+      {
+        "component": "U5",
+        "pad": "1",
+        "type": "surface_mount"
+      },
+      {
+        "component": "T1",
+        "pad": "3",
+        "type": "surface_mount"
+      }
+    ],
+    "+3V3": [
+      {
+        "component": "U5",
+        "pad": "2",
+        "type": "surface_mount"
+      },
+      {
+        "component": "C3",
+        "pad": "2",
+        "type": "surface_mount"
+      },
+      {
+        "component": "POWER0",
+        "pad": "4    D033",
+        "type": "through_hole"
+      },
+      {
+        "component": "U2",
+        "pad": "5",
+        "type": "surface_mount"
+      }
+    ],
+    "CMP": [
+      {
+        "component": "U5",
+        "pad": "3",
+        "type": "surface_mount"
+      },
+      {
+        "component": "RN1",
+        "pad": "1",
+        "type": "surface_mount"
+      },
+      {
+        "component": "RN1",
+        "pad": "2",
+        "type": "surface_mount"
+      }
+    ],
+    "L13": [
+      {
+        "component": "U5",
+        "pad": "6",
+        "type": "surface_mount"
+      },
+      {
+        "component": "U5",
+        "pad": "7",
+        "type": "surface_mount"
+      },
+      {
+        "component": "RN2",
+        "pad": "8",
+        "type": "surface_mount"
+      }
+    ],
+    "N/C": [
+      {
+        "component": "FD1",
+        "pad": "P$1",
+        "type": "surface_mount"
+      },
+      {
+        "component": "X1",
+        "pad": "4    D051",
+        "type": "through_hole"
+      },
+      {
+        "component": "X1",
+        "pad": "5    D051",
+        "type": "through_hole"
+      },
+      {
+        "component": "X1",
+        "pad": "6    D051",
+        "type": "through_hole"
+      },
+      {
+        "component": "X1",
+        "pad": "7    D051",
+        "type": "through_hole"
+      },
+      {
+        "component": "X1",
+        "pad": "8    D051",
+        "type": "through_hole"
+      },
+      {
+        "component": "X1",
+        "pad": "9    D051",
+        "type": "through_hole"
+      },
+      {
+        "component": "FD3",
+        "pad": "P$1",
+        "type": "surface_mount"
+      },
+      {
+        "component": "U3",
+        "pad": "5",
+        "type": "surface_mount"
+      },
+      {
+        "component": "U3",
+        "pad": "6",
+        "type": "surface_mount"
+      },
+      {
+        "component": "U3",
+        "pad": "7",
+        "type": "surface_mount"
+      },
+      {
+        "component": "U3",
+        "pad": "12",
+        "type": "surface_mount"
+      },
+      {
+        "component": "U3",
+        "pad": "14",
+        "type": "surface_mount"
+      },
+      {
+        "component": "U3",
+        "pad": "22",
+        "type": "surface_mount"
+      },
+      {
+        "component": "U3",
+        "pad": "23",
+        "type": "surface_mount"
+      },
+      {
+        "component": "U3",
+        "pad": "25",
+        "type": "surface_mount"
+      },
+      {
+        "component": "U3",
+        "pad": "26",
+        "type": "surface_mount"
+      },
+      {
+        "component": "RN3",
+        "pad": "2",
+        "type": "surface_mount"
+      },
+      {
+        "component": "RN3",
+        "pad": "3",
+        "type": "surface_mount"
+      },
+      {
+        "component": "RN3",
+        "pad": "6",
+        "type": "surface_mount"
+      },
+      {
+        "component": "RN3",
+        "pad": "7",
+        "type": "surface_mount"
+      },
+      {
+        "component": "POWER0",
+        "pad": "1    D033",
+        "type": "through_hole"
+      },
+      {
+        "component": "FD2",
+        "pad": "P$1",
+        "type": "surface_mount"
+      },
+      {
+        "component": "U2",
+        "pad": "4",
+        "type": "surface_mount"
+      }
+    ],
+    "N$1": [
+      {
+        "component": "RN2",
+        "pad": "1",
+        "type": "surface_mount"
+      },
+      {
+        "component": "L0",
+        "pad": "A",
+        "type": "surface_mount"
+      }
+    ],
+    "DTR": [
+      {
+        "component": "RN2",
+        "pad": "4",
+        "type": "surface_mount"
+      },
+      {
+        "component": "C5",
+        "pad": "1",
+        "type": "surface_mount"
+      },
+      {
+        "component": "U3",
+        "pad": "13",
+        "type": "surface_mount"
+      }
+    ],
+    "N$36": [
+      {
+        "component": "RN2",
+        "pad": "6",
+        "type": "surface_mount"
+      },
+      {
+        "component": "TX0",
+        "pad": "A",
+        "type": "surface_mount"
+      }
+    ],
+    "N$35": [
+      {
+        "component": "RN2",
+        "pad": "7",
+        "type": "surface_mount"
+      },
+      {
+        "component": "RX0",
+        "pad": "A",
+        "type": "surface_mount"
+      }
+    ],
+    "RESET": [
+      {
+        "component": "RN1",
+        "pad": "4",
+        "type": "surface_mount"
+      },
+      {
+        "component": "D2",
+        "pad": "A",
+        "type": "surface_mount"
+      },
+      {
+        "component": "ZU4",
+        "pad": "1    D033",
+        "type": "through_hole"
+      },
+      {
+        "component": "C5",
+        "pad": "2",
+        "type": "surface_mount"
+      },
+      {
+        "component": "POWER0",
+        "pad": "3    D033",
+        "type": "through_hole"
+      },
+      {
+        "component": "ICSP0",
+        "pad": "5    D037",
+        "type": "through_hole"
+      },
+      {
+        "component": "RESET0",
+        "pad": "3",
+        "type": "surface_mount"
+      },
+      {
+        "component": "RESET0",
+        "pad": "4",
+        "type": "surface_mount"
+      }
+    ],
+    "RESET2": [
+      {
+        "component": "RN1",
+        "pad": "6",
+        "type": "surface_mount"
+      },
+      {
+        "component": "D3",
+        "pad": "A",
+        "type": "surface_mount"
+      },
+      {
+        "component": "U3",
+        "pad": "24",
+        "type": "surface_mount"
+      },
+      {
+        "component": "ICSP1",
+        "pad": "5    D037",
+        "type": "through_hole"
+      }
+    ],
+    "D-": [
+      {
+        "component": "Z2",
+        "pad": "1",
+        "type": "surface_mount"
+      },
+      {
+        "component": "RN3",
+        "pad": "8",
+        "type": "surface_mount"
+      },
+      {
+        "component": "X2",
+        "pad": "2    D037",
+        "type": "through_hole"
+      }
+    ],
+    "USBVCC": [
+      {
+        "component": "T1",
+        "pad": "1",
+        "type": "surface_mount"
+      },
+      {
+        "component": "F1",
+        "pad": "1",
+        "type": "surface_mount"
+      },
+      {
+        "component": "U3",
+        "pad": "31",
+        "type": "surface_mount"
+      }
+    ],
+    "RXLED": [
+      {
+        "component": "RX0",
+        "pad": "C",
+        "type": "surface_mount"
+      },
+      {
+        "component": "U3",
+        "pad": "10",
+        "type": "surface_mount"
+      }
+    ],
+    "XUSB": [
+      {
+        "component": "F1",
+        "pad": "2",
+        "type": "surface_mount"
+      },
+      {
+        "component": "X2",
+        "pad": "1    D037",
+        "type": "through_hole"
+      }
+    ],
+    "PWRIN": [
+      {
+        "component": "X1",
+        "pad": "2    D051",
+        "type": "through_hole"
+      },
+      {
+        "component": "D1",
+        "pad": "A",
+        "type": "surface_mount"
+      }
+    ],
+    "XTAL1": [
+      {
+        "component": "ZU4",
+        "pad": "9    D033",
+        "type": "through_hole"
+      },
+      {
+        "component": "Y2",
+        "pad": "3",
+        "type": "surface_mount"
+      },
+      {
+        "component": "R2",
+        "pad": "1",
+        "type": "surface_mount"
+      }
+    ],
+    "XTAL2": [
+      {
+        "component": "ZU4",
+        "pad": "10   D033",
+        "type": "through_hole"
+      },
+      {
+        "component": "Y2",
+        "pad": "1",
+        "type": "surface_mount"
+      },
+      {
+        "component": "R2",
+        "pad": "2",
+        "type": "surface_mount"
+      }
+    ],
+    "AVCC": [
+      {
+        "component": "ZU4",
+        "pad": "20   D033",
+        "type": "through_hole"
+      },
+      {
+        "component": "L2",
+        "pad": "2",
+        "type": "surface_mount"
+      },
+      {
+        "component": "C10",
+        "pad": "2",
+        "type": "surface_mount"
+      }
+    ],
+    "AD0": [
+      {
+        "component": "ZU4",
+        "pad": "23   D033",
+        "type": "through_hole"
+      },
+      {
+        "component": "AD0",
+        "pad": "1    D033",
+        "type": "through_hole"
+      }
+    ],
+    "AD1": [
+      {
+        "component": "ZU4",
+        "pad": "24   D033",
+        "type": "through_hole"
+      },
+      {
+        "component": "AD0",
+        "pad": "2    D033",
+        "type": "through_hole"
+      }
+    ],
+    "AD2": [
+      {
+        "component": "ZU4",
+        "pad": "25   D033",
+        "type": "through_hole"
+      },
+      {
+        "component": "AD0",
+        "pad": "3    D033",
+        "type": "through_hole"
+      }
+    ],
+    "AD3": [
+      {
+        "component": "ZU4",
+        "pad": "26   D033",
+        "type": "through_hole"
+      },
+      {
+        "component": "AD0",
+        "pad": "4    D033",
+        "type": "through_hole"
+      }
+    ],
+    "TP_VUCAP": [
+      {
+        "component": "C8",
+        "pad": "1",
+        "type": "surface_mount"
+      },
+      {
+        "component": "U3",
+        "pad": "27",
+        "type": "surface_mount"
+      }
+    ],
+    "M8RXD": [
+      {
+        "component": "RN4",
+        "pad": "7",
+        "type": "surface_mount"
+      },
+      {
+        "component": "U3",
+        "pad": "9",
+        "type": "surface_mount"
+      }
+    ],
+    "M8TXD": [
+      {
+        "component": "RN4",
+        "pad": "8",
+        "type": "surface_mount"
+      },
+      {
+        "component": "U3",
+        "pad": "8",
+        "type": "surface_mount"
+      }
+    ],
+    "TXLED": [
+      {
+        "component": "U3",
+        "pad": "11",
+        "type": "surface_mount"
+      },
+      {
+        "component": "TX0",
+        "pad": "C",
+        "type": "surface_mount"
+      }
+    ],
+    "SCK2": [
+      {
+        "component": "U3",
+        "pad": "15",
+        "type": "surface_mount"
+      },
+      {
+        "component": "ICSP1",
+        "pad": "3    D037",
+        "type": "through_hole"
+      }
+    ],
+    "MOSI2": [
+      {
+        "component": "U3",
+        "pad": "16",
+        "type": "surface_mount"
+      },
+      {
+        "component": "ICSP1",
+        "pad": "4    D037",
+        "type": "through_hole"
+      }
+    ],
+    "MISO2": [
+      {
+        "component": "U3",
+        "pad": "17",
+        "type": "surface_mount"
+      },
+      {
+        "component": "ICSP1",
+        "pad": "1    D037",
+        "type": "through_hole"
+      }
+    ],
+    "PB4": [
+      {
+        "component": "U3",
+        "pad": "18",
+        "type": "surface_mount"
+      },
+      {
+        "component": "JP2",
+        "pad": "1    D037",
+        "type": "through_hole"
+      }
+    ],
+    "PB5": [
+      {
+        "component": "U3",
+        "pad": "19",
+        "type": "surface_mount"
+      },
+      {
+        "component": "JP2",
+        "pad": "3    D037",
+        "type": "through_hole"
+      }
+    ],
+    "PB6": [
+      {
+        "component": "U3",
+        "pad": "20",
+        "type": "surface_mount"
+      },
+      {
+        "component": "JP2",
+        "pad": "2    D037",
+        "type": "through_hole"
+      }
+    ],
+    "PB7": [
+      {
+        "component": "U3",
+        "pad": "21",
+        "type": "surface_mount"
+      },
+      {
+        "component": "JP2",
+        "pad": "4    D037",
+        "type": "through_hole"
+      }
+    ],
+    "RD+": [
+      {
+        "component": "U3",
+        "pad": "29",
+        "type": "surface_mount"
+      },
+      {
+        "component": "RN3",
+        "pad": "4",
+        "type": "surface_mount"
+      }
+    ],
+    "RD-": [
+      {
+        "component": "U3",
+        "pad": "30",
+        "type": "surface_mount"
+      },
+      {
+        "component": "RN3",
+        "pad": "1",
+        "type": "surface_mount"
+      }
+    ],
+    "5-GND": [
+      {
+        "component": "RESET0",
+        "pad": "5",
+        "type": "surface_mount"
+      }
+    ]
+  },
+  "components": {
+    "L1": {
+      "value": "BLM21",
+      "package": "0805",
+      "type": "surface_mount",
+      "has_connectivity": true,
+      "category": "physical_component"
+    },
+    "IOH0": {
+      "value": "10x1F-H8.5",
+      "package": "1X10",
+      "type": "through_hole",
+      "has_connectivity": true,
+      "category": "physical_component"
+    },
+    "C6": {
+      "value": "100n",
+      "package": "C0603-ROUND",
+      "type": "surface_mount",
+      "has_connectivity": true,
+      "category": "physical_component"
+    },
+    "C2": {
+      "value": "100n",
+      "package": "C0603-ROUND",
+      "type": "surface_mount",
+      "has_connectivity": true,
+      "category": "physical_component"
+    },
+    "Y1": {
+      "value": "16MHz",
+      "package": "QS",
+      "type": "through_hole",
+      "has_connectivity": true,
+      "category": "physical_component"
+    },
+    "IOL0": {
+      "value": "8x1F-H8.5",
+      "package": "1X08",
+      "type": "through_hole",
+      "has_connectivity": true,
+      "category": "physical_component"
+    },
+    "ON0": {
+      "value": "N/A",
+      "package": "UNKNOWN",
+      "type": "surface_mount",
+      "has_connectivity": true,
+      "category": "virtual_component"
+    },
+    "Z1": {
+      "value": "N/A",
+      "package": "UNKNOWN",
+      "type": "surface_mount",
+      "has_connectivity": true,
+      "category": "virtual_component"
+    },
+    "PC1": {
+      "value": "47u",
+      "package": "PANASONIC_D",
+      "type": "surface_mount",
+      "has_connectivity": true,
+      "category": "physical_component"
+    },
+    "PC2": {
+      "value": "47u",
+      "package": "PANASONIC_D",
+      "type": "surface_mount",
+      "has_connectivity": true,
+      "category": "physical_component"
+    },
+    "U5": {
+      "value": "LMV358IDGKR",
+      "package": "MSOP08",
+      "type": "surface_mount",
+      "has_connectivity": true,
+      "category": "physical_component"
+    },
+    "FD1": {
+      "value": "FIDUCIALMOUNT",
+      "package": "FIDUCIA-MOUNT",
+      "type": "surface_mount",
+      "has_connectivity": true,
+      "category": "physical_component"
+    },
+    "RN2": {
+      "value": "1K",
+      "package": "CAY16",
+      "type": "surface_mount",
+      "has_connectivity": true,
+      "category": "physical_component"
+    },
+    "U1": {
+      "value": "NCP1117ST50T3G",
+      "package": "SOT223",
+      "type": "surface_mount",
+      "has_connectivity": true,
+      "category": "physical_component"
+    },
+    "C3": {
+      "value": "1u",
+      "package": "C0603-ROUND",
+      "type": "surface_mount",
+      "has_connectivity": true,
+      "category": "physical_component"
+    },
+    "RN1": {
+      "value": "10K",
+      "package": "CAY16",
+      "type": "surface_mount",
+      "has_connectivity": true,
+      "category": "physical_component"
+    },
+    "D2": {
+      "value": "CD1206-S01575",
+      "package": "MINIMELF",
+      "type": "surface_mount",
+      "has_connectivity": true,
+      "category": "physical_component"
+    },
+    "C1": {
+      "value": "100n",
+      "package": "C0603-ROUND",
+      "type": "surface_mount",
+      "has_connectivity": true,
+      "category": "physical_component"
+    },
+    "Z2": {
+      "value": "N/A",
+      "package": "UNKNOWN",
+      "type": "surface_mount",
+      "has_connectivity": true,
+      "category": "virtual_component"
+    },
+    "R1": {
+      "value": "1M",
+      "package": "R0603-ROUND",
+      "type": "surface_mount",
+      "has_connectivity": true,
+      "category": "physical_component"
+    },
+    "T1": {
+      "value": "N/A",
+      "package": "UNKNOWN",
+      "type": "surface_mount",
+      "has_connectivity": true,
+      "category": "virtual_component"
+    },
+    "D3": {
+      "value": "CD1206-S01575",
+      "package": "MINIMELF",
+      "type": "surface_mount",
+      "has_connectivity": true,
+      "category": "physical_component"
+    },
+    "RX0": {
+      "value": "N/A",
+      "package": "UNKNOWN",
+      "type": "surface_mount",
+      "has_connectivity": true,
+      "category": "virtual_component"
+    },
+    "F1": {
+      "value": "MF-MSMF050-2 500mA",
+      "package": "L1812",
+      "type": "surface_mount",
+      "has_connectivity": true,
+      "category": "physical_component"
+    },
+    "X1": {
+      "value": "POWERSUPPLY_DC21MMX",
+      "package": "POWERSUPPLY_DC-21MM",
+      "type": "through_hole",
+      "has_connectivity": true,
+      "category": "physical_component"
+    },
+    "FD3": {
+      "value": "FIDUCIALMOUNT",
+      "package": "FIDUCIA-MOUNT",
+      "type": "surface_mount",
+      "has_connectivity": true,
+      "category": "physical_component"
+    },
+    "C4": {
+      "value": "100n",
+      "package": "C0603-ROUND",
+      "type": "surface_mount",
+      "has_connectivity": true,
+      "category": "physical_component"
+    },
+    "C7": {
+      "value": "100n",
+      "package": "C0603-ROUND",
+      "type": "surface_mount",
+      "has_connectivity": true,
+      "category": "physical_component"
+    },
+    "ZU4": {
+      "value": "ATMEGA328P-PU",
+      "package": "DIL28-3",
+      "type": "through_hole",
+      "has_connectivity": true,
+      "category": "physical_component"
+    },
+    "L0": {
+      "value": "YELLOW",
+      "package": "CHIP-LED0805",
+      "type": "surface_mount",
+      "has_connectivity": true,
+      "category": "physical_component"
+    },
+    "C8": {
+      "value": "1u",
+      "package": "C0603-ROUND",
+      "type": "surface_mount",
+      "has_connectivity": true,
+      "category": "physical_component"
+    },
+    "Y2": {
+      "value": "CSTCE16M0V53-R0 16MHZ",
+      "package": "RESONATOR",
+      "type": "surface_mount",
+      "has_connectivity": true,
+      "category": "physical_component"
+    },
+    "L2": {
+      "value": "10uH",
+      "package": "0805",
+      "type": "surface_mount",
+      "has_connectivity": true,
+      "category": "physical_component"
+    },
+    "C5": {
+      "value": "100n",
+      "package": "C0603-ROUND",
+      "type": "surface_mount",
+      "has_connectivity": true,
+      "category": "physical_component"
+    },
+    "RN4": {
+      "value": "1K",
+      "package": "CAY16",
+      "type": "surface_mount",
+      "has_connectivity": true,
+      "category": "physical_component"
+    },
+    "U3": {
+      "value": "ATMEGA16U2-MU(R)",
+      "package": "MLF32",
+      "type": "surface_mount",
+      "has_connectivity": true,
+      "category": "physical_component"
+    },
+    "AD0": {
+      "value": "6x1F-H8.5",
+      "package": "1X06",
+      "type": "through_hole",
+      "has_connectivity": true,
+      "category": "physical_component"
+    },
+    "R2": {
+      "value": "1M",
+      "package": "R0603-ROUND",
+      "type": "surface_mount",
+      "has_connectivity": true,
+      "category": "physical_component"
+    },
+    "C10": {
+      "value": "100n",
+      "package": "C0603-ROUND",
+      "type": "surface_mount",
+      "has_connectivity": true,
+      "category": "physical_component"
+    },
+    "D1": {
+      "value": "M7",
+      "package": "SMB",
+      "type": "surface_mount",
+      "has_connectivity": true,
+      "category": "physical_component"
+    },
+    "RN3": {
+      "value": "22R",
+      "package": "CAY16",
+      "type": "surface_mount",
+      "has_connectivity": true,
+      "category": "physical_component"
+    },
+    "POWER0": {
+      "value": "N/A",
+      "package": "UNKNOWN",
+      "type": "through_hole",
+      "has_connectivity": true,
+      "category": "virtual_component"
+    },
+    "TX0": {
+      "value": "N/A",
+      "package": "UNKNOWN",
+      "type": "surface_mount",
+      "has_connectivity": true,
+      "category": "virtual_component"
+    },
+    "C11": {
+      "value": "22p",
+      "package": "C0603-ROUND",
+      "type": "surface_mount",
+      "has_connectivity": true,
+      "category": "physical_component"
+    },
+    "ICSP1": {
+      "value": "N/A",
+      "package": "UNKNOWN",
+      "type": "through_hole",
+      "has_connectivity": true,
+      "category": "virtual_component"
+    },
+    "X2": {
+      "value": "USB-B_TH",
+      "package": "PN61729",
+      "type": "through_hole",
+      "has_connectivity": true,
+      "category": "physical_component"
+    },
+    "ICSP0": {
+      "value": "N/A",
+      "package": "UNKNOWN",
+      "type": "through_hole",
+      "has_connectivity": true,
+      "category": "virtual_component"
+    },
+    "JP2": {
+      "value": "N/A",
+      "package": "UNKNOWN",
+      "type": "through_hole",
+      "has_connectivity": true,
+      "category": "virtual_component"
+    },
+    "RESET0": {
+      "value": "N/A",
+      "package": "UNKNOWN",
+      "type": "surface_mount",
+      "has_connectivity": true,
+      "category": "virtual_component"
+    },
+    "FD2": {
+      "value": "FIDUCIALMOUNT",
+      "package": "FIDUCIA-MOUNT",
+      "type": "surface_mount",
+      "has_connectivity": true,
+      "category": "physical_component"
+    },
+    "C9": {
+      "value": "22p",
+      "package": "C0603-ROUND",
+      "type": "surface_mount",
+      "has_connectivity": true,
+      "category": "physical_component"
+    },
+    "U2": {
+      "value": "LP2985-33DBVR",
+      "package": "SOT23-DBV",
+      "type": "surface_mount",
+      "has_connectivity": true,
+      "category": "physical_component"
+    },
+    "GROUND": {
+      "value": "N/A",
+      "package": "UNKNOWN",
+      "type": "surface_mount",
+      "has_connectivity": true,
+      "category": "virtual_component"
+    }
+  }
+}
