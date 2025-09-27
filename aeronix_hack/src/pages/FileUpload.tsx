@@ -32,18 +32,16 @@ const FileUpload: React.FC = () => {
   const handleUpload = async () => {
     if (!netlist) return;
     if (!csv) return;
-    const netlistData = new FormData();
-    netlistData.append("file", netlist);
-    const csvData = new FormData();
-    csvData.append("file", csv);
+    const formData = new FormData();
+    formData.append("netlist", netlist);
+    formData.append("csv", csv);
 
     try {
       const response = await axios.post(
         "http://localhost:5000/upload",
-        { netlist: netlistData, csv: csvData },
+        formData,
         {
           headers: { "Content-Type": "multipart/form-data" },
-          onUploadProgress: (event) => {},
         }
       );
       setMessage(response.data.message);
