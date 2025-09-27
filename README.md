@@ -15,3 +15,7 @@ export LANGSMITH_PROJECT="default" # or any other project name
 https://github.com/AntonioMR/ATMEGA328-Motor-Board/tree/master/firmware
 
 https://learn.adafruit.com/accessing-and-using-adafruit-pcb-design-files
+
+Y oscillators
+R resistors
+C capacitors
