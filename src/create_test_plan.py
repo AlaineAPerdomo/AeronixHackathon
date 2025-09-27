@@ -128,7 +128,7 @@ def run_batch_datasheet_agent(part_numbers):
     """Searches for datasheets and extracts key specs for a list of components."""
     print(f" Running Datasheet Agent for: {part_numbers}...")
     tavily_client = TavilyClient(api_key=os.getenv("TAVILY_API_KEY"))
-    model = genai.GenerativeModel('gemini-1.5-pro-latest')
+    model = genai.GenerativeModel('gemini-2.5-pro')
 
     all_context = ""
     for part in part_numbers:
