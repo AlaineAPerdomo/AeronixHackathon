@@ -15,48 +15,36 @@ import CloudUploadIcon from "@mui/icons-material/CloudUpload";
 
 const FileUpload: React.FC = () => {
   const [netlist, setNetlist] = useState<File | null>(null);
-  const [csv, setCsv] = useState<File | null>(null);
-  const [message, setMessage] = useState("");
-  const [progress, setProgress] = useState(0);
+  const [xlsx, setxlsx] = useState<File | null>(null);
+  const [message, setMessage] = useState<string>("");
 
   const handleNetlistChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     const selected = Array.from(e.target.files || []);
-    const allowedTypes = ["application/ipc", "application/d356"];
-    const validNetlists = selected.filter((f) => allowedTypes.includes(f.type));
     console.log(selected);
     if (e.target.files) setNetlist(e.target.files[0]);
-    setProgress(0);
-    setMessage("");
   };
 
-  const handleCsvChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+  const handlexlsxChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     const selected = Array.from(e.target.files || []);
-    const allowedTypes = ["application/csv"];
-    const validCsv = selected.filter((f) => allowedTypes.includes(f.type));
     console.log(selected);
-    if (e.target.files) setCsv(e.target.files[0]);
-    setProgress(0);
-    setMessage("");
+    if (e.target.files) setxlsx(e.target.files[0]);
   };
 
   const handleUpload = async () => {
     if (!netlist) return;
+    if (!xlsx) return;
     const netlistData = new FormData();
     netlistData.append("file", netlist);
-    const csvData = new FormData();
-    csvData.append("file", csv);
+    const xlsxData = new FormData();
+    xlsxData.append("file", xlsx);
 
     try {
       const response = await axios.post(
         "http://localhost:5000/upload",
-        { netlist: netlistData, csv: csvData },
+        { netlist: netlistData, xlsx: xlsxData },
         {
           headers: { "Content-Type": "multipart/form-data" },
-          onUploadProgress: (event) => {
-            setProgress(
-              Math.round((event.loaded * 100) / (event.total ? event.total : 1))
-            );
-          },
+          onUploadProgress: (event) => {},
         }
       );
       setMessage(response.data.message);
@@ -103,12 +91,13 @@ const FileUpload: React.FC = () => {
           <Stack spacing={3}>
             <input
               type="file"
-              id="file-upload"
+              id="netlist-upload"
+              accept=".d356,.ipc"
               multiple={false}
               style={{ display: "none" }}
               onChange={handleNetlistChange}
             />
-            <label htmlFor="file-upload">
+            <label htmlFor="netlist-upload">
               <Stack spacing={3}>
                 <Button
                   variant="contained"
@@ -123,12 +112,13 @@ const FileUpload: React.FC = () => {
             </label>
             <input
               type="file"
-              id="file-upload"
+              id="xlsx-upload"
+              accept=".xlsx"
               multiple={false}
               style={{ display: "none" }}
-              onChange={handleCsvChange}
+              onChange={handlexlsxChange}
             />
-            <label htmlFor="file-upload">
+            <label htmlFor="xlsx-upload">
               <Stack spacing={3}>
                 <Button
                   variant="contained"
@@ -136,9 +126,9 @@ const FileUpload: React.FC = () => {
                   startIcon={<CloudUploadIcon />}
                   sx={{ mb: 2 }}
                 >
-                  Csv Bill of Materials File (.csv)
+                  Excel Bill of Materials File (.xlsx)
                 </Button>
-                {csv && <Typography>{csv.name}</Typography>}
+                {xlsx && <Typography>{xlsx.name}</Typography>}
               </Stack>
             </label>
           </Stack>
@@ -153,14 +143,6 @@ const FileUpload: React.FC = () => {
               Run Tool
             </Button>
           </Box>
-
-          {progress > 0 && (
-            <LinearProgress
-              variant="determinate"
-              value={progress}
-              sx={{ mt: 2 }}
-            />
-          )}
 
           {message && <Typography sx={{ mt: 2 }}>{message}</Typography>}
         </ThemeProvider>
