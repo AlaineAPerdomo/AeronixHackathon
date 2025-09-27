@@ -49,7 +49,7 @@ def ingest_documents():
         print("Please create it and add your design documents.")
         return
 
-    print("🚀 Starting document ingestion...")
+    print("Starting document ingestion...")
 
     # 1. Load all documents from the source directory
     documents = []
@@ -69,23 +69,23 @@ def ingest_documents():
     # 2. Split documents into smaller, manageable chunks
     text_splitter = RecursiveCharacterTextSplitter(chunk_size=1500, chunk_overlap=150)
     chunks = text_splitter.split_documents(documents)
-    print(f"✅ Split {len(documents)} document(s) into {len(chunks)} chunks.")
+    print(f" Split {len(documents)} document(s) into {len(chunks)} chunks.")
 
     # 3. Create embeddings and persist them to the vector store
-    print("🧠 Creating embeddings and building vector store... (This may take a moment)")
+    print(" Creating embeddings and building vector store... (This may take a moment)")
     embeddings = GoogleGenerativeAIEmbeddings(model="models/embedding-001")
 
     # Create a new Chroma database from the chunks
     db = Chroma.from_documents(chunks, embeddings, persist_directory=CHROMA_PATH)
 
-    print(f"✅ Ingestion complete. Vector store created at: '{CHROMA_PATH}'")
+    print(f" Ingestion complete. Vector store created at: '{CHROMA_PATH}'")
 
 
 # --- Test Plan Generation Functions ---
 def read_file_content(file_path):
     """Reads the content of a given file, handling CSVs with pandas."""
     if not file_path or not os.path.exists(file_path):
-        print(f"⚠️ Warning: File not found or path is empty: {file_path}")
+        print(f" Warning: File not found or path is empty: {file_path}")
         return ""
     try:
         if file_path.lower().endswith('.csv'):
@@ -94,7 +94,7 @@ def read_file_content(file_path):
             with open(file_path, 'r', encoding='utf-8', errors='ignore') as f:
                 return f.read()
     except Exception as e:
-        print(f"❌ Error reading {file_path}: {e}")
+        print(f" Error reading {file_path}: {e}")
         return ""
 
 def call_gemini_with_retry(model, prompt, retries=3, base_delay=15):
@@ -110,14 +110,14 @@ def call_gemini_with_retry(model, prompt, retries=3, base_delay=15):
         except Exception as e:
             print(f"An unexpected error occurred: {e}")
             return None
-    print("❌ All retries failed. Could not get a response from the API.")
+    print(" All retries failed. Could not get a response from the API.")
     return None
 
 def get_relevant_context_from_rag(query, k=8):
     """Retrieves relevant document chunks from the Chroma vector store."""
-    print("🧠 Querying RAG vector store for relevant context...")
+    print(" Querying RAG vector store for relevant context...")
     if not os.path.exists(CHROMA_PATH):
-        return "⚠️ RAG database not found. Please run ingest_docs.py first."
+        return " RAG database not found. Please run ingest_docs.py first."
     embeddings = GoogleGenerativeAIEmbeddings(model="models/embedding-001")
     db = Chroma(persist_directory=CHROMA_PATH, embedding_function=embeddings)
     results = db.similarity_search(query, k=k)
@@ -126,7 +126,7 @@ def get_relevant_context_from_rag(query, k=8):
 
 def run_batch_datasheet_agent(part_numbers):
     """Searches for datasheets and extracts key specs for a list of components."""
-    print(f"🤖 Running Datasheet Agent for: {part_numbers}...")
+    print(f" Running Datasheet Agent for: {part_numbers}...")
     tavily_client = TavilyClient(api_key=os.getenv("TAVILY_API_KEY"))
     model = genai.GenerativeModel('gemini-1.5-pro-latest')
 
@@ -141,7 +141,7 @@ def run_batch_datasheet_agent(part_numbers):
             context = "\n".join([result['content'] for result in search_results['results']])
             all_context += f"\n\n--- Search Results for {part} ---\n{context}"
         except Exception as e:
-            print(f"   -> ⚠️ Could not perform web search for {part}: {e}")
+            print(f"   ->  Could not perform web search for {part}: {e}")
 
     prompt = f"""
     Based on the following datasheet search results, extract the 'recommended operating voltage range' and the 'absolute maximum VCC/VDD voltage' for each component.
@@ -156,12 +156,12 @@ def run_batch_datasheet_agent(part_numbers):
     try:
         return json.loads(specs_json_str.strip().replace('```json', '').replace('```', ''))
     except (json.JSONDecodeError, AttributeError):
-        print("❌ Agent failed to return valid JSON for datasheets.")
+        print(" Agent failed to return valid JSON for datasheets.")
         return {}
 
 def generate_annotated_image(component_ref, pcb_image_path):
     """Asks Gemini 1.5 Pro to highlight a component on a PCB image."""
-    print(f"🎨 Generating annotated image for '{component_ref}'...")
+    print(f" Generating annotated image for '{component_ref}'...")
     try:
         model = genai.GenerativeModel('gemini-1.5-pro-latest')
         pcb_image = Image.open(pcb_image_path)
@@ -181,7 +181,7 @@ def generate_annotated_image(component_ref, pcb_image_path):
         print(f"   -> Saved annotated image to {output_filename}")
         return output_filename
     except Exception as e:
-        print(f"   -> ❌ Error generating image for {component_ref}: {e}")
+        print(f"   ->  Error generating image for {component_ref}: {e}")
         return None
 
 def generate_test_plan(netlist_path, bom_path, layout_image_path, output_path):
@@ -227,7 +227,7 @@ def generate_test_plan(netlist_path, bom_path, layout_image_path, output_path):
                     ic['voltage_specs'] = datasheet_specs[ic['part_number']]
         enriched_json_summary = json.dumps(summary_data, indent=2)
     except json.JSONDecodeError:
-        print("❌ Could not parse Stage 1 JSON. Proceeding without enrichment.")
+        print(" Could not parse Stage 1 JSON. Proceeding without enrichment.")
         enriched_json_summary = json_summary_str
 
     # 5. Stage 2: Test Plan Generation
@@ -271,7 +271,7 @@ def save_to_word_with_images(markdown_text, filename, pcb_image_path):
                         processed_components.add(component_to_find)
 
     doc.save(filename)
-    print(f"\n✅ Success! Test plan saved to '{filename}'")
+    print(f"\n Success! Test plan saved to '{filename}'")
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description="AI-Powered PCB Test Plan Generator")
@@ -287,7 +287,7 @@ if __name__ == "__main__":
     if args.re_ingest or not os.path.exists(CHROMA_PATH):
         ingest_documents()
     else:
-        print("✅ Vector store already exists. Skipping ingestion. Use --re-ingest to force.")
+        print(" Vector store already exists. Skipping ingestion. Use --re-ingest to force.")
 
     # Generate the test plan
     generate_test_plan(args.netlist, args.bom, args.layout_image, args.output)
