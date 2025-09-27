@@ -1,4 +1,4 @@
-# generate_test_plan.py
+# create_test_plan.py
 import os
 import json
 import re
@@ -14,6 +14,8 @@ from dotenv import load_dotenv
 import google.generativeai as genai
 from google.api_core import exceptions
 from tavily import TavilyClient
+from langchain_community.document_loaders import UnstructuredFileLoader
+from langchain.text_splitter import RecursiveCharacterTextSplitter
 from langchain_community.vectorstores import Chroma
 from langchain_google_genai import GoogleGenerativeAIEmbeddings
 
@@ -28,6 +30,7 @@ if not os.getenv("GOOGLE_API_KEY") or not os.getenv("TAVILY_API_KEY"):
 genai.configure(api_key=os.getenv("GOOGLE_API_KEY"))
 
 # --- Constants ---
+DOCS_DIR = "source_documents"
 CHROMA_PATH = "chroma_db"
 GENERATION_CONFIG = {
     "temperature": 0.2,
@@ -35,7 +38,50 @@ GENERATION_CONFIG = {
     "top_k": 32,
 }
 
-# --- Helper Functions ---
+# --- Ingestion Function ---
+def ingest_documents():
+    """
+    Loads documents from the source directory, splits them into chunks,
+    and embeds them into a Chroma vector store for later retrieval.
+    """
+    if not os.path.exists(DOCS_DIR):
+        print(f"Error: The source directory '{DOCS_DIR}' does not exist.")
+        print("Please create it and add your design documents.")
+        return
+
+    print("🚀 Starting document ingestion...")
+
+    # 1. Load all documents from the source directory
+    documents = []
+    for file in os.listdir(DOCS_DIR):
+        file_path = os.path.join(DOCS_DIR, file)
+        try:
+            print(f"   -> Loading: {file}")
+            loader = UnstructuredFileLoader(file_path)
+            documents.extend(loader.load())
+        except Exception as e:
+            print(f"Warning: Could not load file {file}. Error: {e}")
+
+    if not documents:
+        print("No documents were loaded. Aborting.")
+        return
+
+    # 2. Split documents into smaller, manageable chunks
+    text_splitter = RecursiveCharacterTextSplitter(chunk_size=1500, chunk_overlap=150)
+    chunks = text_splitter.split_documents(documents)
+    print(f"✅ Split {len(documents)} document(s) into {len(chunks)} chunks.")
+
+    # 3. Create embeddings and persist them to the vector store
+    print("🧠 Creating embeddings and building vector store... (This may take a moment)")
+    embeddings = GoogleGenerativeAIEmbeddings(model="models/embedding-001")
+
+    # Create a new Chroma database from the chunks
+    db = Chroma.from_documents(chunks, embeddings, persist_directory=CHROMA_PATH)
+
+    print(f"✅ Ingestion complete. Vector store created at: '{CHROMA_PATH}'")
+
+
+# --- Test Plan Generation Functions ---
 def read_file_content(file_path):
     """Reads the content of a given file, handling CSVs with pandas."""
     if not file_path or not os.path.exists(file_path):
@@ -67,7 +113,6 @@ def call_gemini_with_retry(model, prompt, retries=3, base_delay=15):
     print("❌ All retries failed. Could not get a response from the API.")
     return None
 
-# --- RAG and Agent Functions ---
 def get_relevant_context_from_rag(query, k=8):
     """Retrieves relevant document chunks from the Chroma vector store."""
     print("🧠 Querying RAG vector store for relevant context...")
@@ -134,7 +179,6 @@ def generate_annotated_image(component_ref, pcb_image_path):
         print(f"   -> ❌ Error generating image for {component_ref}: {e}")
         return None
 
-# --- Main Workflow ---
 def generate_test_plan(netlist_path, bom_path, layout_image_path, output_path):
     """Main function to generate the PCB test plan."""
     model = genai.GenerativeModel('gemini-1.5-pro-latest')
@@ -230,6 +274,15 @@ if __name__ == "__main__":
     parser.add_argument("--bom", help="Path to the Bill of Materials CSV file.")
     parser.add_argument("--layout_image", help="Path to the PCB layout image (.png, .jpg) for annotation.")
     parser.add_argument("--output", default="Generated_Test_Plan.docx", help="Output filename for the Word document.")
+    parser.add_argument("--re-ingest", action="store_true", help="Force re-ingestion of documents from the source_documents folder.")
+    
     args = parser.parse_args()
 
+    # Check if ingestion is needed
+    if args.re_ingest or not os.path.exists(CHROMA_PATH):
+        ingest_documents()
+    else:
+        print("✅ Vector store already exists. Skipping ingestion. Use --re-ingest to force.")
+
+    # Generate the test plan
     generate_test_plan(args.netlist, args.bom, args.layout_image, args.output)
