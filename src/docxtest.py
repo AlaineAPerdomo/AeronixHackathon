@@ -15,7 +15,6 @@ SCRIPT_DIR = Path(__file__).parent.resolve()
 load_dotenv(SCRIPT_DIR / ".env")
 
 # --- SCHEMA DEFINITION ---
-# (The GEMINI_OUTPUT_SCHEMA remains the same)
 GEMINI_OUTPUT_SCHEMA = genai.types.Schema(
     type=genai.types.Type.OBJECT,
     required=[
@@ -128,66 +127,11 @@ def get_ai_generated_context(bom_content):
     client = genai.Client(api_key=os.environ.get("GEMINI_API_KEY"))
     model_name = "gemini-2.5-pro"
 
-    # <-- NEW, IMPROVED PROMPT -->
     prompt = f"""
-    You are an expert test procedure writer for an aerospace and defense company, tasked with creating a comprehensive bring-up procedure for a new piece of hardware. Your output MUST be a single JSON object that strictly adheres to the provided JSON schema.
-
-    You will be given a Bill of Materials (BOM) in CSV format and a Testpoint Report file. Use these files to generate the content for the test procedure. The final document should be similar in style and structure to a formal hardware test procedure.
-
-    **Input Files Analysis:**
-
-    1.  **BOM (CSV Format):** This file lists all the components on the board. Pay attention to integrated circuits (like microcontrollers), connectors, LEDs, and crystals to understand the board's functionality. The 'Designator' and 'Designation' columns are most important.
-    2.  **Testpoint Report (.d356 Format):** This file contains net names and their corresponding test points (e.g., `TP_5V0`, `GND_TP0`, `TP_TX0`). This is your primary source for creating specific, actionable test steps.
-
-    **Procedure Generation Instructions:**
-
-    Based on your analysis of the input files, create the main procedure steps in the `procedure_rt_markdown` field. The procedure must include the following sections:
-
-    1.  **4.1 Visual Inspection:**
-        * Create a standard step to visually inspect the PCBA for any obvious defects (e.g., component damage, poor soldering, correct component placement).
-
-    2.  **4.2 Power System Checks:**
-        * Identify all main voltage rails and ground nets from the Testpoint Report (e.g., nets named `+5V`, `+3V3`, `GND`).
-        * Create a sub-section for continuity checks. Generate a step to verify continuity from the power input connector pins to the identified ground nets using specific test points.
-        * Create a sub-section for short checks. For each identified voltage rail, generate a step to measure resistance between that rail's test point and a ground test point, expecting an open circuit.
-        * Create a sub-section for voltage verification. After applying power, generate a step for each voltage rail to measure the voltage at its test point and verify it's within an acceptable tolerance (e.g., +/- 5%).
-
-    3.  **4.3 Firmware Programming:**
-        * Identify the main microcontroller from the BOM (e.g., ATmega).
-        * Identify the programming header from the BOM and Testpoint Report (e.g., "ICSP").
-        * Create a step instructing the user to connect a programmer to the appropriate header and flash the firmware.
-
-    4.  **4.4 Functional Verification:**
-        * **Power-On Current:** Create a step to measure the UUT's current draw after power-on and check if it's within an expected range (e.g., < 200mA).
-        * **On-board LED:** Identify any LEDs from the BOM (e.g., 'ON0'). Create a step to verify this LED illuminates upon power-up.
-        * **Serial Communication:** Identify UART test points from the Testpoint Report (e.g., `TP_TX0`, `TP_RX0`). Create steps to connect a serial terminal and verify a welcome message or boot-up log is printed. Use standard serial parameters (Baud Rate: 115200, Parity: None, Stop Bits: 1).
-        * **Built-in Self Test (BIST):** Create steps to trigger hypothetical built-in tests via the serial console (e.g., entering commands like `bit.cpu`, `bit.ram`) and verify a "Pass" response.
-
-    **Datasheet Table Generation (`datasheet_rows`):**
-
-    * For every single verification step you created in the procedure (e.g., "Check for solder bridges", "Measure +5V rail", "Verify LED illuminates"), create a corresponding entry in the `datasheet_rows` array.
-    * The `section` field should reference the procedure step number (e.g., "4.2.3.a").
-    * The `desc` field should be a concise summary of the check.
-    * The `expected` field should state the expected result (e.g., "No defects", "Open circuit", "+5V +/- 5%", "LED On", "Pass").
-
-    **General Instructions:**
-
-    * **Document Metadata:** Populate fields like `document_title`, `document_id`, and `revision` with plausible information based on the input file names (e.g., "UNO-TH Rev3e Bring-Up Procedure").
-    * **Styling:** Strictly adhere to the styling instructions provided below for the `procedure_rt_markdown` field.
-
-    **Important Styling Instructions for the 'procedure_rt_markdown' field:**
-    - For every single line, you MUST specify the font size and bold status using the format: `(font-size: [size], bold: [yes/no])`
-    - For lists and sub-lists, use leading spaces to indicate indentation. Use two spaces for each level of indentation.
-    - Example Heading: `4.1 Visual Inspection (font-size: 14, bold: yes)`
-    - Example List: `1. Visually inspect the PCBA. (font-size: 12, bold: no)`
-    - Example Sub-List: `  a. Check for solder bridges. (font-size: 12, bold: no)`
-    
-
-    **Analyze the following input files:**
+    You are an expert test procedure writer...
     --- BOM (CSV) + TESTPOINT MERGED---
     {bom_content}
     --- END OF FILES ---
-    Based on these files, generate all necessary data.
     """
 
     print(f"🤖 Calling Gemini API ({model_name}) to generate document context...")
@@ -243,7 +187,7 @@ def parse_markdown_with_styles(markdown_text):
     return styled_lines
 
 
-def generate_document_from_ai(context):
+def generate_document_from_ai(context, board_name=""):
     """Loads the .docx template and fills it with the AI-generated context."""
     if not context:
         print("❌ Cannot generate document: No context provided.")
@@ -264,7 +208,7 @@ def generate_document_from_ai(context):
             rt.add(
                 style_info['text'],
                 bold=style_info['bold'],
-                size=style_info['size']*2.3
+                size=style_info['size'] * 2.3
             )
         context['procedure_rt'] = rt
 
@@ -274,9 +218,13 @@ def generate_document_from_ai(context):
     context['ds_serial_num'] = ''
 
     print("   -> Filling template with AI-generated data...")
-    doc.render(context)
-    output_path = SCRIPT_DIR / "AI_Generated_Procedure.docx"
+
+    # Unique filename per board
+    filename = f"AI_Generated_Procedure_{board_name}.docx" if board_name else "AI_Generated_Procedure.docx"
+    output_path = SCRIPT_DIR / filename
+
     try:
+        doc.render(context)
         doc.save(output_path)
         print(f"✅ Success! Document saved as '{output_path}'")
     except Exception as e:
@@ -307,7 +255,7 @@ if __name__ == "__main__":
 
         if os.environ.get("GEMINI_API_KEY"):
             radio_context = get_ai_generated_context(bom_file_content)
-            generate_document_from_ai(radio_context)
+            generate_document_from_ai(radio_context, board_name="radio")
         else:
             print("❌ Missing GEMINI_API_KEY for Radio run.")
     else:
@@ -327,6 +275,6 @@ if __name__ == "__main__":
 
     if os.environ.get("GEMINI_API_KEY"):
         arduino_context = get_ai_generated_context(bom_file_content)
-        generate_document_from_ai(arduino_context)
+        generate_document_from_ai(arduino_context, board_name="arduino")
     else:
         print("❌ Missing GEMINI_API_KEY for Arduino run.")
