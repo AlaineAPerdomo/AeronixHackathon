@@ -1,0 +1,49 @@
+### Altium ###
+# Previews Folders
+**/__Previews/
+
+# History Folders
+**/History/*
+
+# Project Logs
+Project Logs*/
+
+# Project Outputs
+Project Outputs*/
+
+# Auto-conversion notices
+*.PcbDoc.htm
+
+# Access lock file for dbLib sources
+**/*.ldb
+
+# Document Local Metadata
+*.metadata
+
+# Project hierarchy auto-generated file
+*.PrjPcbStructure
+*.PrjMbdStructure
+
+# Altium Designer backup files
+*.SchDocPreview
+*.PcbDocPreview
+*.$$$
+*.~*
+*.SchDoc.Zip
+*.PcbDoc.Zip
+
+# Exported outputs
+*.STEP
+*.step
+*.STP
+*.stp
+*.Zip
+*.zip
+
+# Debug files
+*.REP
+*.rep
+
+# User files
+*.User
+*.user
