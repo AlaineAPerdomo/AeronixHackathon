@@ -5,7 +5,6 @@ import {
   Button,
   Typography,
   Box,
-  LinearProgress,
   Paper,
   createTheme,
   ThemeProvider,
@@ -15,7 +14,7 @@ import CloudUploadIcon from "@mui/icons-material/CloudUpload";
 
 const FileUpload: React.FC = () => {
   const [netlist, setNetlist] = useState<File | null>(null);
-  const [xlsx, setxlsx] = useState<File | null>(null);
+  const [csv, setcsv] = useState<File | null>(null);
   const [message, setMessage] = useState<string>("");
 
   const handleNetlistChange = (e: React.ChangeEvent<HTMLInputElement>) => {
@@ -24,24 +23,24 @@ const FileUpload: React.FC = () => {
     if (e.target.files) setNetlist(e.target.files[0]);
   };
 
-  const handlexlsxChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+  const handlecsvChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     const selected = Array.from(e.target.files || []);
     console.log(selected);
-    if (e.target.files) setxlsx(e.target.files[0]);
+    if (e.target.files) setcsv(e.target.files[0]);
   };
 
   const handleUpload = async () => {
     if (!netlist) return;
-    if (!xlsx) return;
+    if (!csv) return;
     const netlistData = new FormData();
     netlistData.append("file", netlist);
-    const xlsxData = new FormData();
-    xlsxData.append("file", xlsx);
+    const csvData = new FormData();
+    csvData.append("file", csv);
 
     try {
       const response = await axios.post(
         "http://localhost:5000/upload",
-        { netlist: netlistData, xlsx: xlsxData },
+        { netlist: netlistData, csv: csvData },
         {
           headers: { "Content-Type": "multipart/form-data" },
           onUploadProgress: (event) => {},
@@ -112,13 +111,13 @@ const FileUpload: React.FC = () => {
             </label>
             <input
               type="file"
-              id="xlsx-upload"
-              accept=".xlsx"
+              id="csv-upload"
+              accept=".csv"
               multiple={false}
               style={{ display: "none" }}
-              onChange={handlexlsxChange}
+              onChange={handlecsvChange}
             />
-            <label htmlFor="xlsx-upload">
+            <label htmlFor="csv-upload">
               <Stack spacing={3}>
                 <Button
                   variant="contained"
@@ -126,9 +125,9 @@ const FileUpload: React.FC = () => {
                   startIcon={<CloudUploadIcon />}
                   sx={{ mb: 2 }}
                 >
-                  Excel Bill of Materials File (.xlsx)
+                  Altium CSV Bill of Materials File (.csv)
                 </Button>
-                {xlsx && <Typography>{xlsx.name}</Typography>}
+                {csv && <Typography>{csv.name}</Typography>}
               </Stack>
             </label>
           </Stack>
