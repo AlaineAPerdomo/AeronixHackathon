@@ -7,7 +7,7 @@ from google import genai
 from google.genai import types
 from dotenv import load_dotenv
 import docx
-from parse import parse_board_data
+from arduino_parse import parse_board_data
 from radio_parse import parse_radio_data
 
 # --- CONFIGURATION ---
