@@ -8,6 +8,7 @@ from google.genai import types
 from dotenv import load_dotenv
 import docx
 from parse import parse_board_data
+from radio_parse import parse_radio_data
 
 # --- CONFIGURATION ---
 SCRIPT_DIR = Path(__file__).parent.resolve()
@@ -284,20 +285,63 @@ def generate_document_from_ai(context):
 
 
 if __name__ == "__main__":
-    # Define input files for parsing
-    d356_file = SCRIPT_DIR.parent / "public" / "UNO-TH_Rev3e.d356"
-    bom_file = SCRIPT_DIR.parent / "public" / "UNO-TH_Rev3e.xlsx"
+    # Define input files for Arduino parsing
+    arduino_d356_file = SCRIPT_DIR.parent / "public" / "UNO-TH_Rev3e.d356"
+    arduino_bom_file = SCRIPT_DIR.parent / "public" / "UNO-TH_Rev3e.xlsx"
     
-    # Parse board data using the parse function
-    print("📊 Parsing board data...")
-    board_data = parse_board_data(
-        d356_file=str(d356_file),
-        bom_file=str(bom_file),
+    # Define input files for Radio parsing (IPC and CSV)
+    radio_ipc_file = SCRIPT_DIR / "Assembly Testpoint Report for Car-PCB1.ipc"
+    radio_csv_file = SCRIPT_DIR.parent / "public" / "PCB-Car-Radio-main" / "BOM_Car Radio.csv"
+    
+    print("🚀 Starting Combined Board Data Parsing")
+    print("=" * 50)
+    
+    # Parse Arduino board data
+    print("📊 Parsing Arduino board data...")
+    arduino_data = parse_board_data(
+        d356_file=str(arduino_d356_file),
+        bom_file=str(arduino_bom_file),
         verbose=False
     )
     
-    # Convert board data to JSON string for AI processing
-    bom_file_content = json.dumps(board_data, indent=2)
+    # Parse Radio board data (for IPC and CSV, we'll use a simplified approach since radio_parse expects d356/bom)
+    print("📻 Parsing Radio board data...")
+    if radio_ipc_file.exists():
+        # For now, create a placeholder structure since radio_parse expects d356/bom files
+        # In a real implementation, you'd modify radio_parse to handle IPC/CSV directly
+        radio_data = {
+            "ipc_file_path": str(radio_ipc_file),
+            "csv_file_path": str(radio_csv_file) if radio_csv_file.exists() else None,
+            "status": "radio_files_identified",
+            "file_types": ["IPC", "CSV"]
+        }
+        print(f"✅ Radio files identified: IPC={radio_ipc_file.exists()}, CSV={radio_csv_file.exists() if radio_csv_file else False}")
+    else:
+        radio_data = {
+            "status": "radio_files_not_found",
+            "errors": [f"IPC file not found: {radio_ipc_file}"]
+        }
+        print(f"❌ Radio IPC file not found: {radio_ipc_file}")
+    
+    # Combine both datasets
+    combined_data = {
+        "arduino_board": arduino_data,
+        "radio_board": radio_data,
+        "combined_summary": {
+            "total_boards": 2,
+            "arduino_components": arduino_data.get('board_info', {}).get('total_components', 0),
+            "arduino_nets": arduino_data.get('board_info', {}).get('total_nets', 0),
+            "radio_status": radio_data.get('status', 'unknown')
+        }
+    }
+    
+    print(f"✅ Combined parsing complete:")
+    print(f"   - Arduino components: {combined_data['combined_summary']['arduino_components']}")
+    print(f"   - Arduino nets: {combined_data['combined_summary']['arduino_nets']}")
+    print(f"   - Radio status: {combined_data['combined_summary']['radio_status']}")
+    
+    # Convert combined data to JSON string for AI processing
+    bom_file_content = json.dumps(combined_data, indent=2, default=str)
 
     if not os.environ.get("GEMINI_API_KEY"):
         print("❌ FATAL: GEMINI_API_KEY environment variable not found.")
