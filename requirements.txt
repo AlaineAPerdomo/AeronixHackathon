@@ -8,3 +8,5 @@ python-docx
 Pillow
 unstructured
 python-dotenv
+Flask
+Flask-Cors

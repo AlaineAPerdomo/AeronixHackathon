@@ -170,7 +170,12 @@ def generate_annotated_image(component_ref, pcb_image_path):
             pcb_image
         ]
         response = model.generate_content(prompt, stream=False)
-        output_filename = f"annotated_{component_ref}.png"
+        # Save annotated image to a temporary location
+        output_dir = "public"
+        if not os.path.exists(output_dir):
+            os.makedirs(output_dir)
+        output_filename = os.path.join(output_dir, f"annotated_{component_ref}.png")
+        
         with open(output_filename, 'wb') as f:
             f.write(response.parts[0].inline_data.data)
         print(f"   -> Saved annotated image to {output_filename}")
@@ -261,7 +266,7 @@ def save_to_word_with_images(markdown_text, filename, pcb_image_path):
                 component_to_find = found_components[0]
                 if component_to_find not in processed_components:
                     image_file = generate_annotated_image(component_to_find, pcb_image_path)
-                    if image_file:
+                    if image_file and os.path.exists(image_file):
                         doc.add_picture(image_file, width=Inches(4.0))
                         processed_components.add(component_to_find)
 
