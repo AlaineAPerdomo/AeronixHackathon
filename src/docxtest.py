@@ -7,6 +7,7 @@ from google import genai
 from google.genai import types
 from dotenv import load_dotenv
 import docx
+from parse import parse_board_data
 
 # --- CONFIGURATION ---
 SCRIPT_DIR = Path(__file__).parent.resolve()
@@ -281,10 +282,22 @@ def generate_document_from_ai(context):
         print(f"❌ Error saving the document: {e}")
 
 
-if __name__ == "__main__":
-    bom_file = SCRIPT_DIR / "structured_design_data.json"
 
-    bom_file_content = read_file_content(bom_file)
+if __name__ == "__main__":
+    # Define input files for parsing
+    d356_file = SCRIPT_DIR.parent / "public" / "UNO-TH_Rev3e.d356"
+    bom_file = SCRIPT_DIR.parent / "public" / "UNO-TH_Rev3e.xlsx"
+    
+    # Parse board data using the parse function
+    print("📊 Parsing board data...")
+    board_data = parse_board_data(
+        d356_file=str(d356_file),
+        bom_file=str(bom_file),
+        verbose=False
+    )
+    
+    # Convert board data to JSON string for AI processing
+    bom_file_content = json.dumps(board_data, indent=2)
 
     if not os.environ.get("GEMINI_API_KEY"):
         print("❌ FATAL: GEMINI_API_KEY environment variable not found.")
