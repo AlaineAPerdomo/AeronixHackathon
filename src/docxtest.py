@@ -115,7 +115,7 @@ def read_file_content(filepath):
         return ""
 
 
-def get_ai_generated_context(hw_spec_content, sw_spec_content, netlist_content):
+def get_ai_generated_context(hw_spec_content, sw_spec_content, netlist_content, board_info):
     """Calls the Gemini API or loads from cache to get the structured context data."""
     cache_file = SCRIPT_DIR / "api_response_cache.json"
     if cache_file.exists():
@@ -137,14 +137,16 @@ def get_ai_generated_context(hw_spec_content, sw_spec_content, netlist_content):
     - Example Heading: `4.1 Visual Inspection (font-size: 14, bold: yes)`
     - Example List: `1. Visually inspect the PCBA. (font-size: 12, bold: no)`
     - Example Sub-List: `  a. Check for solder bridges. (font-size: 12, bold: no)`
-
-    Analyze the following input files:
+    
+    Analyze the following input files, some may not be available but try your best:
     --- HARDWARE SPECIFICATIONS ---
     {hw_spec_content}
     --- SOFTWARE SPECIFICATIONS ---
     {sw_spec_content}
     --- NETLIST REPORT ---
     {netlist_content}
+    --- BOARD-INFO ---
+    {board_info}
     --- END OF FILES ---
     Based on these files, generate all necessary data.
     """
@@ -250,6 +252,9 @@ if __name__ == "__main__":
     sw_spec_file = SCRIPT_DIR / "Clemson_SW_Spec 2.1.docx"
     netlist_file = SCRIPT_DIR / "Assembly Testpoint Report for Car-PCB1.ipc"
 
+    test_file1 = SCRIPT_DIR / "UNO-TH_Rev3e_merged.json"
+    input_json = SCRIPT_DIR / "structured_design_data.json"
+
     hw_content = read_file_content(hw_spec_file)
     sw_content = read_file_content(sw_spec_file)
     netlist_content = read_file_content(netlist_file)
@@ -258,5 +263,5 @@ if __name__ == "__main__":
         print("❌ FATAL: GEMINI_API_KEY environment variable not found.")
         print(f"   -> Please ensure a .env file exists in the '{SCRIPT_DIR}' directory.")
     else:
-        ai_context = get_ai_generated_context(hw_content, sw_content, netlist_content)
+        ai_context = get_ai_generated_context(input_json, "","", test_file1)
         generate_document_from_ai(ai_context)
