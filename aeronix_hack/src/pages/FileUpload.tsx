@@ -9,29 +9,47 @@ import {
   Paper,
   createTheme,
   ThemeProvider,
+  Stack,
 } from "@mui/material";
 import CloudUploadIcon from "@mui/icons-material/CloudUpload";
 
 const FileUpload: React.FC = () => {
-  const [file, setFile] = useState<File | null>(null);
+  const [netlist, setNetlist] = useState<File | null>(null);
+  const [csv, setCsv] = useState<File | null>(null);
   const [message, setMessage] = useState("");
   const [progress, setProgress] = useState(0);
 
-  const handleFileChange = (e: React.ChangeEvent<HTMLInputElement>) => {
-    if (e.target.files) setFile(e.target.files[0]);
+  const handleNetlistChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+    const selected = Array.from(e.target.files || []);
+    const allowedTypes = ["application/ipc", "application/d356"];
+    const validNetlists = selected.filter((f) => allowedTypes.includes(f.type));
+    console.log(selected);
+    if (e.target.files) setNetlist(e.target.files[0]);
+    setProgress(0);
+    setMessage("");
+  };
+
+  const handleCsvChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+    const selected = Array.from(e.target.files || []);
+    const allowedTypes = ["application/csv"];
+    const validCsv = selected.filter((f) => allowedTypes.includes(f.type));
+    console.log(selected);
+    if (e.target.files) setCsv(e.target.files[0]);
     setProgress(0);
     setMessage("");
   };
 
   const handleUpload = async () => {
-    if (!file) return;
-    const formData = new FormData();
-    formData.append("file", file);
+    if (!netlist) return;
+    const netlistData = new FormData();
+    netlistData.append("file", netlist);
+    const csvData = new FormData();
+    csvData.append("file", csv);
 
     try {
       const response = await axios.post(
         "http://localhost:5000/upload",
-        formData,
+        { netlist: netlistData, csv: csvData },
         {
           headers: { "Content-Type": "multipart/form-data" },
           onUploadProgress: (event) => {
@@ -82,34 +100,57 @@ const FileUpload: React.FC = () => {
         }}
       >
         <ThemeProvider theme={theme}>
-          <Typography variant="h5" gutterBottom>
-            Upload Your File
-          </Typography>
-          <input
-            type="file"
-            id="file-upload"
-            style={{ display: "none" }}
-            onChange={handleFileChange}
-          />
-          <label htmlFor="file-upload">
-            <Button
-              variant="contained"
-              component="span"
-              startIcon={<CloudUploadIcon />}
-              sx={{ mb: 2 }}
-            >
-              Choose File
-            </Button>
-          </label>
-          {file && <Typography>{file.name}</Typography>}
+          <Stack spacing={3}>
+            <input
+              type="file"
+              id="file-upload"
+              multiple={false}
+              style={{ display: "none" }}
+              onChange={handleNetlistChange}
+            />
+            <label htmlFor="file-upload">
+              <Stack spacing={3}>
+                <Button
+                  variant="contained"
+                  component="span"
+                  startIcon={<CloudUploadIcon />}
+                  sx={{ mb: 2 }}
+                >
+                  Netlist File (.d356 or .ipc)
+                </Button>
+                {netlist && <Typography>{netlist.name}</Typography>}
+              </Stack>
+            </label>
+            <input
+              type="file"
+              id="file-upload"
+              multiple={false}
+              style={{ display: "none" }}
+              onChange={handleCsvChange}
+            />
+            <label htmlFor="file-upload">
+              <Stack spacing={3}>
+                <Button
+                  variant="contained"
+                  component="span"
+                  startIcon={<CloudUploadIcon />}
+                  sx={{ mb: 2 }}
+                >
+                  Csv Bill of Materials File (.csv)
+                </Button>
+                {csv && <Typography>{csv.name}</Typography>}
+              </Stack>
+            </label>
+          </Stack>
+
           <Box mt={2}>
             <Button
               variant="contained"
               color="primary"
               onClick={handleUpload}
-              disabled={!file}
+              disabled={!netlist}
             >
-              Upload
+              Run Tool
             </Button>
           </Box>
 
