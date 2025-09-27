@@ -1,0 +1,2878 @@
+{
+  "reconciled_pcb_data": {
+    "file_format": "D356 + BOM",
+    "parse_timestamp": "2025-09-27T12:34:17.438167",
+    "total_nets": 35,
+    "total_components": 205,
+    "metadata": {
+      "param_code": "00",
+      "param_units": "CUST 0",
+      "param_arraydim": "N"
+    },
+    "nets": [
+      {
+        "net_name": "+5V",
+        "net_class": "power",
+        "connections": [
+          {
+            "component_ref": "VIA_+5V_1",
+            "pin_number": "1",
+            "access_type": "via",
+            "x_position": 4.5965,
+            "y_position": -4.334
+          },
+          {
+            "component_ref": "VIA_+5V_2",
+            "pin_number": "1",
+            "access_type": "via",
+            "x_position": 5.4815,
+            "y_position": -3.584
+          },
+          {
+            "component_ref": "VIA_+5V_3",
+            "pin_number": "1",
+            "access_type": "via",
+            "x_position": 4.9715,
+            "y_position": -3.949
+          },
+          {
+            "component_ref": "VIA_+5V_4",
+            "pin_number": "1",
+            "access_type": "via",
+            "x_position": 4.8465,
+            "y_position": -4.659
+          },
+          {
+            "component_ref": "VIA_+5V_5",
+            "pin_number": "1",
+            "access_type": "via",
+            "x_position": 4.8465,
+            "y_position": -4.334
+          },
+          {
+            "component_ref": "VIA_+5V_6",
+            "pin_number": "1",
+            "access_type": "via",
+            "x_position": 4.6965,
+            "y_position": -4.609
+          },
+          {
+            "component_ref": "VIA_+5V_7",
+            "pin_number": "1",
+            "access_type": "via",
+            "x_position": 4.7715,
+            "y_position": -4.049
+          },
+          {
+            "component_ref": "VIA_+5V_8",
+            "pin_number": "1",
+            "access_type": "via",
+            "x_position": 4.6965,
+            "y_position": -4.384
+          },
+          {
+            "component_ref": "VIA_+5V_9",
+            "pin_number": "1",
+            "access_type": "via",
+            "x_position": 4.7965,
+            "y_position": -4.584
+          },
+          {
+            "component_ref": "VIA_+5V_10",
+            "pin_number": "1",
+            "access_type": "via",
+            "x_position": 5.1615,
+            "y_position": -4.724
+          },
+          {
+            "component_ref": "VIA_+5V_11",
+            "pin_number": "1",
+            "access_type": "via",
+            "x_position": 4.5965,
+            "y_position": -4.499
+          },
+          {
+            "component_ref": "VIA_+5V_12",
+            "pin_number": "1",
+            "access_type": "via",
+            "x_position": 4.7965,
+            "y_position": -4.409
+          },
+          {
+            "component_ref": "VIA_+5V_13",
+            "pin_number": "1",
+            "access_type": "via",
+            "x_position": 5.4765,
+            "y_position": -4.094
+          },
+          {
+            "component_ref": "VIA_+5V_14",
+            "pin_number": "1",
+            "access_type": "via",
+            "x_position": 4.7715,
+            "y_position": -4.234
+          },
+          {
+            "component_ref": "VIA_+5V_15",
+            "pin_number": "1",
+            "access_type": "via",
+            "x_position": 4.5965,
+            "y_position": -4.659
+          },
+          {
+            "component_ref": "POWER0",
+            "pin_number": "2",
+            "access_type": "component_pin",
+            "x_position": null,
+            "y_position": null
+          },
+          {
+            "component_ref": "POWER0",
+            "pin_number": "5",
+            "access_type": "component_pin",
+            "x_position": null,
+            "y_position": null
+          },
+          {
+            "component_ref": "ICSP1",
+            "pin_number": "2",
+            "access_type": "component_pin",
+            "x_position": null,
+            "y_position": null
+          },
+          {
+            "component_ref": "ICSP0",
+            "pin_number": "2",
+            "access_type": "component_pin",
+            "x_position": null,
+            "y_position": null
+          }
+        ]
+      },
+      {
+        "net_name": "GND",
+        "net_class": "ground",
+        "connections": [
+          {
+            "component_ref": "VIA_GND_1",
+            "pin_number": "1",
+            "access_type": "via",
+            "x_position": 6.3965,
+            "y_position": -5.084
+          },
+          {
+            "component_ref": "VIA_GND_2",
+            "pin_number": "1",
+            "access_type": "via",
+            "x_position": 5.3615,
+            "y_position": -4.729
+          },
+          {
+            "component_ref": "VIA_GND_3",
+            "pin_number": "1",
+            "access_type": "via",
+            "x_position": 7.1425,
+            "y_position": -4.763
+          },
+          {
+            "component_ref": "VIA_GND_4",
+            "pin_number": "1",
+            "access_type": "via",
+            "x_position": 6.3525,
+            "y_position": -4.033
+          },
+          {
+            "component_ref": "VIA_GND_5",
+            "pin_number": "1",
+            "access_type": "via",
+            "x_position": 5.2415,
+            "y_position": -4.154
+          },
+          {
+            "component_ref": "VIA_GND_6",
+            "pin_number": "1",
+            "access_type": "via",
+            "x_position": 5.7025,
+            "y_position": -3.833
+          },
+          {
+            "component_ref": "VIA_GND_7",
+            "pin_number": "1",
+            "access_type": "via",
+            "x_position": 7.1435,
+            "y_position": -4.487
+          },
+          {
+            "component_ref": "VIA_GND_8",
+            "pin_number": "1",
+            "access_type": "via",
+            "x_position": 6.2025,
+            "y_position": -3.943
+          },
+          {
+            "component_ref": "VIA_GND_9",
+            "pin_number": "1",
+            "access_type": "via",
+            "x_position": 6.1175,
+            "y_position": -4.478
+          },
+          {
+            "component_ref": "VIA_GND_10",
+            "pin_number": "1",
+            "access_type": "via",
+            "x_position": 5.3465,
+            "y_position": -5.073
+          },
+          {
+            "component_ref": "VIA_GND_11",
+            "pin_number": "1",
+            "access_type": "via",
+            "x_position": 5.0515,
+            "y_position": -4.509
+          },
+          {
+            "component_ref": "VIA_GND_12",
+            "pin_number": "1",
+            "access_type": "via",
+            "x_position": 4.9065,
+            "y_position": -3.219
+          },
+          {
+            "component_ref": "VIA_GND_13",
+            "pin_number": "1",
+            "access_type": "via",
+            "x_position": 6.2165,
+            "y_position": -3.184
+          },
+          {
+            "component_ref": "VIA_GND_14",
+            "pin_number": "1",
+            "access_type": "via",
+            "x_position": 4.9715,
+            "y_position": -4.209
+          },
+          {
+            "component_ref": "VIA_GND_15",
+            "pin_number": "1",
+            "access_type": "via",
+            "x_position": 4.9465,
+            "y_position": -4.684
+          },
+          {
+            "component_ref": "VIA_GND_16",
+            "pin_number": "1",
+            "access_type": "via",
+            "x_position": 6.6465,
+            "y_position": -3.249
+          },
+          {
+            "component_ref": "VIA_GND_17",
+            "pin_number": "1",
+            "access_type": "via",
+            "x_position": 5.6815,
+            "y_position": -3.944
+          },
+          {
+            "component_ref": "VIA_GND_18",
+            "pin_number": "1",
+            "access_type": "via",
+            "x_position": 5.4025,
+            "y_position": -4.325
+          },
+          {
+            "component_ref": "VIA_GND_19",
+            "pin_number": "1",
+            "access_type": "via",
+            "x_position": 6.8365,
+            "y_position": -4.084
+          },
+          {
+            "component_ref": "VIA_GND_20",
+            "pin_number": "1",
+            "access_type": "via",
+            "x_position": 5.2425,
+            "y_position": -3.857
+          },
+          {
+            "component_ref": "VIA_GND_21",
+            "pin_number": "1",
+            "access_type": "via",
+            "x_position": 7.0425,
+            "y_position": -3.588
+          },
+          {
+            "component_ref": "VIA_GND_22",
+            "pin_number": "1",
+            "access_type": "via",
+            "x_position": 7.0425,
+            "y_position": -3.318
+          },
+          {
+            "component_ref": "VIA_GND_23",
+            "pin_number": "1",
+            "access_type": "via",
+            "x_position": 5.5665,
+            "y_position": -4.624
+          },
+          {
+            "component_ref": "VIA_GND_24",
+            "pin_number": "1",
+            "access_type": "via",
+            "x_position": 5.6465,
+            "y_position": -4.939
+          },
+          {
+            "component_ref": "VIA_GND_25",
+            "pin_number": "1",
+            "access_type": "via",
+            "x_position": 6.5215,
+            "y_position": -4.334
+          },
+          {
+            "component_ref": "VIA_GND_26",
+            "pin_number": "1",
+            "access_type": "via",
+            "x_position": 5.6925,
+            "y_position": -3.702
+          },
+          {
+            "component_ref": "VIA_GND_27",
+            "pin_number": "1",
+            "access_type": "via",
+            "x_position": 5.1525,
+            "y_position": -4.913
+          },
+          {
+            "component_ref": "POWER0",
+            "pin_number": "6",
+            "access_type": "component_pin",
+            "x_position": null,
+            "y_position": null
+          },
+          {
+            "component_ref": "POWER0",
+            "pin_number": "7",
+            "access_type": "component_pin",
+            "x_position": null,
+            "y_position": null
+          },
+          {
+            "component_ref": "ICSP1",
+            "pin_number": "6",
+            "access_type": "component_pin",
+            "x_position": null,
+            "y_position": null
+          },
+          {
+            "component_ref": "ICSP0",
+            "pin_number": "6",
+            "access_type": "component_pin",
+            "x_position": null,
+            "y_position": null
+          },
+          {
+            "component_ref": "RESET0",
+            "pin_number": "1",
+            "access_type": "access_point",
+            "x_position": null,
+            "y_position": null
+          },
+          {
+            "component_ref": "RESET0",
+            "pin_number": "2",
+            "access_type": "access_point",
+            "x_position": null,
+            "y_position": null
+          },
+          {
+            "component_ref": "GROUND",
+            "pin_number": "1",
+            "access_type": "access_point",
+            "x_position": null,
+            "y_position": null
+          }
+        ]
+      },
+      {
+        "net_name": "AREF",
+        "net_class": "analog",
+        "connections": [
+          {
+            "component_ref": "VIA_AREF_1",
+            "pin_number": "1",
+            "access_type": "via",
+            "x_position": 5.4915,
+            "y_position": -3.249
+          }
+        ]
+      },
+      {
+        "net_name": "RESET",
+        "net_class": "signal",
+        "connections": [
+          {
+            "component_ref": "VIA_RESET_1",
+            "pin_number": "1",
+            "access_type": "via",
+            "x_position": 5.6865,
+            "y_position": -4.029
+          },
+          {
+            "component_ref": "VIA_RESET_2",
+            "pin_number": "1",
+            "access_type": "via",
+            "x_position": 6.8365,
+            "y_position": -4.209
+          },
+          {
+            "component_ref": "VIA_RESET_3",
+            "pin_number": "1",
+            "access_type": "via",
+            "x_position": 4.8465,
+            "y_position": -3.3076
+          },
+          {
+            "component_ref": "RESET",
+            "pin_number": "1",
+            "access_type": "access_point",
+            "x_position": null,
+            "y_position": null
+          },
+          {
+            "component_ref": "RESET",
+            "pin_number": "1",
+            "access_type": "access_point",
+            "x_position": null,
+            "y_position": null
+          },
+          {
+            "component_ref": "POWER0",
+            "pin_number": "3",
+            "access_type": "component_pin",
+            "x_position": null,
+            "y_position": null
+          },
+          {
+            "component_ref": "ICSP0",
+            "pin_number": "5",
+            "access_type": "component_pin",
+            "x_position": null,
+            "y_position": null
+          },
+          {
+            "component_ref": "RESET0",
+            "pin_number": "3",
+            "access_type": "access_point",
+            "x_position": null,
+            "y_position": null
+          },
+          {
+            "component_ref": "RESET0",
+            "pin_number": "4",
+            "access_type": "access_point",
+            "x_position": null,
+            "y_position": null
+          }
+        ]
+      },
+      {
+        "net_name": "VIN",
+        "net_class": "power",
+        "connections": [
+          {
+            "component_ref": "VIA_VIN_1",
+            "pin_number": "1",
+            "access_type": "via",
+            "x_position": 6.3965,
+            "y_position": -4.859
+          },
+          {
+            "component_ref": "VIA_VIN_2",
+            "pin_number": "1",
+            "access_type": "via",
+            "x_position": 5.5915,
+            "y_position": -4.869
+          },
+          {
+            "component_ref": "POWER0",
+            "pin_number": "8",
+            "access_type": "component_pin",
+            "x_position": null,
+            "y_position": null
+          }
+        ]
+      },
+      {
+        "net_name": "M8RXD",
+        "net_class": "signal",
+        "connections": [
+          {
+            "component_ref": "VIA_M8RXD_1",
+            "pin_number": "1",
+            "access_type": "via",
+            "x_position": 6.5615,
+            "y_position": -3.839
+          }
+        ]
+      },
+      {
+        "net_name": "M8TXD",
+        "net_class": "signal",
+        "connections": [
+          {
+            "component_ref": "VIA_M8TXD_1",
+            "pin_number": "1",
+            "access_type": "via",
+            "x_position": 6.5065,
+            "y_position": -3.924
+          }
+        ]
+      },
+      {
+        "net_name": "SCK",
+        "net_class": "signal",
+        "connections": [
+          {
+            "component_ref": "VIA_SCK_1",
+            "pin_number": "1",
+            "access_type": "via",
+            "x_position": 5.5565,
+            "y_position": -4.339
+          },
+          {
+            "component_ref": "ICSP0",
+            "pin_number": "3",
+            "access_type": "component_pin",
+            "x_position": null,
+            "y_position": null
+          }
+        ]
+      },
+      {
+        "net_name": "N$3",
+        "net_class": "signal",
+        "connections": [
+          {
+            "component_ref": "VIA_N$3_1",
+            "pin_number": "1",
+            "access_type": "via",
+            "x_position": 6.7265,
+            "y_position": -3.804
+          }
+        ]
+      },
+      {
+        "net_name": "N$35",
+        "net_class": "signal",
+        "connections": [
+          {
+            "component_ref": "VIA_N$35_1",
+            "pin_number": "1",
+            "access_type": "via",
+            "x_position": 5.7355,
+            "y_position": -3.779
+          }
+        ]
+      },
+      {
+        "net_name": "N$36",
+        "net_class": "signal",
+        "connections": [
+          {
+            "component_ref": "VIA_N$36_1",
+            "pin_number": "1",
+            "access_type": "via",
+            "x_position": 5.7355,
+            "y_position": -3.659
+          }
+        ]
+      },
+      {
+        "net_name": "+3V3",
+        "net_class": "power",
+        "connections": [
+          {
+            "component_ref": "VIA_+3V3_1",
+            "pin_number": "1",
+            "access_type": "via",
+            "x_position": 5.5015,
+            "y_position": -4.424
+          },
+          {
+            "component_ref": "VIA_+3V3_2",
+            "pin_number": "1",
+            "access_type": "via",
+            "x_position": 5.7215,
+            "y_position": -4.769
+          },
+          {
+            "component_ref": "POWER0",
+            "pin_number": "4",
+            "access_type": "component_pin",
+            "x_position": null,
+            "y_position": null
+          }
+        ]
+      },
+      {
+        "net_name": "MISO",
+        "net_class": "signal",
+        "connections": [
+          {
+            "component_ref": "VIA_MISO_1",
+            "pin_number": "1",
+            "access_type": "via",
+            "x_position": 5.9815,
+            "y_position": -4.539
+          },
+          {
+            "component_ref": "ICSP0",
+            "pin_number": "1",
+            "access_type": "component_pin",
+            "x_position": null,
+            "y_position": null
+          }
+        ]
+      },
+      {
+        "net_name": "MOSI",
+        "net_class": "signal",
+        "connections": [
+          {
+            "component_ref": "VIA_MOSI_1",
+            "pin_number": "1",
+            "access_type": "via",
+            "x_position": 5.9265,
+            "y_position": -4.069
+          },
+          {
+            "component_ref": "ICSP0",
+            "pin_number": "4",
+            "access_type": "component_pin",
+            "x_position": null,
+            "y_position": null
+          }
+        ]
+      },
+      {
+        "net_name": "SS",
+        "net_class": "signal",
+        "connections": [
+          {
+            "component_ref": "VIA_SS_1",
+            "pin_number": "1",
+            "access_type": "via",
+            "x_position": 5.8165,
+            "y_position": -4.159
+          }
+        ]
+      },
+      {
+        "net_name": "DTR",
+        "net_class": "signal",
+        "connections": [
+          {
+            "component_ref": "VIA_DTR_1",
+            "pin_number": "1",
+            "access_type": "via",
+            "x_position": 5.5165,
+            "y_position": -4.009
+          },
+          {
+            "component_ref": "VIA_DTR_2",
+            "pin_number": "1",
+            "access_type": "via",
+            "x_position": 5.4865,
+            "y_position": -3.704
+          }
+        ]
+      },
+      {
+        "net_name": "GATE_CMD",
+        "net_class": "signal",
+        "connections": [
+          {
+            "component_ref": "VIA_GATE_CMD_1",
+            "pin_number": "1",
+            "access_type": "via",
+            "x_position": 4.9715,
+            "y_position": -4.339
+          },
+          {
+            "component_ref": "VIA_GATE_CMD_2",
+            "pin_number": "1",
+            "access_type": "via",
+            "x_position": 5.3765,
+            "y_position": -4.459
+          }
+        ]
+      },
+      {
+        "net_name": "CMP",
+        "net_class": "signal",
+        "connections": [
+          {
+            "component_ref": "VIA_CMP_1",
+            "pin_number": "1",
+            "access_type": "via",
+            "x_position": 5.6765,
+            "y_position": -4.264
+          }
+        ]
+      },
+      {
+        "net_name": "USBVCC",
+        "net_class": "power",
+        "connections": [
+          {
+            "component_ref": "VIA_USBVCC_1",
+            "pin_number": "1",
+            "access_type": "via",
+            "x_position": 4.8865,
+            "y_position": -3.969
+          }
+        ]
+      },
+      {
+        "net_name": "TP_VUCAP",
+        "net_class": "signal",
+        "connections": [
+          {
+            "component_ref": "VIA_TP_VUCAP_1",
+            "pin_number": "1",
+            "access_type": "via",
+            "x_position": 5.0865,
+            "y_position": -3.534
+          }
+        ]
+      },
+      {
+        "net_name": "RESET2",
+        "net_class": "signal",
+        "connections": [
+          {
+            "component_ref": "VIA_RESET2_1",
+            "pin_number": "1",
+            "access_type": "via",
+            "x_position": 5.5135,
+            "y_position": -4.218
+          },
+          {
+            "component_ref": "VIA_RESET2_2",
+            "pin_number": "1",
+            "access_type": "via",
+            "x_position": 5.3865,
+            "y_position": -3.349
+          },
+          {
+            "component_ref": "ICSP1",
+            "pin_number": "5",
+            "access_type": "component_pin",
+            "x_position": null,
+            "y_position": null
+          }
+        ]
+      },
+      {
+        "net_name": "MISO2",
+        "net_class": "signal",
+        "connections": [
+          {
+            "component_ref": "VIA_MISO2_1",
+            "pin_number": "1",
+            "access_type": "via",
+            "x_position": 5.3715,
+            "y_position": -3.569
+          },
+          {
+            "component_ref": "ICSP1",
+            "pin_number": "1",
+            "access_type": "component_pin",
+            "x_position": null,
+            "y_position": null
+          }
+        ]
+      },
+      {
+        "net_name": "USHIELD",
+        "net_class": "signal",
+        "connections": [
+          {
+            "component_ref": "VIA_USHIELD_1",
+            "pin_number": "1",
+            "access_type": "via",
+            "x_position": 4.8515,
+            "y_position": -3.499
+          }
+        ]
+      },
+      {
+        "net_name": "AD4/SDA",
+        "net_class": "signal",
+        "connections": [
+          {
+            "component_ref": "VIA_AD4/SDA_1",
+            "pin_number": "1",
+            "access_type": "via",
+            "x_position": 5.7915,
+            "y_position": -3.954
+          },
+          {
+            "component_ref": "VIA_AD4/SDA_2",
+            "pin_number": "1",
+            "access_type": "via",
+            "x_position": 6.8315,
+            "y_position": -4.464
+          },
+          {
+            "component_ref": "VIA_AD4/SDA_3",
+            "pin_number": "1",
+            "access_type": "via",
+            "x_position": 6.419,
+            "y_position": -4.1715
+          }
+        ]
+      },
+      {
+        "net_name": "AD5/SCL",
+        "net_class": "signal",
+        "connections": [
+          {
+            "component_ref": "VIA_AD5/SCL_1",
+            "pin_number": "1",
+            "access_type": "via",
+            "x_position": 5.7515,
+            "y_position": -3.999
+          },
+          {
+            "component_ref": "VIA_AD5/SCL_2",
+            "pin_number": "1",
+            "access_type": "via",
+            "x_position": 6.349,
+            "y_position": -4.1765
+          },
+          {
+            "component_ref": "VIA_AD5/SCL_3",
+            "pin_number": "1",
+            "access_type": "via",
+            "x_position": 6.9315,
+            "y_position": -4.504
+          }
+        ]
+      },
+      {
+        "net_name": "IO1",
+        "net_class": "signal",
+        "connections": [
+          {
+            "component_ref": "VIA_IO1_1",
+            "pin_number": "1",
+            "access_type": "via",
+            "x_position": 6.7145,
+            "y_position": -3.951
+          }
+        ]
+      },
+      {
+        "net_name": "IO0",
+        "net_class": "signal",
+        "connections": [
+          {
+            "component_ref": "VIA_IO0_1",
+            "pin_number": "1",
+            "access_type": "via",
+            "x_position": 6.9065,
+            "y_position": -3.889
+          }
+        ]
+      },
+      {
+        "net_name": "IO9",
+        "net_class": "signal",
+        "connections": [
+          {
+            "component_ref": "VIA_IO9_1",
+            "pin_number": "1",
+            "access_type": "via",
+            "x_position": 5.7715,
+            "y_position": -4.204
+          }
+        ]
+      },
+      {
+        "net_name": "N$1",
+        "net_class": "signal",
+        "connections": [
+          {
+            "component_ref": "VIA_N$1_1",
+            "pin_number": "1",
+            "access_type": "via",
+            "x_position": 5.5015,
+            "y_position": -3.484
+          }
+        ]
+      },
+      {
+        "net_name": "L13",
+        "net_class": "signal",
+        "connections": [
+          {
+            "component_ref": "VIA_L13_1",
+            "pin_number": "1",
+            "access_type": "via",
+            "x_position": 5.2415,
+            "y_position": -4.354
+          },
+          {
+            "component_ref": "VIA_L13_2",
+            "pin_number": "1",
+            "access_type": "via",
+            "x_position": 5.7115,
+            "y_position": -3.564
+          }
+        ]
+      },
+      {
+        "net_name": "N/C",
+        "net_class": "signal",
+        "connections": [
+          {
+            "component_ref": "ORIGIN",
+            "pin_number": "X",
+            "access_type": "access_point",
+            "x_position": null,
+            "y_position": null
+          },
+          {
+            "component_ref": "POWER0",
+            "pin_number": "1",
+            "access_type": "component_pin",
+            "x_position": null,
+            "y_position": null
+          }
+        ]
+      },
+      {
+        "net_name": "SCK2",
+        "net_class": "signal",
+        "connections": [
+          {
+            "component_ref": "ICSP1",
+            "pin_number": "3",
+            "access_type": "component_pin",
+            "x_position": null,
+            "y_position": null
+          }
+        ]
+      },
+      {
+        "net_name": "MOSI2",
+        "net_class": "signal",
+        "connections": [
+          {
+            "component_ref": "ICSP1",
+            "pin_number": "4",
+            "access_type": "component_pin",
+            "x_position": null,
+            "y_position": null
+          }
+        ]
+      },
+      {
+        "net_name": "UGND",
+        "net_class": "ground",
+        "connections": [
+          {
+            "component_ref": "GROUND",
+            "pin_number": "2",
+            "access_type": "access_point",
+            "x_position": null,
+            "y_position": null
+          }
+        ]
+      },
+      {
+        "net_name": "5-GND",
+        "net_class": "ground",
+        "connections": [
+          {
+            "component_ref": "RESET0",
+            "pin_number": "5",
+            "access_type": "access_point",
+            "x_position": null,
+            "y_position": null
+          }
+        ]
+      }
+    ],
+    "components": [
+      {
+        "reference": "VIA_+5V_1",
+        "component_type": "via",
+        "value": null,
+        "part_number": null,
+        "manufacturer": null,
+        "x_position": 4.5965,
+        "y_position": -4.334
+      },
+      {
+        "reference": "VIA_+5V_2",
+        "component_type": "via",
+        "value": null,
+        "part_number": null,
+        "manufacturer": null,
+        "x_position": 5.4815,
+        "y_position": -3.584
+      },
+      {
+        "reference": "VIA_+5V_3",
+        "component_type": "via",
+        "value": null,
+        "part_number": null,
+        "manufacturer": null,
+        "x_position": 4.9715,
+        "y_position": -3.949
+      },
+      {
+        "reference": "VIA_+5V_4",
+        "component_type": "via",
+        "value": null,
+        "part_number": null,
+        "manufacturer": null,
+        "x_position": 4.8465,
+        "y_position": -4.659
+      },
+      {
+        "reference": "VIA_+5V_5",
+        "component_type": "via",
+        "value": null,
+        "part_number": null,
+        "manufacturer": null,
+        "x_position": 4.8465,
+        "y_position": -4.334
+      },
+      {
+        "reference": "VIA_+5V_6",
+        "component_type": "via",
+        "value": null,
+        "part_number": null,
+        "manufacturer": null,
+        "x_position": 4.6965,
+        "y_position": -4.609
+      },
+      {
+        "reference": "VIA_+5V_7",
+        "component_type": "via",
+        "value": null,
+        "part_number": null,
+        "manufacturer": null,
+        "x_position": 4.7715,
+        "y_position": -4.049
+      },
+      {
+        "reference": "VIA_+5V_8",
+        "component_type": "via",
+        "value": null,
+        "part_number": null,
+        "manufacturer": null,
+        "x_position": 4.6965,
+        "y_position": -4.384
+      },
+      {
+        "reference": "VIA_+5V_9",
+        "component_type": "via",
+        "value": null,
+        "part_number": null,
+        "manufacturer": null,
+        "x_position": 4.7965,
+        "y_position": -4.584
+      },
+      {
+        "reference": "VIA_+5V_10",
+        "component_type": "via",
+        "value": null,
+        "part_number": null,
+        "manufacturer": null,
+        "x_position": 5.1615,
+        "y_position": -4.724
+      },
+      {
+        "reference": "VIA_+5V_11",
+        "component_type": "via",
+        "value": null,
+        "part_number": null,
+        "manufacturer": null,
+        "x_position": 4.5965,
+        "y_position": -4.499
+      },
+      {
+        "reference": "VIA_+5V_12",
+        "component_type": "via",
+        "value": null,
+        "part_number": null,
+        "manufacturer": null,
+        "x_position": 4.7965,
+        "y_position": -4.409
+      },
+      {
+        "reference": "VIA_+5V_13",
+        "component_type": "via",
+        "value": null,
+        "part_number": null,
+        "manufacturer": null,
+        "x_position": 5.4765,
+        "y_position": -4.094
+      },
+      {
+        "reference": "VIA_+5V_14",
+        "component_type": "via",
+        "value": null,
+        "part_number": null,
+        "manufacturer": null,
+        "x_position": 4.7715,
+        "y_position": -4.234
+      },
+      {
+        "reference": "VIA_+5V_15",
+        "component_type": "via",
+        "value": null,
+        "part_number": null,
+        "manufacturer": null,
+        "x_position": 4.5965,
+        "y_position": -4.659
+      },
+      {
+        "reference": "VIA_GND_1",
+        "component_type": "via",
+        "value": null,
+        "part_number": null,
+        "manufacturer": null,
+        "x_position": 6.3965,
+        "y_position": -5.084
+      },
+      {
+        "reference": "VIA_GND_2",
+        "component_type": "via",
+        "value": null,
+        "part_number": null,
+        "manufacturer": null,
+        "x_position": 5.3615,
+        "y_position": -4.729
+      },
+      {
+        "reference": "VIA_GND_3",
+        "component_type": "via",
+        "value": null,
+        "part_number": null,
+        "manufacturer": null,
+        "x_position": 7.1425,
+        "y_position": -4.763
+      },
+      {
+        "reference": "VIA_GND_4",
+        "component_type": "via",
+        "value": null,
+        "part_number": null,
+        "manufacturer": null,
+        "x_position": 6.3525,
+        "y_position": -4.033
+      },
+      {
+        "reference": "VIA_GND_5",
+        "component_type": "via",
+        "value": null,
+        "part_number": null,
+        "manufacturer": null,
+        "x_position": 5.2415,
+        "y_position": -4.154
+      },
+      {
+        "reference": "VIA_GND_6",
+        "component_type": "via",
+        "value": null,
+        "part_number": null,
+        "manufacturer": null,
+        "x_position": 5.7025,
+        "y_position": -3.833
+      },
+      {
+        "reference": "VIA_GND_7",
+        "component_type": "via",
+        "value": null,
+        "part_number": null,
+        "manufacturer": null,
+        "x_position": 7.1435,
+        "y_position": -4.487
+      },
+      {
+        "reference": "VIA_GND_8",
+        "component_type": "via",
+        "value": null,
+        "part_number": null,
+        "manufacturer": null,
+        "x_position": 6.2025,
+        "y_position": -3.943
+      },
+      {
+        "reference": "VIA_GND_9",
+        "component_type": "via",
+        "value": null,
+        "part_number": null,
+        "manufacturer": null,
+        "x_position": 6.1175,
+        "y_position": -4.478
+      },
+      {
+        "reference": "VIA_GND_10",
+        "component_type": "via",
+        "value": null,
+        "part_number": null,
+        "manufacturer": null,
+        "x_position": 5.3465,
+        "y_position": -5.073
+      },
+      {
+        "reference": "VIA_GND_11",
+        "component_type": "via",
+        "value": null,
+        "part_number": null,
+        "manufacturer": null,
+        "x_position": 5.0515,
+        "y_position": -4.509
+      },
+      {
+        "reference": "VIA_GND_12",
+        "component_type": "via",
+        "value": null,
+        "part_number": null,
+        "manufacturer": null,
+        "x_position": 4.9065,
+        "y_position": -3.219
+      },
+      {
+        "reference": "VIA_GND_13",
+        "component_type": "via",
+        "value": null,
+        "part_number": null,
+        "manufacturer": null,
+        "x_position": 6.2165,
+        "y_position": -3.184
+      },
+      {
+        "reference": "VIA_GND_14",
+        "component_type": "via",
+        "value": null,
+        "part_number": null,
+        "manufacturer": null,
+        "x_position": 4.9715,
+        "y_position": -4.209
+      },
+      {
+        "reference": "VIA_GND_15",
+        "component_type": "via",
+        "value": null,
+        "part_number": null,
+        "manufacturer": null,
+        "x_position": 4.9465,
+        "y_position": -4.684
+      },
+      {
+        "reference": "VIA_GND_16",
+        "component_type": "via",
+        "value": null,
+        "part_number": null,
+        "manufacturer": null,
+        "x_position": 6.6465,
+        "y_position": -3.249
+      },
+      {
+        "reference": "VIA_GND_17",
+        "component_type": "via",
+        "value": null,
+        "part_number": null,
+        "manufacturer": null,
+        "x_position": 5.6815,
+        "y_position": -3.944
+      },
+      {
+        "reference": "VIA_GND_18",
+        "component_type": "via",
+        "value": null,
+        "part_number": null,
+        "manufacturer": null,
+        "x_position": 5.4025,
+        "y_position": -4.325
+      },
+      {
+        "reference": "VIA_GND_19",
+        "component_type": "via",
+        "value": null,
+        "part_number": null,
+        "manufacturer": null,
+        "x_position": 6.8365,
+        "y_position": -4.084
+      },
+      {
+        "reference": "VIA_GND_20",
+        "component_type": "via",
+        "value": null,
+        "part_number": null,
+        "manufacturer": null,
+        "x_position": 5.2425,
+        "y_position": -3.857
+      },
+      {
+        "reference": "VIA_GND_21",
+        "component_type": "via",
+        "value": null,
+        "part_number": null,
+        "manufacturer": null,
+        "x_position": 7.0425,
+        "y_position": -3.588
+      },
+      {
+        "reference": "VIA_GND_22",
+        "component_type": "via",
+        "value": null,
+        "part_number": null,
+        "manufacturer": null,
+        "x_position": 7.0425,
+        "y_position": -3.318
+      },
+      {
+        "reference": "VIA_GND_23",
+        "component_type": "via",
+        "value": null,
+        "part_number": null,
+        "manufacturer": null,
+        "x_position": 5.5665,
+        "y_position": -4.624
+      },
+      {
+        "reference": "VIA_GND_24",
+        "component_type": "via",
+        "value": null,
+        "part_number": null,
+        "manufacturer": null,
+        "x_position": 5.6465,
+        "y_position": -4.939
+      },
+      {
+        "reference": "VIA_GND_25",
+        "component_type": "via",
+        "value": null,
+        "part_number": null,
+        "manufacturer": null,
+        "x_position": 6.5215,
+        "y_position": -4.334
+      },
+      {
+        "reference": "VIA_GND_26",
+        "component_type": "via",
+        "value": null,
+        "part_number": null,
+        "manufacturer": null,
+        "x_position": 5.6925,
+        "y_position": -3.702
+      },
+      {
+        "reference": "VIA_GND_27",
+        "component_type": "via",
+        "value": null,
+        "part_number": null,
+        "manufacturer": null,
+        "x_position": 5.1525,
+        "y_position": -4.913
+      },
+      {
+        "reference": "VIA_AREF_1",
+        "component_type": "via",
+        "value": null,
+        "part_number": null,
+        "manufacturer": null,
+        "x_position": 5.4915,
+        "y_position": -3.249
+      },
+      {
+        "reference": "VIA_RESET_1",
+        "component_type": "via",
+        "value": null,
+        "part_number": null,
+        "manufacturer": null,
+        "x_position": 5.6865,
+        "y_position": -4.029
+      },
+      {
+        "reference": "VIA_RESET_2",
+        "component_type": "via",
+        "value": null,
+        "part_number": null,
+        "manufacturer": null,
+        "x_position": 6.8365,
+        "y_position": -4.209
+      },
+      {
+        "reference": "VIA_RESET_3",
+        "component_type": "via",
+        "value": null,
+        "part_number": null,
+        "manufacturer": null,
+        "x_position": 4.8465,
+        "y_position": -3.3076
+      },
+      {
+        "reference": "VIA_VIN_1",
+        "component_type": "via",
+        "value": null,
+        "part_number": null,
+        "manufacturer": null,
+        "x_position": 6.3965,
+        "y_position": -4.859
+      },
+      {
+        "reference": "VIA_VIN_2",
+        "component_type": "via",
+        "value": null,
+        "part_number": null,
+        "manufacturer": null,
+        "x_position": 5.5915,
+        "y_position": -4.869
+      },
+      {
+        "reference": "VIA_M8RXD_1",
+        "component_type": "via",
+        "value": null,
+        "part_number": null,
+        "manufacturer": null,
+        "x_position": 6.5615,
+        "y_position": -3.839
+      },
+      {
+        "reference": "VIA_M8TXD_1",
+        "component_type": "via",
+        "value": null,
+        "part_number": null,
+        "manufacturer": null,
+        "x_position": 6.5065,
+        "y_position": -3.924
+      },
+      {
+        "reference": "VIA_SCK_1",
+        "component_type": "via",
+        "value": null,
+        "part_number": null,
+        "manufacturer": null,
+        "x_position": 5.5565,
+        "y_position": -4.339
+      },
+      {
+        "reference": "VIA_N$3_1",
+        "component_type": "via",
+        "value": null,
+        "part_number": null,
+        "manufacturer": null,
+        "x_position": 6.7265,
+        "y_position": -3.804
+      },
+      {
+        "reference": "VIA_N$35_1",
+        "component_type": "via",
+        "value": null,
+        "part_number": null,
+        "manufacturer": null,
+        "x_position": 5.7355,
+        "y_position": -3.779
+      },
+      {
+        "reference": "VIA_N$36_1",
+        "component_type": "via",
+        "value": null,
+        "part_number": null,
+        "manufacturer": null,
+        "x_position": 5.7355,
+        "y_position": -3.659
+      },
+      {
+        "reference": "VIA_+3V3_1",
+        "component_type": "via",
+        "value": null,
+        "part_number": null,
+        "manufacturer": null,
+        "x_position": 5.5015,
+        "y_position": -4.424
+      },
+      {
+        "reference": "VIA_+3V3_2",
+        "component_type": "via",
+        "value": null,
+        "part_number": null,
+        "manufacturer": null,
+        "x_position": 5.7215,
+        "y_position": -4.769
+      },
+      {
+        "reference": "VIA_MISO_1",
+        "component_type": "via",
+        "value": null,
+        "part_number": null,
+        "manufacturer": null,
+        "x_position": 5.9815,
+        "y_position": -4.539
+      },
+      {
+        "reference": "VIA_MOSI_1",
+        "component_type": "via",
+        "value": null,
+        "part_number": null,
+        "manufacturer": null,
+        "x_position": 5.9265,
+        "y_position": -4.069
+      },
+      {
+        "reference": "VIA_SS_1",
+        "component_type": "via",
+        "value": null,
+        "part_number": null,
+        "manufacturer": null,
+        "x_position": 5.8165,
+        "y_position": -4.159
+      },
+      {
+        "reference": "VIA_DTR_1",
+        "component_type": "via",
+        "value": null,
+        "part_number": null,
+        "manufacturer": null,
+        "x_position": 5.5165,
+        "y_position": -4.009
+      },
+      {
+        "reference": "VIA_DTR_2",
+        "component_type": "via",
+        "value": null,
+        "part_number": null,
+        "manufacturer": null,
+        "x_position": 5.4865,
+        "y_position": -3.704
+      },
+      {
+        "reference": "VIA_GATE_CMD_1",
+        "component_type": "via",
+        "value": null,
+        "part_number": null,
+        "manufacturer": null,
+        "x_position": 4.9715,
+        "y_position": -4.339
+      },
+      {
+        "reference": "VIA_GATE_CMD_2",
+        "component_type": "via",
+        "value": null,
+        "part_number": null,
+        "manufacturer": null,
+        "x_position": 5.3765,
+        "y_position": -4.459
+      },
+      {
+        "reference": "VIA_CMP_1",
+        "component_type": "via",
+        "value": null,
+        "part_number": null,
+        "manufacturer": null,
+        "x_position": 5.6765,
+        "y_position": -4.264
+      },
+      {
+        "reference": "VIA_USBVCC_1",
+        "component_type": "via",
+        "value": null,
+        "part_number": null,
+        "manufacturer": null,
+        "x_position": 4.8865,
+        "y_position": -3.969
+      },
+      {
+        "reference": "VIA_TP_VUCAP_1",
+        "component_type": "via",
+        "value": null,
+        "part_number": null,
+        "manufacturer": null,
+        "x_position": 5.0865,
+        "y_position": -3.534
+      },
+      {
+        "reference": "VIA_RESET2_1",
+        "component_type": "via",
+        "value": null,
+        "part_number": null,
+        "manufacturer": null,
+        "x_position": 5.5135,
+        "y_position": -4.218
+      },
+      {
+        "reference": "VIA_RESET2_2",
+        "component_type": "via",
+        "value": null,
+        "part_number": null,
+        "manufacturer": null,
+        "x_position": 5.3865,
+        "y_position": -3.349
+      },
+      {
+        "reference": "VIA_MISO2_1",
+        "component_type": "via",
+        "value": null,
+        "part_number": null,
+        "manufacturer": null,
+        "x_position": 5.3715,
+        "y_position": -3.569
+      },
+      {
+        "reference": "VIA_USHIELD_1",
+        "component_type": "via",
+        "value": null,
+        "part_number": null,
+        "manufacturer": null,
+        "x_position": 4.8515,
+        "y_position": -3.499
+      },
+      {
+        "reference": "VIA_AD4/SDA_1",
+        "component_type": "via",
+        "value": null,
+        "part_number": null,
+        "manufacturer": null,
+        "x_position": 5.7915,
+        "y_position": -3.954
+      },
+      {
+        "reference": "VIA_AD4/SDA_2",
+        "component_type": "via",
+        "value": null,
+        "part_number": null,
+        "manufacturer": null,
+        "x_position": 6.8315,
+        "y_position": -4.464
+      },
+      {
+        "reference": "VIA_AD4/SDA_3",
+        "component_type": "via",
+        "value": null,
+        "part_number": null,
+        "manufacturer": null,
+        "x_position": 6.419,
+        "y_position": -4.1715
+      },
+      {
+        "reference": "VIA_AD5/SCL_1",
+        "component_type": "via",
+        "value": null,
+        "part_number": null,
+        "manufacturer": null,
+        "x_position": 5.7515,
+        "y_position": -3.999
+      },
+      {
+        "reference": "VIA_AD5/SCL_2",
+        "component_type": "via",
+        "value": null,
+        "part_number": null,
+        "manufacturer": null,
+        "x_position": 6.349,
+        "y_position": -4.1765
+      },
+      {
+        "reference": "VIA_AD5/SCL_3",
+        "component_type": "via",
+        "value": null,
+        "part_number": null,
+        "manufacturer": null,
+        "x_position": 6.9315,
+        "y_position": -4.504
+      },
+      {
+        "reference": "VIA_IO1_1",
+        "component_type": "via",
+        "value": null,
+        "part_number": null,
+        "manufacturer": null,
+        "x_position": 6.7145,
+        "y_position": -3.951
+      },
+      {
+        "reference": "VIA_IO0_1",
+        "component_type": "via",
+        "value": null,
+        "part_number": null,
+        "manufacturer": null,
+        "x_position": 6.9065,
+        "y_position": -3.889
+      },
+      {
+        "reference": "VIA_IO9_1",
+        "component_type": "via",
+        "value": null,
+        "part_number": null,
+        "manufacturer": null,
+        "x_position": 5.7715,
+        "y_position": -4.204
+      },
+      {
+        "reference": "VIA_N$1_1",
+        "component_type": "via",
+        "value": null,
+        "part_number": null,
+        "manufacturer": null,
+        "x_position": 5.5015,
+        "y_position": -3.484
+      },
+      {
+        "reference": "VIA_L13_1",
+        "component_type": "via",
+        "value": null,
+        "part_number": null,
+        "manufacturer": null,
+        "x_position": 5.2415,
+        "y_position": -4.354
+      },
+      {
+        "reference": "VIA_L13_2",
+        "component_type": "via",
+        "value": null,
+        "part_number": null,
+        "manufacturer": null,
+        "x_position": 5.7115,
+        "y_position": -3.564
+      },
+      {
+        "reference": "ORIGIN",
+        "component_type": "other",
+        "value": null,
+        "part_number": null,
+        "manufacturer": null,
+        "x_position": null,
+        "y_position": null
+      },
+      {
+        "reference": "RESET",
+        "component_type": "resistor",
+        "value": null,
+        "part_number": null,
+        "manufacturer": null,
+        "x_position": null,
+        "y_position": null
+      },
+      {
+        "reference": "POWER0",
+        "component_type": "connector",
+        "value": null,
+        "part_number": null,
+        "manufacturer": null,
+        "x_position": null,
+        "y_position": null
+      },
+      {
+        "reference": "ICSP1",
+        "component_type": "ic",
+        "value": null,
+        "part_number": null,
+        "manufacturer": null,
+        "x_position": null,
+        "y_position": null
+      },
+      {
+        "reference": "ICSP0",
+        "component_type": "ic",
+        "value": null,
+        "part_number": null,
+        "manufacturer": null,
+        "x_position": null,
+        "y_position": null
+      },
+      {
+        "reference": "RESET0",
+        "component_type": "resistor",
+        "value": null,
+        "part_number": null,
+        "manufacturer": null,
+        "x_position": null,
+        "y_position": null
+      },
+      {
+        "reference": "GROUND",
+        "component_type": "other",
+        "value": null,
+        "part_number": null,
+        "manufacturer": null,
+        "x_position": null,
+        "y_position": null
+      },
+      {
+        "reference": "TP_SDA0",
+        "component_type": "transformer",
+        "value": null,
+        "part_number": null,
+        "manufacturer": null,
+        "x_position": null,
+        "y_position": null
+      },
+      {
+        "reference": "TP_PB6",
+        "component_type": "transformer",
+        "value": null,
+        "part_number": null,
+        "manufacturer": null,
+        "x_position": null,
+        "y_position": null
+      },
+      {
+        "reference": "TP_LCMD0",
+        "component_type": "transformer",
+        "value": null,
+        "part_number": null,
+        "manufacturer": null,
+        "x_position": null,
+        "y_position": null
+      },
+      {
+        "reference": "TP_XT1",
+        "component_type": "transformer",
+        "value": null,
+        "part_number": null,
+        "manufacturer": null,
+        "x_position": null,
+        "y_position": null
+      },
+      {
+        "reference": "TP_5",
+        "component_type": "transformer",
+        "value": null,
+        "part_number": null,
+        "manufacturer": null,
+        "x_position": null,
+        "y_position": null
+      },
+      {
+        "reference": "ORIGIN0",
+        "component_type": "other",
+        "value": null,
+        "part_number": null,
+        "manufacturer": null,
+        "x_position": null,
+        "y_position": null
+      },
+      {
+        "reference": "TP_PB5",
+        "component_type": "transformer",
+        "value": null,
+        "part_number": null,
+        "manufacturer": null,
+        "x_position": null,
+        "y_position": null
+      },
+      {
+        "reference": "TP_7",
+        "component_type": "transformer",
+        "value": null,
+        "part_number": null,
+        "manufacturer": null,
+        "x_position": null,
+        "y_position": null
+      },
+      {
+        "reference": "TP_USBVCC0",
+        "component_type": "transformer",
+        "value": null,
+        "part_number": null,
+        "manufacturer": null,
+        "x_position": null,
+        "y_position": null
+      },
+      {
+        "reference": "TP_DTR0",
+        "component_type": "transformer",
+        "value": null,
+        "part_number": null,
+        "manufacturer": null,
+        "x_position": null,
+        "y_position": null
+      },
+      {
+        "reference": "GND_TP1",
+        "component_type": "other",
+        "value": null,
+        "part_number": null,
+        "manufacturer": null,
+        "x_position": null,
+        "y_position": null
+      },
+      {
+        "reference": "TP_MOSI2",
+        "component_type": "transformer",
+        "value": null,
+        "part_number": null,
+        "manufacturer": null,
+        "x_position": null,
+        "y_position": null
+      },
+      {
+        "reference": "TP_LL0",
+        "component_type": "transformer",
+        "value": null,
+        "part_number": null,
+        "manufacturer": null,
+        "x_position": null,
+        "y_position": null
+      },
+      {
+        "reference": "TP_RESET0",
+        "component_type": "transformer",
+        "value": null,
+        "part_number": null,
+        "manufacturer": null,
+        "x_position": null,
+        "y_position": null
+      },
+      {
+        "reference": "TP_TXL0",
+        "component_type": "transformer",
+        "value": null,
+        "part_number": null,
+        "manufacturer": null,
+        "x_position": null,
+        "y_position": null
+      },
+      {
+        "reference": "TP_VUCAP0",
+        "component_type": "transformer",
+        "value": null,
+        "part_number": null,
+        "manufacturer": null,
+        "x_position": null,
+        "y_position": null
+      },
+      {
+        "reference": "TP_PWRIN0",
+        "component_type": "transformer",
+        "value": null,
+        "part_number": null,
+        "manufacturer": null,
+        "x_position": null,
+        "y_position": null
+      },
+      {
+        "reference": "TP_XT3",
+        "component_type": "transformer",
+        "value": null,
+        "part_number": null,
+        "manufacturer": null,
+        "x_position": null,
+        "y_position": null
+      },
+      {
+        "reference": "TP_USH0",
+        "component_type": "transformer",
+        "value": null,
+        "part_number": null,
+        "manufacturer": null,
+        "x_position": null,
+        "y_position": null
+      },
+      {
+        "reference": "TP_2",
+        "component_type": "transformer",
+        "value": null,
+        "part_number": null,
+        "manufacturer": null,
+        "x_position": null,
+        "y_position": null
+      },
+      {
+        "reference": "TP_GATE0",
+        "component_type": "transformer",
+        "value": null,
+        "part_number": null,
+        "manufacturer": null,
+        "x_position": null,
+        "y_position": null
+      },
+      {
+        "reference": "TP_1",
+        "component_type": "transformer",
+        "value": null,
+        "part_number": null,
+        "manufacturer": null,
+        "x_position": null,
+        "y_position": null
+      },
+      {
+        "reference": "TP_13",
+        "component_type": "transformer",
+        "value": null,
+        "part_number": null,
+        "manufacturer": null,
+        "x_position": null,
+        "y_position": null
+      },
+      {
+        "reference": "TP_5V0",
+        "component_type": "transformer",
+        "value": null,
+        "part_number": null,
+        "manufacturer": null,
+        "x_position": null,
+        "y_position": null
+      },
+      {
+        "reference": "TP_XT4",
+        "component_type": "transformer",
+        "value": null,
+        "part_number": null,
+        "manufacturer": null,
+        "x_position": null,
+        "y_position": null
+      },
+      {
+        "reference": "TP_11",
+        "component_type": "transformer",
+        "value": null,
+        "part_number": null,
+        "manufacturer": null,
+        "x_position": null,
+        "y_position": null
+      },
+      {
+        "reference": "TP_RESET2",
+        "component_type": "transformer",
+        "value": null,
+        "part_number": null,
+        "manufacturer": null,
+        "x_position": null,
+        "y_position": null
+      },
+      {
+        "reference": "TP_D-0",
+        "component_type": "transformer",
+        "value": null,
+        "part_number": null,
+        "manufacturer": null,
+        "x_position": null,
+        "y_position": null
+      },
+      {
+        "reference": "TP_5V1",
+        "component_type": "transformer",
+        "value": null,
+        "part_number": null,
+        "manufacturer": null,
+        "x_position": null,
+        "y_position": null
+      },
+      {
+        "reference": "TP_RXL0",
+        "component_type": "transformer",
+        "value": null,
+        "part_number": null,
+        "manufacturer": null,
+        "x_position": null,
+        "y_position": null
+      },
+      {
+        "reference": "TP_A4",
+        "component_type": "transformer",
+        "value": null,
+        "part_number": null,
+        "manufacturer": null,
+        "x_position": null,
+        "y_position": null
+      },
+      {
+        "reference": "TP_A5",
+        "component_type": "transformer",
+        "value": null,
+        "part_number": null,
+        "manufacturer": null,
+        "x_position": null,
+        "y_position": null
+      },
+      {
+        "reference": "TP_A2",
+        "component_type": "transformer",
+        "value": null,
+        "part_number": null,
+        "manufacturer": null,
+        "x_position": null,
+        "y_position": null
+      },
+      {
+        "reference": "TP_SCK2",
+        "component_type": "transformer",
+        "value": null,
+        "part_number": null,
+        "manufacturer": null,
+        "x_position": null,
+        "y_position": null
+      },
+      {
+        "reference": "TP_AREF0",
+        "component_type": "transformer",
+        "value": null,
+        "part_number": null,
+        "manufacturer": null,
+        "x_position": null,
+        "y_position": null
+      },
+      {
+        "reference": "TP_SCL0",
+        "component_type": "transformer",
+        "value": null,
+        "part_number": null,
+        "manufacturer": null,
+        "x_position": null,
+        "y_position": null
+      },
+      {
+        "reference": "TP_TX0",
+        "component_type": "transformer",
+        "value": null,
+        "part_number": null,
+        "manufacturer": null,
+        "x_position": null,
+        "y_position": null
+      },
+      {
+        "reference": "TP_ONL0",
+        "component_type": "transformer",
+        "value": null,
+        "part_number": null,
+        "manufacturer": null,
+        "x_position": null,
+        "y_position": null
+      },
+      {
+        "reference": "TP_4",
+        "component_type": "transformer",
+        "value": null,
+        "part_number": null,
+        "manufacturer": null,
+        "x_position": null,
+        "y_position": null
+      },
+      {
+        "reference": "TP_A3",
+        "component_type": "transformer",
+        "value": null,
+        "part_number": null,
+        "manufacturer": null,
+        "x_position": null,
+        "y_position": null
+      },
+      {
+        "reference": "TP_9",
+        "component_type": "transformer",
+        "value": null,
+        "part_number": null,
+        "manufacturer": null,
+        "x_position": null,
+        "y_position": null
+      },
+      {
+        "reference": "TP_XUSB0",
+        "component_type": "transformer",
+        "value": null,
+        "part_number": null,
+        "manufacturer": null,
+        "x_position": null,
+        "y_position": null
+      },
+      {
+        "reference": "TP_PB7",
+        "component_type": "transformer",
+        "value": null,
+        "part_number": null,
+        "manufacturer": null,
+        "x_position": null,
+        "y_position": null
+      },
+      {
+        "reference": "TP_XT2",
+        "component_type": "transformer",
+        "value": null,
+        "part_number": null,
+        "manufacturer": null,
+        "x_position": null,
+        "y_position": null
+      },
+      {
+        "reference": "TP_PB4",
+        "component_type": "transformer",
+        "value": null,
+        "part_number": null,
+        "manufacturer": null,
+        "x_position": null,
+        "y_position": null
+      },
+      {
+        "reference": "TP_12",
+        "component_type": "transformer",
+        "value": null,
+        "part_number": null,
+        "manufacturer": null,
+        "x_position": null,
+        "y_position": null
+      },
+      {
+        "reference": "TP_MISO2",
+        "component_type": "transformer",
+        "value": null,
+        "part_number": null,
+        "manufacturer": null,
+        "x_position": null,
+        "y_position": null
+      },
+      {
+        "reference": "TP_A0",
+        "component_type": "transformer",
+        "value": null,
+        "part_number": null,
+        "manufacturer": null,
+        "x_position": null,
+        "y_position": null
+      },
+      {
+        "reference": "TP_10",
+        "component_type": "transformer",
+        "value": null,
+        "part_number": null,
+        "manufacturer": null,
+        "x_position": null,
+        "y_position": null
+      },
+      {
+        "reference": "TP_D+0",
+        "component_type": "transformer",
+        "value": null,
+        "part_number": null,
+        "manufacturer": null,
+        "x_position": null,
+        "y_position": null
+      },
+      {
+        "reference": "TP_VIN0",
+        "component_type": "transformer",
+        "value": null,
+        "part_number": null,
+        "manufacturer": null,
+        "x_position": null,
+        "y_position": null
+      },
+      {
+        "reference": "TP_0",
+        "component_type": "transformer",
+        "value": null,
+        "part_number": null,
+        "manufacturer": null,
+        "x_position": null,
+        "y_position": null
+      },
+      {
+        "reference": "TP_3V3",
+        "component_type": "transformer",
+        "value": null,
+        "part_number": null,
+        "manufacturer": null,
+        "x_position": null,
+        "y_position": null
+      },
+      {
+        "reference": "TP_CMP0",
+        "component_type": "transformer",
+        "value": null,
+        "part_number": null,
+        "manufacturer": null,
+        "x_position": null,
+        "y_position": null
+      },
+      {
+        "reference": "TP_RX0",
+        "component_type": "transformer",
+        "value": null,
+        "part_number": null,
+        "manufacturer": null,
+        "x_position": null,
+        "y_position": null
+      },
+      {
+        "reference": "TP_UGND0",
+        "component_type": "transformer",
+        "value": null,
+        "part_number": null,
+        "manufacturer": null,
+        "x_position": null,
+        "y_position": null
+      },
+      {
+        "reference": "GND_TP0",
+        "component_type": "other",
+        "value": null,
+        "part_number": null,
+        "manufacturer": null,
+        "x_position": null,
+        "y_position": null
+      },
+      {
+        "reference": "TP_3",
+        "component_type": "transformer",
+        "value": null,
+        "part_number": null,
+        "manufacturer": null,
+        "x_position": null,
+        "y_position": null
+      },
+      {
+        "reference": "TP_6",
+        "component_type": "transformer",
+        "value": null,
+        "part_number": null,
+        "manufacturer": null,
+        "x_position": null,
+        "y_position": null
+      },
+      {
+        "reference": "TP_A1",
+        "component_type": "transformer",
+        "value": null,
+        "part_number": null,
+        "manufacturer": null,
+        "x_position": null,
+        "y_position": null
+      },
+      {
+        "reference": "TP_8",
+        "component_type": "transformer",
+        "value": null,
+        "part_number": null,
+        "manufacturer": null,
+        "x_position": null,
+        "y_position": null
+      },
+      {
+        "reference": "L1",
+        "component_type": "inductor",
+        "value": null,
+        "part_number": null,
+        "manufacturer": null,
+        "x_position": null,
+        "y_position": null
+      },
+      {
+        "reference": "IOH0",
+        "component_type": "other",
+        "value": null,
+        "part_number": null,
+        "manufacturer": null,
+        "x_position": null,
+        "y_position": null
+      },
+      {
+        "reference": "C6",
+        "component_type": "capacitor",
+        "value": null,
+        "part_number": null,
+        "manufacturer": null,
+        "x_position": null,
+        "y_position": null
+      },
+      {
+        "reference": "C2",
+        "component_type": "capacitor",
+        "value": null,
+        "part_number": null,
+        "manufacturer": null,
+        "x_position": null,
+        "y_position": null
+      },
+      {
+        "reference": "C1",
+        "component_type": "capacitor",
+        "value": null,
+        "part_number": null,
+        "manufacturer": null,
+        "x_position": null,
+        "y_position": null
+      },
+      {
+        "reference": "C4",
+        "component_type": "capacitor",
+        "value": null,
+        "part_number": null,
+        "manufacturer": null,
+        "x_position": null,
+        "y_position": null
+      },
+      {
+        "reference": "C7",
+        "component_type": "capacitor",
+        "value": null,
+        "part_number": null,
+        "manufacturer": null,
+        "x_position": null,
+        "y_position": null
+      },
+      {
+        "reference": "C5",
+        "component_type": "capacitor",
+        "value": null,
+        "part_number": null,
+        "manufacturer": null,
+        "x_position": null,
+        "y_position": null
+      },
+      {
+        "reference": "C10",
+        "component_type": "capacitor",
+        "value": null,
+        "part_number": null,
+        "manufacturer": null,
+        "x_position": null,
+        "y_position": null
+      },
+      {
+        "reference": "Y1",
+        "component_type": "crystal",
+        "value": null,
+        "part_number": null,
+        "manufacturer": null,
+        "x_position": null,
+        "y_position": null
+      },
+      {
+        "reference": "IOL0",
+        "component_type": "other",
+        "value": null,
+        "part_number": null,
+        "manufacturer": null,
+        "x_position": null,
+        "y_position": null
+      },
+      {
+        "reference": "ON0",
+        "component_type": "other",
+        "value": null,
+        "part_number": null,
+        "manufacturer": null,
+        "x_position": null,
+        "y_position": null
+      },
+      {
+        "reference": "Z1",
+        "component_type": "other",
+        "value": null,
+        "part_number": null,
+        "manufacturer": null,
+        "x_position": null,
+        "y_position": null
+      },
+      {
+        "reference": "Z2",
+        "component_type": "other",
+        "value": null,
+        "part_number": null,
+        "manufacturer": null,
+        "x_position": null,
+        "y_position": null
+      },
+      {
+        "reference": "PC1",
+        "component_type": "connector",
+        "value": null,
+        "part_number": null,
+        "manufacturer": null,
+        "x_position": null,
+        "y_position": null
+      },
+      {
+        "reference": "PC2",
+        "component_type": "connector",
+        "value": null,
+        "part_number": null,
+        "manufacturer": null,
+        "x_position": null,
+        "y_position": null
+      },
+      {
+        "reference": "UNK_HOLE_2",
+        "component_type": "ic",
+        "value": null,
+        "part_number": null,
+        "manufacturer": null,
+        "x_position": null,
+        "y_position": null
+      },
+      {
+        "reference": "RESET-EN0",
+        "component_type": "resistor",
+        "value": null,
+        "part_number": null,
+        "manufacturer": null,
+        "x_position": null,
+        "y_position": null
+      },
+      {
+        "reference": "GROUND0",
+        "component_type": "other",
+        "value": null,
+        "part_number": null,
+        "manufacturer": null,
+        "x_position": null,
+        "y_position": null
+      },
+      {
+        "reference": "U5",
+        "component_type": "ic",
+        "value": null,
+        "part_number": null,
+        "manufacturer": null,
+        "x_position": null,
+        "y_position": null
+      },
+      {
+        "reference": "FD1",
+        "component_type": "fuse",
+        "value": null,
+        "part_number": null,
+        "manufacturer": null,
+        "x_position": null,
+        "y_position": null
+      },
+      {
+        "reference": "FD3",
+        "component_type": "fuse",
+        "value": null,
+        "part_number": null,
+        "manufacturer": null,
+        "x_position": null,
+        "y_position": null
+      },
+      {
+        "reference": "FD2",
+        "component_type": "fuse",
+        "value": null,
+        "part_number": null,
+        "manufacturer": null,
+        "x_position": null,
+        "y_position": null
+      },
+      {
+        "reference": "RN2",
+        "component_type": "resistor",
+        "value": null,
+        "part_number": null,
+        "manufacturer": null,
+        "x_position": null,
+        "y_position": null
+      },
+      {
+        "reference": "RN4",
+        "component_type": "resistor",
+        "value": null,
+        "part_number": null,
+        "manufacturer": null,
+        "x_position": null,
+        "y_position": null
+      },
+      {
+        "reference": "U1",
+        "component_type": "ic",
+        "value": null,
+        "part_number": null,
+        "manufacturer": null,
+        "x_position": null,
+        "y_position": null
+      },
+      {
+        "reference": "C3",
+        "component_type": "capacitor",
+        "value": null,
+        "part_number": null,
+        "manufacturer": null,
+        "x_position": null,
+        "y_position": null
+      },
+      {
+        "reference": "C8",
+        "component_type": "capacitor",
+        "value": null,
+        "part_number": null,
+        "manufacturer": null,
+        "x_position": null,
+        "y_position": null
+      },
+      {
+        "reference": "RN1",
+        "component_type": "resistor",
+        "value": null,
+        "part_number": null,
+        "manufacturer": null,
+        "x_position": null,
+        "y_position": null
+      },
+      {
+        "reference": "D2",
+        "component_type": "diode",
+        "value": null,
+        "part_number": null,
+        "manufacturer": null,
+        "x_position": null,
+        "y_position": null
+      },
+      {
+        "reference": "D3",
+        "component_type": "diode",
+        "value": null,
+        "part_number": null,
+        "manufacturer": null,
+        "x_position": null,
+        "y_position": null
+      },
+      {
+        "reference": "UNK_HOLE_0",
+        "component_type": "ic",
+        "value": null,
+        "part_number": null,
+        "manufacturer": null,
+        "x_position": null,
+        "y_position": null
+      },
+      {
+        "reference": "R1",
+        "component_type": "resistor",
+        "value": null,
+        "part_number": null,
+        "manufacturer": null,
+        "x_position": null,
+        "y_position": null
+      },
+      {
+        "reference": "R2",
+        "component_type": "resistor",
+        "value": null,
+        "part_number": null,
+        "manufacturer": null,
+        "x_position": null,
+        "y_position": null
+      },
+      {
+        "reference": "T1",
+        "component_type": "transformer",
+        "value": null,
+        "part_number": null,
+        "manufacturer": null,
+        "x_position": null,
+        "y_position": null
+      },
+      {
+        "reference": "RX0",
+        "component_type": "resistor",
+        "value": null,
+        "part_number": null,
+        "manufacturer": null,
+        "x_position": null,
+        "y_position": null
+      },
+      {
+        "reference": "L0",
+        "component_type": "inductor",
+        "value": null,
+        "part_number": null,
+        "manufacturer": null,
+        "x_position": null,
+        "y_position": null
+      },
+      {
+        "reference": "TX0",
+        "component_type": "transformer",
+        "value": null,
+        "part_number": null,
+        "manufacturer": null,
+        "x_position": null,
+        "y_position": null
+      },
+      {
+        "reference": "F1",
+        "component_type": "fuse",
+        "value": null,
+        "part_number": null,
+        "manufacturer": null,
+        "x_position": null,
+        "y_position": null
+      },
+      {
+        "reference": "X1",
+        "component_type": "crystal",
+        "value": null,
+        "part_number": null,
+        "manufacturer": null,
+        "x_position": null,
+        "y_position": null
+      },
+      {
+        "reference": "ZU4",
+        "component_type": "other",
+        "value": null,
+        "part_number": null,
+        "manufacturer": null,
+        "x_position": null,
+        "y_position": null
+      },
+      {
+        "reference": "Y2",
+        "component_type": "crystal",
+        "value": null,
+        "part_number": null,
+        "manufacturer": null,
+        "x_position": null,
+        "y_position": null
+      },
+      {
+        "reference": "L2",
+        "component_type": "inductor",
+        "value": null,
+        "part_number": null,
+        "manufacturer": null,
+        "x_position": null,
+        "y_position": null
+      },
+      {
+        "reference": "FRAME1",
+        "component_type": "fuse",
+        "value": null,
+        "part_number": null,
+        "manufacturer": null,
+        "x_position": null,
+        "y_position": null
+      },
+      {
+        "reference": "U3",
+        "component_type": "ic",
+        "value": null,
+        "part_number": null,
+        "manufacturer": null,
+        "x_position": null,
+        "y_position": null
+      },
+      {
+        "reference": "AD0",
+        "component_type": "other",
+        "value": null,
+        "part_number": null,
+        "manufacturer": null,
+        "x_position": null,
+        "y_position": null
+      },
+      {
+        "reference": "UNK_HOLE_1",
+        "component_type": "ic",
+        "value": null,
+        "part_number": null,
+        "manufacturer": null,
+        "x_position": null,
+        "y_position": null
+      },
+      {
+        "reference": "D1",
+        "component_type": "diode",
+        "value": null,
+        "part_number": null,
+        "manufacturer": null,
+        "x_position": null,
+        "y_position": null
+      },
+      {
+        "reference": "RN3",
+        "component_type": "resistor",
+        "value": null,
+        "part_number": null,
+        "manufacturer": null,
+        "x_position": null,
+        "y_position": null
+      },
+      {
+        "reference": "C11",
+        "component_type": "capacitor",
+        "value": null,
+        "part_number": null,
+        "manufacturer": null,
+        "x_position": null,
+        "y_position": null
+      },
+      {
+        "reference": "C9",
+        "component_type": "capacitor",
+        "value": null,
+        "part_number": null,
+        "manufacturer": null,
+        "x_position": null,
+        "y_position": null
+      },
+      {
+        "reference": "X2",
+        "component_type": "crystal",
+        "value": null,
+        "part_number": null,
+        "manufacturer": null,
+        "x_position": null,
+        "y_position": null
+      },
+      {
+        "reference": "JP2",
+        "component_type": "connector",
+        "value": null,
+        "part_number": null,
+        "manufacturer": null,
+        "x_position": null,
+        "y_position": null
+      },
+      {
+        "reference": "UNK_HOLE_3",
+        "component_type": "ic",
+        "value": null,
+        "part_number": null,
+        "manufacturer": null,
+        "x_position": null,
+        "y_position": null
+      },
+      {
+        "reference": "U2",
+        "component_type": "ic",
+        "value": null,
+        "part_number": null,
+        "manufacturer": null,
+        "x_position": null,
+        "y_position": null
+      }
+    ]
+  },
+  "analysis": {
+    "component_types": {
+      "via": 82,
+      "other": 13,
+      "resistor": 10,
+      "connector": 4,
+      "ic": 10,
+      "transformer": 60,
+      "inductor": 3,
+      "capacitor": 11,
+      "crystal": 4,
+      "fuse": 5,
+      "diode": 3
+    },
+    "net_classes": {
+      "power": 4,
+      "ground": 3,
+      "analog": 1,
+      "signal": 27
+    }
+  },
+  "errors": []
+}
