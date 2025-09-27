@@ -1,14 +1,13 @@
 # ingest_docs.py
 import os
-
+from dotenv import load_dotenv
 from langchain_community.document_loaders import UnstructuredFileLoader
 from langchain.text_splitter import RecursiveCharacterTextSplitter
 from langchain_community.vectorstores import Chroma
 from langchain_google_genai import GoogleGenerativeAIEmbeddings
 
 # --- Environment Setup ---
-# Set the Google API key from the config file
-os.environ["GOOGLE_API_KEY"] = config.GOOGLE_API_KEY
+load_dotenv()
 
 # --- Constants ---
 DOCS_DIR = "source_documents"
@@ -19,6 +18,10 @@ def ingest_documents():
     Loads documents from the source directory, splits them into chunks,
     and embeds them into a Chroma vector store for later retrieval.
     """
+    if not os.getenv("GOOGLE_API_KEY"):
+        print("Error: GOOGLE_API_KEY must be set in the .env file.")
+        return
+
     if not os.path.exists(DOCS_DIR):
         print(f"Error: The source directory '{DOCS_DIR}' does not exist.")
         print("Please create it and add your design documents.")

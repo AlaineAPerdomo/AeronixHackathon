@@ -4,7 +4,6 @@ import json
 import re
 import time
 import argparse
-import config # Import API keys
 import pandas as pd
 from docx import Document
 from docx.shared import Inches
@@ -19,11 +18,14 @@ from langchain_community.vectorstores import Chroma
 from langchain_google_genai import GoogleGenerativeAIEmbeddings
 
 # --- Environment and API Configuration ---
-os.environ["GOOGLE_API_KEY"] = config.GOOGLE_API_KEY
-os.environ["TAVILY_API_KEY"] = config.TAVILY_API_KEY
-genai.configure(api_key=config.GOOGLE_API_KEY)
-
 load_dotenv()  # Load variables from .env into the environment
+
+# Configure APIs using environment variables
+if not os.getenv("GOOGLE_API_KEY") or not os.getenv("TAVILY_API_KEY"):
+    print("ERROR: Please set GOOGLE_API_KEY and TAVILY_API_KEY in your .env file.")
+    exit()
+
+genai.configure(api_key=os.getenv("GOOGLE_API_KEY"))
 
 # --- Constants ---
 CHROMA_PATH = "chroma_db"
@@ -80,7 +82,7 @@ def get_relevant_context_from_rag(query, k=8):
 def run_batch_datasheet_agent(part_numbers):
     """Searches for datasheets and extracts key specs for a list of components."""
     print(f"🤖 Running Datasheet Agent for: {part_numbers}...")
-    tavily_client = TavilyClient(api_key=os.environ["TAVILY_API_KEY"])
+    tavily_client = TavilyClient(api_key=os.getenv("TAVILY_API_KEY"))
     model = genai.GenerativeModel('gemini-1.5-pro-latest')
 
     all_context = ""
