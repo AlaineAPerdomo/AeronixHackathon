@@ -1,8 +1,38 @@
 # generate_from_template.py
 from docxtpl import DocxTemplate, RichText
+import re
 
+def parse_markdown_with_styles(markdown_text):
+    """
+    Parses markdown text with inline font-size and bold annotations and returns
+    a list of dicts: [{'text': ..., 'bold': ..., 'size': ...}, ...]
+    """
+    styled_lines = []
+    # Match (font-size: XX, bold: yes/no) anywhere in the line
+    style_pattern = re.compile(r'\(font-size:\s*(\d+),\s*bold:\s*(yes|no)\)', re.IGNORECASE)
 
-def generate_final_document():
+    for line in markdown_text.split('\n'):
+        match = style_pattern.search(line)
+        if match:
+            size = int(match.group(1))
+            bold = match.group(2).strip().lower() == 'yes'
+            # Remove the style annotation from the line text
+            clean_line = style_pattern.sub('', line).strip()
+        else:
+            # Default values if no annotation is present
+            size = 12
+            bold = False
+            clean_line = line.strip()
+        
+        if clean_line:  # Only add non-empty lines
+            styled_lines.append({
+                'text': clean_line + '\n',  # Keep the newline
+                'bold': bold,
+                'size': size
+            })
+    return styled_lines
+
+def generate_final_document(styled_lines):
     """
     Loads the .docx template, fills it with the complete and accurate context,
     and saves the final, perfectly formatted document.
@@ -84,13 +114,8 @@ The purpose of these designs is to facilitate research into how LoRa radios can 
     # Create the RichText object for the main procedure.
     # The AI will generate this content in the future.
     rt = RichText()
-    rt.add('4.1 Visual Inspection\n', bold=True, size=24)
-    rt.add(
-        '1. Visually inspect the PCBA to the IPC-610 standard and class specified in the drawing (AE104077-001).\n\n')
-    rt.add('4.2 Voltage Rail Checks\n', bold=True, size=24)
-    rt.add('1. Set the multimeter (Item 2) in diode check (beep) mode.\n')
-    rt.add('2. Using the multimeter, probe the ground pad (pin 2) of the input barrel jack (J3) (GND)...')
-    # ...This would continue for the entire procedure...
+    for i in styled_lines:
+        rt.add(i['text'], bold=i['bold'], size=i['size'])
     context['procedure_rt'] = rt
 
     # --- Render and Save ---
