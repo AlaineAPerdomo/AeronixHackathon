@@ -1,0 +1,4332 @@
+{
+  "nets": [
+    {
+      "name": "+3V3",
+      "connections": [
+        {
+          "component": "C69",
+          "pin": "-1"
+        },
+        {
+          "component": "U11",
+          "pin": "-8"
+        },
+        {
+          "component": "U11",
+          "pin": "-7"
+        },
+        {
+          "component": "C52",
+          "pin": "-2"
+        },
+        {
+          "component": "R3",
+          "pin": "-2"
+        },
+        {
+          "component": "R19",
+          "pin": "-2"
+        },
+        {
+          "component": "C53",
+          "pin": "-1"
+        },
+        {
+          "component": "C54",
+          "pin": "-1"
+        },
+        {
+          "component": "R33",
+          "pin": "-1"
+        },
+        {
+          "component": "C68",
+          "pin": "-1"
+        },
+        {
+          "component": "U13",
+          "pin": "-15"
+        },
+        {
+          "component": "U13",
+          "pin": "-2"
+        },
+        {
+          "component": "L10",
+          "pin": "-2"
+        },
+        {
+          "component": "R5",
+          "pin": "-2"
+        },
+        {
+          "component": "R6",
+          "pin": "-2"
+        },
+        {
+          "component": "C51",
+          "pin": "-2"
+        },
+        {
+          "component": "U5",
+          "pin": "-8"
+        },
+        {
+          "component": "U5",
+          "pin": "-3"
+        },
+        {
+          "component": "U10",
+          "pin": "-5"
+        },
+        {
+          "component": "U10",
+          "pin": "-8"
+        },
+        {
+          "component": "C59",
+          "pin": "-2"
+        },
+        {
+          "component": "C58",
+          "pin": "-2"
+        },
+        {
+          "component": "R7",
+          "pin": "-2"
+        },
+        {
+          "component": "C8",
+          "pin": "-2"
+        },
+        {
+          "component": "C3",
+          "pin": "-1"
+        },
+        {
+          "component": "C6",
+          "pin": "-2"
+        },
+        {
+          "component": "C2",
+          "pin": "-1"
+        },
+        {
+          "component": "C7",
+          "pin": "-2"
+        },
+        {
+          "component": "C50",
+          "pin": "-2"
+        },
+        {
+          "component": "R1",
+          "pin": "-2"
+        },
+        {
+          "component": "C5",
+          "pin": "-1"
+        },
+        {
+          "component": "R9",
+          "pin": "-2"
+        },
+        {
+          "component": "C71",
+          "pin": "-1"
+        },
+        {
+          "component": "C70",
+          "pin": "-2"
+        },
+        {
+          "component": "U1",
+          "pin": "-64"
+        },
+        {
+          "component": "U1",
+          "pin": "-32"
+        },
+        {
+          "component": "U1",
+          "pin": "-19"
+        },
+        {
+          "component": "U1",
+          "pin": "-48"
+        },
+        {
+          "component": "U1",
+          "pin": "-13"
+        },
+        {
+          "component": "U1",
+          "pin": "-1"
+        },
+        {
+          "component": "C4",
+          "pin": "-1"
+        },
+        {
+          "component": "C1",
+          "pin": "-1"
+        },
+        {
+          "component": "P2",
+          "pin": "-2"
+        },
+        {
+          "component": "P2",
+          "pin": "-4"
+        },
+        {
+          "component": "P1",
+          "pin": "-1"
+        },
+        {
+          "component": "VIA",
+          "pin": "-"
+        },
+        {
+          "component": "VIA",
+          "pin": "-"
+        },
+        {
+          "component": "VIA",
+          "pin": "-"
+        },
+        {
+          "component": "VIA",
+          "pin": "-"
+        },
+        {
+          "component": "VIA",
+          "pin": "-"
+        },
+        {
+          "component": "VIA",
+          "pin": "-"
+        },
+        {
+          "component": "VIA",
+          "pin": "-"
+        },
+        {
+          "component": "VIA",
+          "pin": "-"
+        },
+        {
+          "component": "VIA",
+          "pin": "-"
+        },
+        {
+          "component": "VIA",
+          "pin": "-"
+        },
+        {
+          "component": "VIA",
+          "pin": "-"
+        },
+        {
+          "component": "VIA",
+          "pin": "-"
+        },
+        {
+          "component": "VIA",
+          "pin": "-"
+        },
+        {
+          "component": "VIA",
+          "pin": "-"
+        },
+        {
+          "component": "VIA",
+          "pin": "-"
+        },
+        {
+          "component": "VIA",
+          "pin": "-"
+        },
+        {
+          "component": "VIA",
+          "pin": "-"
+        },
+        {
+          "component": "VIA",
+          "pin": "-"
+        },
+        {
+          "component": "VIA",
+          "pin": "-"
+        },
+        {
+          "component": "VIA",
+          "pin": "-"
+        },
+        {
+          "component": "VIA",
+          "pin": "-"
+        },
+        {
+          "component": "VIA",
+          "pin": "-"
+        },
+        {
+          "component": "VIA",
+          "pin": "-"
+        },
+        {
+          "component": "VIA",
+          "pin": "-"
+        },
+        {
+          "component": "VIA",
+          "pin": "-"
+        },
+        {
+          "component": "VIA",
+          "pin": "-"
+        },
+        {
+          "component": "VIA",
+          "pin": "-"
+        },
+        {
+          "component": "VIA",
+          "pin": "-"
+        },
+        {
+          "component": "VIA",
+          "pin": "-"
+        },
+        {
+          "component": "VIA",
+          "pin": "-"
+        },
+        {
+          "component": "VIA",
+          "pin": "-"
+        },
+        {
+          "component": "VIA",
+          "pin": "-"
+        },
+        {
+          "component": "VIA",
+          "pin": "-"
+        },
+        {
+          "component": "VIA",
+          "pin": "-"
+        },
+        {
+          "component": "VIA",
+          "pin": "-"
+        }
+      ]
+    },
+    {
+      "name": "+3V3_RF",
+      "connections": [
+        {
+          "component": "C26",
+          "pin": "-1"
+        },
+        {
+          "component": "U2",
+          "pin": "-3"
+        },
+        {
+          "component": "U2",
+          "pin": "-14"
+        },
+        {
+          "component": "U2",
+          "pin": "-24"
+        },
+        {
+          "component": "U12",
+          "pin": "-1"
+        },
+        {
+          "component": "U12",
+          "pin": "-2"
+        },
+        {
+          "component": "U3",
+          "pin": "-6"
+        },
+        {
+          "component": "C34",
+          "pin": "-1"
+        },
+        {
+          "component": "U4",
+          "pin": "-6"
+        },
+        {
+          "component": "C12",
+          "pin": "-1"
+        },
+        {
+          "component": "C73",
+          "pin": "-2"
+        },
+        {
+          "component": "C25",
+          "pin": "-1"
+        },
+        {
+          "component": "C28",
+          "pin": "-1"
+        },
+        {
+          "component": "C27",
+          "pin": "-1"
+        },
+        {
+          "component": "VIA",
+          "pin": "-"
+        },
+        {
+          "component": "VIA",
+          "pin": "-"
+        },
+        {
+          "component": "VIA",
+          "pin": "-"
+        },
+        {
+          "component": "VIA",
+          "pin": "-"
+        },
+        {
+          "component": "VIA",
+          "pin": "-"
+        },
+        {
+          "component": "VIA",
+          "pin": "-"
+        },
+        {
+          "component": "VIA",
+          "pin": "-"
+        },
+        {
+          "component": "VIA",
+          "pin": "-"
+        }
+      ]
+    },
+    {
+      "name": "+5V",
+      "connections": [
+        {
+          "component": "U7",
+          "pin": "-2"
+        },
+        {
+          "component": "U7",
+          "pin": "-9"
+        },
+        {
+          "component": "U7",
+          "pin": "-10"
+        },
+        {
+          "component": "C74",
+          "pin": "-1"
+        },
+        {
+          "component": "U12",
+          "pin": "-4"
+        },
+        {
+          "component": "U12",
+          "pin": "-6"
+        },
+        {
+          "component": "C49",
+          "pin": "-1"
+        },
+        {
+          "component": "U8",
+          "pin": "-5"
+        },
+        {
+          "component": "C48",
+          "pin": "-1"
+        },
+        {
+          "component": "C47",
+          "pin": "-1"
+        },
+        {
+          "component": "R23",
+          "pin": "-2"
+        },
+        {
+          "component": "R17",
+          "pin": "-2"
+        },
+        {
+          "component": "U6",
+          "pin": "-16"
+        },
+        {
+          "component": "U6",
+          "pin": "-15"
+        },
+        {
+          "component": "U6",
+          "pin": "-14"
+        },
+        {
+          "component": "C72",
+          "pin": "-1"
+        },
+        {
+          "component": "VIA",
+          "pin": "-"
+        },
+        {
+          "component": "VIA",
+          "pin": "-"
+        },
+        {
+          "component": "VIA",
+          "pin": "-"
+        },
+        {
+          "component": "VIA",
+          "pin": "-"
+        },
+        {
+          "component": "VIA",
+          "pin": "-"
+        },
+        {
+          "component": "VIA",
+          "pin": "-"
+        },
+        {
+          "component": "VIA",
+          "pin": "-"
+        },
+        {
+          "component": "VIA",
+          "pin": "-"
+        },
+        {
+          "component": "VIA",
+          "pin": "-"
+        },
+        {
+          "component": "VIA",
+          "pin": "-"
+        },
+        {
+          "component": "VIA",
+          "pin": "-"
+        },
+        {
+          "component": "VIA",
+          "pin": "-"
+        },
+        {
+          "component": "VIA",
+          "pin": "-"
+        },
+        {
+          "component": "VIA",
+          "pin": "-"
+        },
+        {
+          "component": "VIA",
+          "pin": "-"
+        },
+        {
+          "component": "VIA",
+          "pin": "-"
+        },
+        {
+          "component": "VIA",
+          "pin": "-"
+        },
+        {
+          "component": "VIA",
+          "pin": "-"
+        },
+        {
+          "component": "VIA",
+          "pin": "-"
+        }
+      ]
+    },
+    {
+      "name": "1",
+      "connections": [
+        {
+          "component": "R4",
+          "pin": "-1"
+        },
+        {
+          "component": "R15",
+          "pin": "-2"
+        },
+        {
+          "component": "R7",
+          "pin": "-1"
+        },
+        {
+          "component": "U1",
+          "pin": "-41"
+        }
+      ]
+    },
+    {
+      "name": "12",
+      "connections": [
+        {
+          "component": "U7",
+          "pin": "-3"
+        },
+        {
+          "component": "U7",
+          "pin": "-12"
+        },
+        {
+          "component": "L10",
+          "pin": "-1"
+        },
+        {
+          "component": "C46",
+          "pin": "-2"
+        }
+      ]
+    },
+    {
+      "name": "ADC1_IN1_SE",
+      "connections": [
+        {
+          "component": "U1",
+          "pin": "-10"
+        },
+        {
+          "component": "P2",
+          "pin": "-32"
+        }
+      ]
+    },
+    {
+      "name": "ADC1_IN2_SE",
+      "connections": [
+        {
+          "component": "U1",
+          "pin": "-11"
+        },
+        {
+          "component": "P2",
+          "pin": "-34"
+        }
+      ]
+    },
+    {
+      "name": "ANT_OFF_N",
+      "connections": [
+        {
+          "component": "U11",
+          "pin": "-13"
+        },
+        {
+          "component": "Q1",
+          "pin": "-2"
+        }
+      ]
+    },
+    {
+      "name": "ANT_SHORT_N",
+      "connections": [
+        {
+          "component": "U11",
+          "pin": "-3"
+        },
+        {
+          "component": "R12",
+          "pin": "-2"
+        },
+        {
+          "component": "C56",
+          "pin": "-2"
+        },
+        {
+          "component": "L11",
+          "pin": "-2"
+        }
+      ]
+    },
+    {
+      "name": "DIO0_sx",
+      "connections": [
+        {
+          "component": "U2",
+          "pin": "-8"
+        },
+        {
+          "component": "RN1",
+          "pin": "-4"
+        }
+      ]
+    },
+    {
+      "name": "DIO1_sx",
+      "connections": [
+        {
+          "component": "U2",
+          "pin": "-9"
+        },
+        {
+          "component": "RN1",
+          "pin": "-3"
+        }
+      ]
+    },
+    {
+      "name": "DIO2_sx",
+      "connections": [
+        {
+          "component": "U2",
+          "pin": "-10"
+        },
+        {
+          "component": "RN1",
+          "pin": "-2"
+        }
+      ]
+    },
+    {
+      "name": "DIO3_sx",
+      "connections": [
+        {
+          "component": "U2",
+          "pin": "-11"
+        },
+        {
+          "component": "RN1",
+          "pin": "-1"
+        }
+      ]
+    },
+    {
+      "name": "DIO4_sx",
+      "connections": [
+        {
+          "component": "U2",
+          "pin": "-12"
+        },
+        {
+          "component": "RN2",
+          "pin": "-4"
+        }
+      ]
+    },
+    {
+      "name": "DIO5_sx",
+      "connections": [
+        {
+          "component": "U2",
+          "pin": "-13"
+        },
+        {
+          "component": "RN2",
+          "pin": "-3"
+        }
+      ]
+    },
+    {
+      "name": "Flash_LED",
+      "connections": [
+        {
+          "component": "D2",
+          "pin": "-2"
+        },
+        {
+          "component": "U13",
+          "pin": "-11"
+        }
+      ]
+    },
+    {
+      "name": "GND",
+      "connections": [
+        {
+          "component": "U2",
+          "pin": "-29"
+        },
+        {
+          "component": "C69",
+          "pin": "-2"
+        },
+        {
+          "component": "J5",
+          "pin": "-2"
+        },
+        {
+          "component": "J5",
+          "pin": "-3"
+        },
+        {
+          "component": "U11",
+          "pin": "-12"
+        },
+        {
+          "component": "U11",
+          "pin": "-10"
+        },
+        {
+          "component": "U11",
+          "pin": "-1"
+        },
+        {
+          "component": "C65",
+          "pin": "-2"
+        },
+        {
+          "component": "L1",
+          "pin": "-1"
+        },
+        {
+          "component": "U7",
+          "pin": "-1"
+        },
+        {
+          "component": "U7",
+          "pin": "-6"
+        },
+        {
+          "component": "U7",
+          "pin": "-11"
+        },
+        {
+          "component": "C52",
+          "pin": "-1"
+        },
+        {
+          "component": "C74",
+          "pin": "-2"
+        },
+        {
+          "component": "C26",
+          "pin": "-2"
+        },
+        {
+          "component": "R13",
+          "pin": "-2"
+        },
+        {
+          "component": "R26",
+          "pin": "-2"
+        },
+        {
+          "component": "R27",
+          "pin": "-2"
+        },
+        {
+          "component": "R31",
+          "pin": "-2"
+        },
+        {
+          "component": "R32",
+          "pin": "-2"
+        },
+        {
+          "component": "R28",
+          "pin": "-2"
+        },
+        {
+          "component": "R34",
+          "pin": "-2"
+        },
+        {
+          "component": "J3",
+          "pin": "-2"
+        },
+        {
+          "component": "U2",
+          "pin": "-15"
+        },
+        {
+          "component": "U2",
+          "pin": "-23"
+        },
+        {
+          "component": "U2",
+          "pin": "-26"
+        },
+        {
+          "component": "C53",
+          "pin": "-2"
+        },
+        {
+          "component": "C54",
+          "pin": "-2"
+        },
+        {
+          "component": "C68",
+          "pin": "-2"
+        },
+        {
+          "component": "U13",
+          "pin": "-16"
+        },
+        {
+          "component": "U13",
+          "pin": "-9"
+        },
+        {
+          "component": "R20",
+          "pin": "-1"
+        },
+        {
+          "component": "U12",
+          "pin": "-7"
+        },
+        {
+          "component": "U12",
+          "pin": "-3"
+        },
+        {
+          "component": "U12",
+          "pin": "-5"
+        },
+        {
+          "component": "Q1",
+          "pin": "-1"
+        },
+        {
+          "component": "C31",
+          "pin": "-2"
+        },
+        {
+          "component": "C33",
+          "pin": "-2"
+        },
+        {
+          "component": "C61",
+          "pin": "-2"
+        },
+        {
+          "component": "U3",
+          "pin": "-2"
+        },
+        {
+          "component": "C34",
+          "pin": "-2"
+        },
+        {
+          "component": "C22",
+          "pin": "-2"
+        },
+        {
+          "component": "C21",
+          "pin": "-2"
+        },
+        {
+          "component": "U4",
+          "pin": "-2"
+        },
+        {
+          "component": "C20",
+          "pin": "-2"
+        },
+        {
+          "component": "C19",
+          "pin": "-2"
+        },
+        {
+          "component": "C18",
+          "pin": "-2"
+        },
+        {
+          "component": "C51",
+          "pin": "-1"
+        },
+        {
+          "component": "C49",
+          "pin": "-2"
+        },
+        {
+          "component": "C35",
+          "pin": "-2"
+        },
+        {
+          "component": "C36",
+          "pin": "-2"
+        },
+        {
+          "component": "C57",
+          "pin": "-2"
+        },
+        {
+          "component": "C56",
+          "pin": "-1"
+        },
+        {
+          "component": "U9",
+          "pin": "-6"
+        },
+        {
+          "component": "U9",
+          "pin": "-4"
+        },
+        {
+          "component": "U9",
+          "pin": "-3"
+        },
+        {
+          "component": "U9",
+          "pin": "-1"
+        },
+        {
+          "component": "U5",
+          "pin": "-9"
+        },
+        {
+          "component": "U5",
+          "pin": "-4"
+        },
+        {
+          "component": "Y1",
+          "pin": "-4"
+        },
+        {
+          "component": "Y1",
+          "pin": "-2"
+        },
+        {
+          "component": "C67",
+          "pin": "-2"
+        },
+        {
+          "component": "C42",
+          "pin": "-2"
+        },
+        {
+          "component": "Y2",
+          "pin": "-4"
+        },
+        {
+          "component": "Y2",
+          "pin": "-2"
+        },
+        {
+          "component": "C60",
+          "pin": "-2"
+        },
+        {
+          "component": "C30",
+          "pin": "-2"
+        },
+        {
+          "component": "C29",
+          "pin": "-2"
+        },
+        {
+          "component": "C9",
+          "pin": "-2"
+        },
+        {
+          "component": "U10",
+          "pin": "-7"
+        },
+        {
+          "component": "U10",
+          "pin": "-6"
+        },
+        {
+          "component": "U10",
+          "pin": "-3"
+        },
+        {
+          "component": "U10",
+          "pin": "-2"
+        },
+        {
+          "component": "C59",
+          "pin": "-1"
+        },
+        {
+          "component": "C58",
+          "pin": "-1"
+        },
+        {
+          "component": "R15",
+          "pin": "-1"
+        },
+        {
+          "component": "U8",
+          "pin": "-2"
+        },
+        {
+          "component": "C8",
+          "pin": "-1"
+        },
+        {
+          "component": "C66",
+          "pin": "-2"
+        },
+        {
+          "component": "C41",
+          "pin": "-1"
+        },
+        {
+          "component": "C40",
+          "pin": "-2"
+        },
+        {
+          "component": "J4",
+          "pin": "-7"
+        },
+        {
+          "component": "J4",
+          "pin": "-6"
+        },
+        {
+          "component": "J4",
+          "pin": "-9"
+        },
+        {
+          "component": "J4",
+          "pin": "-8"
+        },
+        {
+          "component": "J4",
+          "pin": "-5"
+        },
+        {
+          "component": "R2",
+          "pin": "-2"
+        },
+        {
+          "component": "C23",
+          "pin": "-2"
+        },
+        {
+          "component": "C12",
+          "pin": "-2"
+        },
+        {
+          "component": "C63",
+          "pin": "-2"
+        },
+        {
+          "component": "C64",
+          "pin": "-2"
+        },
+        {
+          "component": "J1",
+          "pin": "-3"
+        },
+        {
+          "component": "J1",
+          "pin": "-2"
+        },
+        {
+          "component": "J2",
+          "pin": "-2"
+        },
+        {
+          "component": "J2",
+          "pin": "-3"
+        },
+        {
+          "component": "C3",
+          "pin": "-2"
+        },
+        {
+          "component": "C6",
+          "pin": "-1"
+        },
+        {
+          "component": "C2",
+          "pin": "-2"
+        },
+        {
+          "component": "C7",
+          "pin": "-1"
+        },
+        {
+          "component": "C5",
+          "pin": "-2"
+        },
+        {
+          "component": "C48",
+          "pin": "-2"
+        },
+        {
+          "component": "C47",
+          "pin": "-2"
+        },
+        {
+          "component": "C45",
+          "pin": "-1"
+        },
+        {
+          "component": "C43",
+          "pin": "-1"
+        },
+        {
+          "component": "C44",
+          "pin": "-1"
+        },
+        {
+          "component": "U6",
+          "pin": "-11"
+        },
+        {
+          "component": "U6",
+          "pin": "-6"
+        },
+        {
+          "component": "D1",
+          "pin": "-2"
+        },
+        {
+          "component": "R25",
+          "pin": "-1"
+        },
+        {
+          "component": "C73",
+          "pin": "-1"
+        },
+        {
+          "component": "C72",
+          "pin": "-2"
+        },
+        {
+          "component": "C71",
+          "pin": "-2"
+        },
+        {
+          "component": "C70",
+          "pin": "-1"
+        },
+        {
+          "component": "U1",
+          "pin": "-63"
+        },
+        {
+          "component": "U1",
+          "pin": "-31"
+        },
+        {
+          "component": "U1",
+          "pin": "-18"
+        },
+        {
+          "component": "U1",
+          "pin": "-47"
+        },
+        {
+          "component": "U1",
+          "pin": "-12"
+        },
+        {
+          "component": "C4",
+          "pin": "-2"
+        },
+        {
+          "component": "R24",
+          "pin": "-1"
+        },
+        {
+          "component": "C25",
+          "pin": "-2"
+        },
+        {
+          "component": "C28",
+          "pin": "-2"
+        },
+        {
+          "component": "C27",
+          "pin": "-2"
+        },
+        {
+          "component": "C14",
+          "pin": "-2"
+        },
+        {
+          "component": "C13",
+          "pin": "-2"
+        },
+        {
+          "component": "C1",
+          "pin": "-2"
+        },
+        {
+          "component": "J5",
+          "pin": "-5"
+        },
+        {
+          "component": "J5",
+          "pin": "-4"
+        },
+        {
+          "component": "J1",
+          "pin": "-4"
+        },
+        {
+          "component": "J1",
+          "pin": "-5"
+        },
+        {
+          "component": "J2",
+          "pin": "-5"
+        },
+        {
+          "component": "J2",
+          "pin": "-4"
+        },
+        {
+          "component": "P2",
+          "pin": "-43"
+        },
+        {
+          "component": "P2",
+          "pin": "-41"
+        },
+        {
+          "component": "P2",
+          "pin": "-39"
+        },
+        {
+          "component": "P2",
+          "pin": "-29"
+        },
+        {
+          "component": "P2",
+          "pin": "-27"
+        },
+        {
+          "component": "P2",
+          "pin": "-17"
+        },
+        {
+          "component": "P2",
+          "pin": "-15"
+        },
+        {
+          "component": "P2",
+          "pin": "-7"
+        },
+        {
+          "component": "P2",
+          "pin": "-1"
+        },
+        {
+          "component": "P2",
+          "pin": "-3"
+        },
+        {
+          "component": "P2",
+          "pin": "-5"
+        },
+        {
+          "component": "P2",
+          "pin": "-9"
+        },
+        {
+          "component": "P2",
+          "pin": "-11"
+        },
+        {
+          "component": "P2",
+          "pin": "-13"
+        },
+        {
+          "component": "P2",
+          "pin": "-19"
+        },
+        {
+          "component": "P2",
+          "pin": "-21"
+        },
+        {
+          "component": "P2",
+          "pin": "-23"
+        },
+        {
+          "component": "P2",
+          "pin": "-25"
+        },
+        {
+          "component": "P2",
+          "pin": "-31"
+        },
+        {
+          "component": "P2",
+          "pin": "-33"
+        },
+        {
+          "component": "P2",
+          "pin": "-35"
+        },
+        {
+          "component": "P2",
+          "pin": "-37"
+        },
+        {
+          "component": "J4",
+          "pin": "-10"
+        },
+        {
+          "component": "J4",
+          "pin": "-11"
+        },
+        {
+          "component": "P1",
+          "pin": "-20"
+        },
+        {
+          "component": "P1",
+          "pin": "-18"
+        },
+        {
+          "component": "P1",
+          "pin": "-16"
+        },
+        {
+          "component": "P1",
+          "pin": "-4"
+        },
+        {
+          "component": "P1",
+          "pin": "-6"
+        },
+        {
+          "component": "P1",
+          "pin": "-8"
+        },
+        {
+          "component": "P1",
+          "pin": "-10"
+        },
+        {
+          "component": "P1",
+          "pin": "-12"
+        },
+        {
+          "component": "P1",
+          "pin": "-14"
+        },
+        {
+          "component": "SW1",
+          "pin": "-1"
+        },
+        {
+          "component": "VIA",
+          "pin": "-"
+        },
+        {
+          "component": "VIA",
+          "pin": "-"
+        },
+        {
+          "component": "VIA",
+          "pin": "-"
+        },
+        {
+          "component": "VIA",
+          "pin": "-"
+        },
+        {
+          "component": "VIA",
+          "pin": "-"
+        },
+        {
+          "component": "VIA",
+          "pin": "-"
+        },
+        {
+          "component": "VIA",
+          "pin": "-"
+        },
+        {
+          "component": "VIA",
+          "pin": "-"
+        },
+        {
+          "component": "VIA",
+          "pin": "-"
+        },
+        {
+          "component": "VIA",
+          "pin": "-"
+        },
+        {
+          "component": "VIA",
+          "pin": "-"
+        },
+        {
+          "component": "VIA",
+          "pin": "-"
+        },
+        {
+          "component": "VIA",
+          "pin": "-"
+        },
+        {
+          "component": "VIA",
+          "pin": "-"
+        },
+        {
+          "component": "VIA",
+          "pin": "-"
+        },
+        {
+          "component": "VIA",
+          "pin": "-"
+        },
+        {
+          "component": "VIA",
+          "pin": "-"
+        },
+        {
+          "component": "VIA",
+          "pin": "-"
+        },
+        {
+          "component": "VIA",
+          "pin": "-"
+        },
+        {
+          "component": "VIA",
+          "pin": "-"
+        },
+        {
+          "component": "VIA",
+          "pin": "-"
+        },
+        {
+          "component": "VIA",
+          "pin": "-"
+        },
+        {
+          "component": "VIA",
+          "pin": "-"
+        },
+        {
+          "component": "VIA",
+          "pin": "-"
+        },
+        {
+          "component": "VIA",
+          "pin": "-"
+        },
+        {
+          "component": "VIA",
+          "pin": "-"
+        },
+        {
+          "component": "VIA",
+          "pin": "-"
+        },
+        {
+          "component": "VIA",
+          "pin": "-"
+        },
+        {
+          "component": "VIA",
+          "pin": "-"
+        },
+        {
+          "component": "VIA",
+          "pin": "-"
+        },
+        {
+          "component": "VIA",
+          "pin": "-"
+        },
+        {
+          "component": "VIA",
+          "pin": "-"
+        },
+        {
+          "component": "VIA",
+          "pin": "-"
+        },
+        {
+          "component": "VIA",
+          "pin": "-"
+        },
+        {
+          "component": "VIA",
+          "pin": "-"
+        },
+        {
+          "component": "VIA",
+          "pin": "-"
+        },
+        {
+          "component": "VIA",
+          "pin": "-"
+        },
+        {
+          "component": "VIA",
+          "pin": "-"
+        },
+        {
+          "component": "VIA",
+          "pin": "-"
+        },
+        {
+          "component": "VIA",
+          "pin": "-"
+        },
+        {
+          "component": "VIA",
+          "pin": "-"
+        },
+        {
+          "component": "VIA",
+          "pin": "-"
+        },
+        {
+          "component": "VIA",
+          "pin": "-"
+        },
+        {
+          "component": "VIA",
+          "pin": "-"
+        },
+        {
+          "component": "VIA",
+          "pin": "-"
+        },
+        {
+          "component": "VIA",
+          "pin": "-"
+        },
+        {
+          "component": "VIA",
+          "pin": "-"
+        },
+        {
+          "component": "VIA",
+          "pin": "-"
+        },
+        {
+          "component": "VIA",
+          "pin": "-"
+        },
+        {
+          "component": "VIA",
+          "pin": "-"
+        },
+        {
+          "component": "VIA",
+          "pin": "-"
+        },
+        {
+          "component": "VIA",
+          "pin": "-"
+        },
+        {
+          "component": "VIA",
+          "pin": "-"
+        },
+        {
+          "component": "VIA",
+          "pin": "-"
+        },
+        {
+          "component": "VIA",
+          "pin": "-"
+        },
+        {
+          "component": "VIA",
+          "pin": "-"
+        },
+        {
+          "component": "VIA",
+          "pin": "-"
+        },
+        {
+          "component": "VIA",
+          "pin": "-"
+        },
+        {
+          "component": "VIA",
+          "pin": "-"
+        },
+        {
+          "component": "VIA",
+          "pin": "-"
+        },
+        {
+          "component": "VIA",
+          "pin": "-"
+        },
+        {
+          "component": "VIA",
+          "pin": "-"
+        },
+        {
+          "component": "VIA",
+          "pin": "-"
+        },
+        {
+          "component": "VIA",
+          "pin": "-"
+        },
+        {
+          "component": "VIA",
+          "pin": "-"
+        },
+        {
+          "component": "VIA",
+          "pin": "-"
+        },
+        {
+          "component": "VIA",
+          "pin": "-"
+        },
+        {
+          "component": "VIA",
+          "pin": "-"
+        },
+        {
+          "component": "VIA",
+          "pin": "-"
+        },
+        {
+          "component": "VIA",
+          "pin": "-"
+        },
+        {
+          "component": "VIA",
+          "pin": "-"
+        },
+        {
+          "component": "VIA",
+          "pin": "-"
+        },
+        {
+          "component": "VIA",
+          "pin": "-"
+        },
+        {
+          "component": "VIA",
+          "pin": "-"
+        },
+        {
+          "component": "VIA",
+          "pin": "-"
+        },
+        {
+          "component": "VIA",
+          "pin": "-"
+        },
+        {
+          "component": "VIA",
+          "pin": "-"
+        },
+        {
+          "component": "VIA",
+          "pin": "-"
+        },
+        {
+          "component": "VIA",
+          "pin": "-"
+        },
+        {
+          "component": "VIA",
+          "pin": "-"
+        },
+        {
+          "component": "VIA",
+          "pin": "-"
+        },
+        {
+          "component": "VIA",
+          "pin": "-"
+        },
+        {
+          "component": "VIA",
+          "pin": "-"
+        },
+        {
+          "component": "VIA",
+          "pin": "-"
+        },
+        {
+          "component": "VIA",
+          "pin": "-"
+        },
+        {
+          "component": "VIA",
+          "pin": "-"
+        },
+        {
+          "component": "VIA",
+          "pin": "-"
+        },
+        {
+          "component": "VIA",
+          "pin": "-"
+        },
+        {
+          "component": "VIA",
+          "pin": "-"
+        },
+        {
+          "component": "VIA",
+          "pin": "-"
+        },
+        {
+          "component": "VIA",
+          "pin": "-"
+        },
+        {
+          "component": "VIA",
+          "pin": "-"
+        },
+        {
+          "component": "VIA",
+          "pin": "-"
+        },
+        {
+          "component": "VIA",
+          "pin": "-"
+        },
+        {
+          "component": "VIA",
+          "pin": "-"
+        },
+        {
+          "component": "VIA",
+          "pin": "-"
+        },
+        {
+          "component": "VIA",
+          "pin": "-"
+        },
+        {
+          "component": "VIA",
+          "pin": "-"
+        },
+        {
+          "component": "VIA",
+          "pin": "-"
+        },
+        {
+          "component": "VIA",
+          "pin": "-"
+        },
+        {
+          "component": "VIA",
+          "pin": "-"
+        },
+        {
+          "component": "VIA",
+          "pin": "-"
+        },
+        {
+          "component": "VIA",
+          "pin": "-"
+        },
+        {
+          "component": "VIA",
+          "pin": "-"
+        },
+        {
+          "component": "VIA",
+          "pin": "-"
+        },
+        {
+          "component": "VIA",
+          "pin": "-"
+        },
+        {
+          "component": "VIA",
+          "pin": "-"
+        },
+        {
+          "component": "VIA",
+          "pin": "-"
+        },
+        {
+          "component": "VIA",
+          "pin": "-"
+        },
+        {
+          "component": "VIA",
+          "pin": "-"
+        },
+        {
+          "component": "VIA",
+          "pin": "-"
+        },
+        {
+          "component": "VIA",
+          "pin": "-"
+        },
+        {
+          "component": "VIA",
+          "pin": "-"
+        },
+        {
+          "component": "VIA",
+          "pin": "-"
+        },
+        {
+          "component": "VIA",
+          "pin": "-"
+        },
+        {
+          "component": "VIA",
+          "pin": "-"
+        },
+        {
+          "component": "VIA",
+          "pin": "-"
+        },
+        {
+          "component": "VIA",
+          "pin": "-"
+        },
+        {
+          "component": "VIA",
+          "pin": "-"
+        },
+        {
+          "component": "VIA",
+          "pin": "-"
+        },
+        {
+          "component": "VIA",
+          "pin": "-"
+        },
+        {
+          "component": "VIA",
+          "pin": "-"
+        },
+        {
+          "component": "VIA",
+          "pin": "-"
+        },
+        {
+          "component": "VIA",
+          "pin": "-"
+        },
+        {
+          "component": "VIA",
+          "pin": "-"
+        },
+        {
+          "component": "VIA",
+          "pin": "-"
+        },
+        {
+          "component": "VIA",
+          "pin": "-"
+        },
+        {
+          "component": "VIA",
+          "pin": "-"
+        },
+        {
+          "component": "VIA",
+          "pin": "-"
+        },
+        {
+          "component": "VIA",
+          "pin": "-"
+        },
+        {
+          "component": "VIA",
+          "pin": "-"
+        },
+        {
+          "component": "VIA",
+          "pin": "-"
+        },
+        {
+          "component": "VIA",
+          "pin": "-"
+        },
+        {
+          "component": "VIA",
+          "pin": "-"
+        },
+        {
+          "component": "VIA",
+          "pin": "-"
+        },
+        {
+          "component": "VIA",
+          "pin": "-"
+        },
+        {
+          "component": "VIA",
+          "pin": "-"
+        },
+        {
+          "component": "VIA",
+          "pin": "-"
+        },
+        {
+          "component": "VIA",
+          "pin": "-"
+        },
+        {
+          "component": "VIA",
+          "pin": "-"
+        },
+        {
+          "component": "VIA",
+          "pin": "-"
+        },
+        {
+          "component": "VIA",
+          "pin": "-"
+        },
+        {
+          "component": "VIA",
+          "pin": "-"
+        },
+        {
+          "component": "VIA",
+          "pin": "-"
+        },
+        {
+          "component": "VIA",
+          "pin": "-"
+        },
+        {
+          "component": "VIA",
+          "pin": "-"
+        },
+        {
+          "component": "VIA",
+          "pin": "-"
+        },
+        {
+          "component": "VIA",
+          "pin": "-"
+        },
+        {
+          "component": "VIA",
+          "pin": "-"
+        },
+        {
+          "component": "VIA",
+          "pin": "-"
+        },
+        {
+          "component": "VIA",
+          "pin": "-"
+        },
+        {
+          "component": "VIA",
+          "pin": "-"
+        },
+        {
+          "component": "VIA",
+          "pin": "-"
+        },
+        {
+          "component": "VIA",
+          "pin": "-"
+        },
+        {
+          "component": "VIA",
+          "pin": "-"
+        },
+        {
+          "component": "VIA",
+          "pin": "-"
+        },
+        {
+          "component": "VIA",
+          "pin": "-"
+        },
+        {
+          "component": "VIA",
+          "pin": "-"
+        },
+        {
+          "component": "VIA",
+          "pin": "-"
+        },
+        {
+          "component": "VIA",
+          "pin": "-"
+        },
+        {
+          "component": "VIA",
+          "pin": "-"
+        },
+        {
+          "component": "VIA",
+          "pin": "-"
+        },
+        {
+          "component": "VIA",
+          "pin": "-"
+        },
+        {
+          "component": "VIA",
+          "pin": "-"
+        },
+        {
+          "component": "VIA",
+          "pin": "-"
+        },
+        {
+          "component": "VIA",
+          "pin": "-"
+        }
+      ]
+    },
+    {
+      "name": "GPIO_0",
+      "connections": [
+        {
+          "component": "U1",
+          "pin": "-57"
+        },
+        {
+          "component": "P2",
+          "pin": "-12"
+        }
+      ]
+    },
+    {
+      "name": "GPIO_1",
+      "connections": [
+        {
+          "component": "U1",
+          "pin": "-58"
+        },
+        {
+          "component": "P2",
+          "pin": "-14"
+        }
+      ]
+    },
+    {
+      "name": "GPIO_2",
+      "connections": [
+        {
+          "component": "U1",
+          "pin": "-59"
+        },
+        {
+          "component": "P2",
+          "pin": "-16"
+        }
+      ]
+    },
+    {
+      "name": "GPIO_3",
+      "connections": [
+        {
+          "component": "U1",
+          "pin": "-61"
+        },
+        {
+          "component": "P2",
+          "pin": "-18"
+        }
+      ]
+    },
+    {
+      "name": "GPIO_4",
+      "connections": [
+        {
+          "component": "U1",
+          "pin": "-62"
+        },
+        {
+          "component": "P2",
+          "pin": "-20"
+        }
+      ]
+    },
+    {
+      "name": "GPIO_5",
+      "connections": [
+        {
+          "component": "U1",
+          "pin": "-2"
+        },
+        {
+          "component": "P2",
+          "pin": "-22"
+        },
+        {
+          "component": "VIA",
+          "pin": "-"
+        }
+      ]
+    },
+    {
+      "name": "GPIO_6",
+      "connections": [
+        {
+          "component": "U1",
+          "pin": "-3"
+        },
+        {
+          "component": "P2",
+          "pin": "-24"
+        },
+        {
+          "component": "VIA",
+          "pin": "-"
+        }
+      ]
+    },
+    {
+      "name": "GPIO_7",
+      "connections": [
+        {
+          "component": "U1",
+          "pin": "-4"
+        },
+        {
+          "component": "P2",
+          "pin": "-26"
+        },
+        {
+          "component": "VIA",
+          "pin": "-"
+        }
+      ]
+    },
+    {
+      "name": "GPIO_DAC_OUT1",
+      "connections": [
+        {
+          "component": "U1",
+          "pin": "-20"
+        },
+        {
+          "component": "P2",
+          "pin": "-36"
+        }
+      ]
+    },
+    {
+      "name": "GPIO_DAC_OUT2",
+      "connections": [
+        {
+          "component": "U1",
+          "pin": "-21"
+        },
+        {
+          "component": "P2",
+          "pin": "-38"
+        }
+      ]
+    },
+    {
+      "name": "GPIO_UART4_RX",
+      "connections": [
+        {
+          "component": "R30",
+          "pin": "-2"
+        },
+        {
+          "component": "U1",
+          "pin": "-54"
+        }
+      ]
+    },
+    {
+      "name": "GPIO_UART4_TX",
+      "connections": [
+        {
+          "component": "R29",
+          "pin": "-2"
+        },
+        {
+          "component": "U1",
+          "pin": "-53"
+        }
+      ]
+    },
+    {
+      "name": "GPS_EXTINT",
+      "connections": [
+        {
+          "component": "U11",
+          "pin": "-5"
+        },
+        {
+          "component": "U1",
+          "pin": "-15"
+        },
+        {
+          "component": "VIA",
+          "pin": "-"
+        },
+        {
+          "component": "VIA",
+          "pin": "-"
+        }
+      ]
+    },
+    {
+      "name": "GPS_LED",
+      "connections": [
+        {
+          "component": "D6",
+          "pin": "-2"
+        },
+        {
+          "component": "U13",
+          "pin": "-6"
+        }
+      ]
+    },
+    {
+      "name": "GPS_RESET#",
+      "connections": [
+        {
+          "component": "U11",
+          "pin": "-9"
+        },
+        {
+          "component": "U1",
+          "pin": "-14"
+        },
+        {
+          "component": "VIA",
+          "pin": "-"
+        },
+        {
+          "component": "VIA",
+          "pin": "-"
+        }
+      ]
+    },
+    {
+      "name": "GPS_SAFEBOOT#",
+      "connections": [
+        {
+          "component": "U11",
+          "pin": "-18"
+        },
+        {
+          "component": "U1",
+          "pin": "-17"
+        },
+        {
+          "component": "VIA",
+          "pin": "-"
+        },
+        {
+          "component": "VIA",
+          "pin": "-"
+        },
+        {
+          "component": "VIA",
+          "pin": "-"
+        },
+        {
+          "component": "VIA",
+          "pin": "-"
+        }
+      ]
+    },
+    {
+      "name": "GPS_TX_READY",
+      "connections": [
+        {
+          "component": "U11",
+          "pin": "-2"
+        },
+        {
+          "component": "U1",
+          "pin": "-16"
+        },
+        {
+          "component": "VIA",
+          "pin": "-"
+        },
+        {
+          "component": "VIA",
+          "pin": "-"
+        }
+      ]
+    },
+    {
+      "name": "Header_LED",
+      "connections": [
+        {
+          "component": "D8",
+          "pin": "-2"
+        },
+        {
+          "component": "U13",
+          "pin": "-4"
+        }
+      ]
+    },
+    {
+      "name": "I2C2_SCL",
+      "connections": [
+        {
+          "component": "U11",
+          "pin": "-17"
+        },
+        {
+          "component": "U13",
+          "pin": "-13"
+        },
+        {
+          "component": "R5",
+          "pin": "-1"
+        },
+        {
+          "component": "U6",
+          "pin": "-9"
+        },
+        {
+          "component": "U1",
+          "pin": "-8"
+        },
+        {
+          "component": "P2",
+          "pin": "-28"
+        },
+        {
+          "component": "VIA",
+          "pin": "-"
+        },
+        {
+          "component": "VIA",
+          "pin": "-"
+        },
+        {
+          "component": "VIA",
+          "pin": "-"
+        },
+        {
+          "component": "VIA",
+          "pin": "-"
+        },
+        {
+          "component": "VIA",
+          "pin": "-"
+        },
+        {
+          "component": "VIA",
+          "pin": "-"
+        },
+        {
+          "component": "VIA",
+          "pin": "-"
+        },
+        {
+          "component": "VIA",
+          "pin": "-"
+        }
+      ]
+    },
+    {
+      "name": "I2C2_SDA",
+      "connections": [
+        {
+          "component": "U11",
+          "pin": "-16"
+        },
+        {
+          "component": "U13",
+          "pin": "-14"
+        },
+        {
+          "component": "R6",
+          "pin": "-1"
+        },
+        {
+          "component": "U6",
+          "pin": "-8"
+        },
+        {
+          "component": "U1",
+          "pin": "-9"
+        },
+        {
+          "component": "P2",
+          "pin": "-30"
+        },
+        {
+          "component": "VIA",
+          "pin": "-"
+        },
+        {
+          "component": "VIA",
+          "pin": "-"
+        },
+        {
+          "component": "VIA",
+          "pin": "-"
+        },
+        {
+          "component": "VIA",
+          "pin": "-"
+        },
+        {
+          "component": "VIA",
+          "pin": "-"
+        },
+        {
+          "component": "VIA",
+          "pin": "-"
+        },
+        {
+          "component": "VIA",
+          "pin": "-"
+        },
+        {
+          "component": "VIA",
+          "pin": "-"
+        }
+      ]
+    },
+    {
+      "name": "IMU_INT1",
+      "connections": [
+        {
+          "component": "U10",
+          "pin": "-4"
+        },
+        {
+          "component": "U1",
+          "pin": "-39"
+        },
+        {
+          "component": "VIA",
+          "pin": "-"
+        },
+        {
+          "component": "VIA",
+          "pin": "-"
+        }
+      ]
+    },
+    {
+      "name": "IMU_INT2",
+      "connections": [
+        {
+          "component": "U10",
+          "pin": "-9"
+        },
+        {
+          "component": "U1",
+          "pin": "-40"
+        }
+      ]
+    },
+    {
+      "name": "IMU_LED",
+      "connections": [
+        {
+          "component": "D7",
+          "pin": "-2"
+        },
+        {
+          "component": "U13",
+          "pin": "-5"
+        }
+      ]
+    },
+    {
+      "name": "JTCK_SWCLK",
+      "connections": [
+        {
+          "component": "U1",
+          "pin": "-49"
+        },
+        {
+          "component": "P1",
+          "pin": "-9"
+        },
+        {
+          "component": "VIA",
+          "pin": "-"
+        }
+      ]
+    },
+    {
+      "name": "JTDI",
+      "connections": [
+        {
+          "component": "U1",
+          "pin": "-50"
+        },
+        {
+          "component": "P1",
+          "pin": "-5"
+        }
+      ]
+    },
+    {
+      "name": "JTDO_SWO",
+      "connections": [
+        {
+          "component": "U1",
+          "pin": "-55"
+        },
+        {
+          "component": "P1",
+          "pin": "-13"
+        },
+        {
+          "component": "VIA",
+          "pin": "-"
+        },
+        {
+          "component": "VIA",
+          "pin": "-"
+        }
+      ]
+    },
+    {
+      "name": "JTMS_SWDIO",
+      "connections": [
+        {
+          "component": "U1",
+          "pin": "-46"
+        },
+        {
+          "component": "P1",
+          "pin": "-7"
+        }
+      ]
+    },
+    {
+      "name": "JTRST",
+      "connections": [
+        {
+          "component": "U1",
+          "pin": "-56"
+        },
+        {
+          "component": "P1",
+          "pin": "-3"
+        },
+        {
+          "component": "VIA",
+          "pin": "-"
+        }
+      ]
+    },
+    {
+      "name": "LoRa_DIO_0",
+      "connections": [
+        {
+          "component": "U1",
+          "pin": "-33"
+        },
+        {
+          "component": "RN1",
+          "pin": "-5"
+        }
+      ]
+    },
+    {
+      "name": "LoRa_DIO_1",
+      "connections": [
+        {
+          "component": "U1",
+          "pin": "-30"
+        },
+        {
+          "component": "RN1",
+          "pin": "-6"
+        }
+      ]
+    },
+    {
+      "name": "LoRa_DIO_2",
+      "connections": [
+        {
+          "component": "U1",
+          "pin": "-29"
+        },
+        {
+          "component": "RN1",
+          "pin": "-7"
+        }
+      ]
+    },
+    {
+      "name": "LoRa_DIO_3",
+      "connections": [
+        {
+          "component": "U1",
+          "pin": "-28"
+        },
+        {
+          "component": "RN1",
+          "pin": "-8"
+        }
+      ]
+    },
+    {
+      "name": "LoRa_DIO_4",
+      "connections": [
+        {
+          "component": "U1",
+          "pin": "-27"
+        },
+        {
+          "component": "RN2",
+          "pin": "-5"
+        }
+      ]
+    },
+    {
+      "name": "LoRa_DIO_5",
+      "connections": [
+        {
+          "component": "U1",
+          "pin": "-26"
+        },
+        {
+          "component": "RN2",
+          "pin": "-6"
+        }
+      ]
+    },
+    {
+      "name": "LoRa_FEM_CPS",
+      "connections": [
+        {
+          "component": "R11",
+          "pin": "-1"
+        },
+        {
+          "component": "U1",
+          "pin": "-23"
+        },
+        {
+          "component": "VIA",
+          "pin": "-"
+        },
+        {
+          "component": "VIA",
+          "pin": "-"
+        },
+        {
+          "component": "VIA",
+          "pin": "-"
+        },
+        {
+          "component": "VIA",
+          "pin": "-"
+        }
+      ]
+    },
+    {
+      "name": "LoRa_FEM_CTX",
+      "connections": [
+        {
+          "component": "R14",
+          "pin": "-1"
+        },
+        {
+          "component": "U1",
+          "pin": "-22"
+        },
+        {
+          "component": "VIA",
+          "pin": "-"
+        },
+        {
+          "component": "VIA",
+          "pin": "-"
+        },
+        {
+          "component": "VIA",
+          "pin": "-"
+        },
+        {
+          "component": "VIA",
+          "pin": "-"
+        }
+      ]
+    },
+    {
+      "name": "LoRa_LED",
+      "connections": [
+        {
+          "component": "D3",
+          "pin": "-2"
+        },
+        {
+          "component": "U13",
+          "pin": "-8"
+        }
+      ]
+    },
+    {
+      "name": "LoRa_RXTX",
+      "connections": [
+        {
+          "component": "RN3",
+          "pin": "-8"
+        },
+        {
+          "component": "U1",
+          "pin": "-24"
+        },
+        {
+          "component": "VIA",
+          "pin": "-"
+        },
+        {
+          "component": "VIA",
+          "pin": "-"
+        }
+      ]
+    },
+    {
+      "name": "LoRa_Reset#",
+      "connections": [
+        {
+          "component": "R18",
+          "pin": "-2"
+        },
+        {
+          "component": "U1",
+          "pin": "-37"
+        }
+      ]
+    },
+    {
+      "name": "MCU_Reset",
+      "connections": [
+        {
+          "component": "R3",
+          "pin": "-1"
+        },
+        {
+          "component": "U13",
+          "pin": "-10"
+        },
+        {
+          "component": "U1",
+          "pin": "-7"
+        },
+        {
+          "component": "P1",
+          "pin": "-15"
+        },
+        {
+          "component": "SW1",
+          "pin": "-4"
+        },
+        {
+          "component": "VIA",
+          "pin": "-"
+        },
+        {
+          "component": "VIA",
+          "pin": "-"
+        },
+        {
+          "component": "VIA",
+          "pin": "-"
+        },
+        {
+          "component": "VIA",
+          "pin": "-"
+        },
+        {
+          "component": "VIA",
+          "pin": "-"
+        },
+        {
+          "component": "VIA",
+          "pin": "-"
+        }
+      ]
+    },
+    {
+      "name": "MISO_sx",
+      "connections": [
+        {
+          "component": "U2",
+          "pin": "-17"
+        },
+        {
+          "component": "RN3",
+          "pin": "-4"
+        }
+      ]
+    },
+    {
+      "name": "MOSI_sx",
+      "connections": [
+        {
+          "component": "U2",
+          "pin": "-18"
+        },
+        {
+          "component": "RN3",
+          "pin": "-3"
+        }
+      ]
+    },
+    {
+      "name": "N/C",
+      "connections": [
+        {
+          "component": "U11",
+          "pin": "-15"
+        },
+        {
+          "component": "U11",
+          "pin": "-6"
+        },
+        {
+          "component": "U7",
+          "pin": "-8"
+        },
+        {
+          "component": "J3",
+          "pin": "-3"
+        },
+        {
+          "component": "U13",
+          "pin": "-3"
+        },
+        {
+          "component": "U10",
+          "pin": "-11"
+        },
+        {
+          "component": "U10",
+          "pin": "-10"
+        },
+        {
+          "component": "J4",
+          "pin": "-4"
+        },
+        {
+          "component": "U6",
+          "pin": "-13"
+        },
+        {
+          "component": "U6",
+          "pin": "-7"
+        },
+        {
+          "component": "U1",
+          "pin": "-51"
+        },
+        {
+          "component": "U1",
+          "pin": "-43"
+        },
+        {
+          "component": "RN2",
+          "pin": "-8"
+        },
+        {
+          "component": "RN2",
+          "pin": "-1"
+        },
+        {
+          "component": "J3",
+          "pin": "-"
+        },
+        {
+          "component": "PTH3",
+          "pin": "-1"
+        },
+        {
+          "component": "PTH1",
+          "pin": "-1"
+        },
+        {
+          "component": "PTH4",
+          "pin": "-1"
+        },
+        {
+          "component": "P1",
+          "pin": "-19"
+        },
+        {
+          "component": "P1",
+          "pin": "-17"
+        },
+        {
+          "component": "P1",
+          "pin": "-11"
+        },
+        {
+          "component": "SW1",
+          "pin": "-3"
+        },
+        {
+          "component": "SW1",
+          "pin": "-2"
+        },
+        {
+          "component": "PTH2",
+          "pin": "-1"
+        }
+      ]
+    },
+    {
+      "name": "NRESET_sx",
+      "connections": [
+        {
+          "component": "U2",
+          "pin": "-7"
+        },
+        {
+          "component": "R18",
+          "pin": "-1"
+        }
+      ]
+    },
+    {
+      "name": "NSS_sx",
+      "connections": [
+        {
+          "component": "U2",
+          "pin": "-19"
+        },
+        {
+          "component": "RN3",
+          "pin": "-2"
+        }
+      ]
+    },
+    {
+      "name": "NetC10_2",
+      "connections": [
+        {
+          "component": "R8",
+          "pin": "-1"
+        },
+        {
+          "component": "C10",
+          "pin": "-2"
+        }
+      ]
+    },
+    {
+      "name": "NetC11_1",
+      "connections": [
+        {
+          "component": "C11",
+          "pin": "-1"
+        },
+        {
+          "component": "R8",
+          "pin": "-2"
+        }
+      ]
+    },
+    {
+      "name": "NetC11_2",
+      "connections": [
+        {
+          "component": "U3",
+          "pin": "-1"
+        },
+        {
+          "component": "C11",
+          "pin": "-2"
+        }
+      ]
+    },
+    {
+      "name": "NetC15_1",
+      "connections": [
+        {
+          "component": "L3",
+          "pin": "-1"
+        },
+        {
+          "component": "C65",
+          "pin": "-1"
+        },
+        {
+          "component": "L12",
+          "pin": "-2"
+        },
+        {
+          "component": "C15",
+          "pin": "-1"
+        }
+      ]
+    },
+    {
+      "name": "NetC15_2",
+      "connections": [
+        {
+          "component": "L3",
+          "pin": "-2"
+        },
+        {
+          "component": "L4",
+          "pin": "-1"
+        },
+        {
+          "component": "C62",
+          "pin": "-1"
+        },
+        {
+          "component": "C19",
+          "pin": "-1"
+        },
+        {
+          "component": "C15",
+          "pin": "-2"
+        }
+      ]
+    },
+    {
+      "name": "NetC16_1",
+      "connections": [
+        {
+          "component": "C18",
+          "pin": "-1"
+        },
+        {
+          "component": "C16",
+          "pin": "-1"
+        },
+        {
+          "component": "L5",
+          "pin": "-2"
+        },
+        {
+          "component": "L2",
+          "pin": "-2"
+        }
+      ]
+    },
+    {
+      "name": "NetC16_2",
+      "connections": [
+        {
+          "component": "L12",
+          "pin": "-1"
+        },
+        {
+          "component": "C16",
+          "pin": "-2"
+        }
+      ]
+    },
+    {
+      "name": "NetC17_1",
+      "connections": [
+        {
+          "component": "U3",
+          "pin": "-5"
+        },
+        {
+          "component": "C17",
+          "pin": "-1"
+        }
+      ]
+    },
+    {
+      "name": "NetC17_2",
+      "connections": [
+        {
+          "component": "C17",
+          "pin": "-2"
+        },
+        {
+          "component": "C63",
+          "pin": "-1"
+        },
+        {
+          "component": "L13",
+          "pin": "-1"
+        }
+      ]
+    },
+    {
+      "name": "NetC20_1",
+      "connections": [
+        {
+          "component": "U3",
+          "pin": "-3"
+        },
+        {
+          "component": "L4",
+          "pin": "-2"
+        },
+        {
+          "component": "C20",
+          "pin": "-1"
+        },
+        {
+          "component": "C62",
+          "pin": "-2"
+        }
+      ]
+    },
+    {
+      "name": "NetC21_1",
+      "connections": [
+        {
+          "component": "U2",
+          "pin": "-25"
+        },
+        {
+          "component": "L6",
+          "pin": "-2"
+        },
+        {
+          "component": "C31",
+          "pin": "-1"
+        },
+        {
+          "component": "C22",
+          "pin": "-1"
+        },
+        {
+          "component": "C21",
+          "pin": "-1"
+        },
+        {
+          "component": "L5",
+          "pin": "-1"
+        }
+      ]
+    },
+    {
+      "name": "NetC23_1",
+      "connections": [
+        {
+          "component": "U3",
+          "pin": "-4"
+        },
+        {
+          "component": "R11",
+          "pin": "-2"
+        },
+        {
+          "component": "C23",
+          "pin": "-1"
+        }
+      ]
+    },
+    {
+      "name": "NetC24_1",
+      "connections": [
+        {
+          "component": "L7",
+          "pin": "-2"
+        },
+        {
+          "component": "L8",
+          "pin": "-1"
+        },
+        {
+          "component": "C35",
+          "pin": "-1"
+        },
+        {
+          "component": "C24",
+          "pin": "-1"
+        }
+      ]
+    },
+    {
+      "name": "NetC24_2",
+      "connections": [
+        {
+          "component": "U4",
+          "pin": "-1"
+        },
+        {
+          "component": "L8",
+          "pin": "-2"
+        },
+        {
+          "component": "C24",
+          "pin": "-2"
+        },
+        {
+          "component": "C36",
+          "pin": "-1"
+        }
+      ]
+    },
+    {
+      "name": "NetC29_1",
+      "connections": [
+        {
+          "component": "U2",
+          "pin": "-2"
+        },
+        {
+          "component": "C29",
+          "pin": "-1"
+        }
+      ]
+    },
+    {
+      "name": "NetC30_1",
+      "connections": [
+        {
+          "component": "U2",
+          "pin": "-4"
+        },
+        {
+          "component": "C30",
+          "pin": "-1"
+        }
+      ]
+    },
+    {
+      "name": "NetC32_1",
+      "connections": [
+        {
+          "component": "U2",
+          "pin": "-22"
+        },
+        {
+          "component": "L6",
+          "pin": "-1"
+        },
+        {
+          "component": "C33",
+          "pin": "-1"
+        },
+        {
+          "component": "C32",
+          "pin": "-1"
+        }
+      ]
+    },
+    {
+      "name": "NetC32_2",
+      "connections": [
+        {
+          "component": "L7",
+          "pin": "-1"
+        },
+        {
+          "component": "C32",
+          "pin": "-2"
+        }
+      ]
+    },
+    {
+      "name": "NetC37_1",
+      "connections": [
+        {
+          "component": "C37",
+          "pin": "-1"
+        },
+        {
+          "component": "C40",
+          "pin": "-1"
+        },
+        {
+          "component": "L9",
+          "pin": "-2"
+        }
+      ]
+    },
+    {
+      "name": "NetC37_2",
+      "connections": [
+        {
+          "component": "R10",
+          "pin": "-1"
+        },
+        {
+          "component": "C37",
+          "pin": "-2"
+        }
+      ]
+    },
+    {
+      "name": "NetC38_1",
+      "connections": [
+        {
+          "component": "R10",
+          "pin": "-2"
+        },
+        {
+          "component": "C38",
+          "pin": "-1"
+        }
+      ]
+    },
+    {
+      "name": "NetC38_2",
+      "connections": [
+        {
+          "component": "U4",
+          "pin": "-3"
+        },
+        {
+          "component": "C38",
+          "pin": "-2"
+        }
+      ]
+    },
+    {
+      "name": "NetC39_1",
+      "connections": [
+        {
+          "component": "U4",
+          "pin": "-5"
+        },
+        {
+          "component": "C39",
+          "pin": "-1"
+        }
+      ]
+    },
+    {
+      "name": "NetC39_2",
+      "connections": [
+        {
+          "component": "C39",
+          "pin": "-2"
+        },
+        {
+          "component": "L14",
+          "pin": "-1"
+        },
+        {
+          "component": "C66",
+          "pin": "-1"
+        }
+      ]
+    },
+    {
+      "name": "NetC41_2",
+      "connections": [
+        {
+          "component": "R14",
+          "pin": "-2"
+        },
+        {
+          "component": "U4",
+          "pin": "-4"
+        },
+        {
+          "component": "C41",
+          "pin": "-2"
+        }
+      ]
+    },
+    {
+      "name": "NetC42_1",
+      "connections": [
+        {
+          "component": "U2",
+          "pin": "-6"
+        },
+        {
+          "component": "C42",
+          "pin": "-1"
+        },
+        {
+          "component": "Y2",
+          "pin": "-1"
+        }
+      ]
+    },
+    {
+      "name": "NetC45_2",
+      "connections": [
+        {
+          "component": "U7",
+          "pin": "-5"
+        },
+        {
+          "component": "C45",
+          "pin": "-2"
+        }
+      ]
+    },
+    {
+      "name": "NetC46_1",
+      "connections": [
+        {
+          "component": "U7",
+          "pin": "-4"
+        },
+        {
+          "component": "C46",
+          "pin": "-1"
+        }
+      ]
+    },
+    {
+      "name": "NetC50_1",
+      "connections": [
+        {
+          "component": "U7",
+          "pin": "-7"
+        },
+        {
+          "component": "R19",
+          "pin": "-1"
+        },
+        {
+          "component": "R20",
+          "pin": "-2"
+        },
+        {
+          "component": "C50",
+          "pin": "-1"
+        }
+      ]
+    },
+    {
+      "name": "NetC55_1",
+      "connections": [
+        {
+          "component": "J5",
+          "pin": "-1"
+        },
+        {
+          "component": "C55",
+          "pin": "-1"
+        },
+        {
+          "component": "L11",
+          "pin": "-1"
+        }
+      ]
+    },
+    {
+      "name": "NetC55_2",
+      "connections": [
+        {
+          "component": "C55",
+          "pin": "-2"
+        },
+        {
+          "component": "U9",
+          "pin": "-2"
+        }
+      ]
+    },
+    {
+      "name": "NetC60_1",
+      "connections": [
+        {
+          "component": "U2",
+          "pin": "-5"
+        },
+        {
+          "component": "Y2",
+          "pin": "-3"
+        },
+        {
+          "component": "C60",
+          "pin": "-1"
+        }
+      ]
+    },
+    {
+      "name": "NetC61_1",
+      "connections": [
+        {
+          "component": "U2",
+          "pin": "-21"
+        },
+        {
+          "component": "C61",
+          "pin": "-1"
+        },
+        {
+          "component": "L9",
+          "pin": "-1"
+        }
+      ]
+    },
+    {
+      "name": "NetC64_1",
+      "connections": [
+        {
+          "component": "C64",
+          "pin": "-1"
+        },
+        {
+          "component": "J1",
+          "pin": "-1"
+        },
+        {
+          "component": "L13",
+          "pin": "-2"
+        }
+      ]
+    },
+    {
+      "name": "NetC67_1",
+      "connections": [
+        {
+          "component": "L14",
+          "pin": "-2"
+        },
+        {
+          "component": "C67",
+          "pin": "-1"
+        },
+        {
+          "component": "J2",
+          "pin": "-1"
+        }
+      ]
+    },
+    {
+      "name": "NetC9_1",
+      "connections": [
+        {
+          "component": "L15",
+          "pin": "-2"
+        },
+        {
+          "component": "C9",
+          "pin": "-1"
+        },
+        {
+          "component": "C10",
+          "pin": "-1"
+        }
+      ]
+    },
+    {
+      "name": "NetD2_1",
+      "connections": [
+        {
+          "component": "R13",
+          "pin": "-1"
+        },
+        {
+          "component": "D2",
+          "pin": "-1"
+        }
+      ]
+    },
+    {
+      "name": "NetD3_1",
+      "connections": [
+        {
+          "component": "R26",
+          "pin": "-1"
+        },
+        {
+          "component": "D3",
+          "pin": "-1"
+        }
+      ]
+    },
+    {
+      "name": "NetD4_1",
+      "connections": [
+        {
+          "component": "R27",
+          "pin": "-1"
+        },
+        {
+          "component": "D4",
+          "pin": "-1"
+        }
+      ]
+    },
+    {
+      "name": "NetD5_1",
+      "connections": [
+        {
+          "component": "R28",
+          "pin": "-1"
+        },
+        {
+          "component": "D5",
+          "pin": "-1"
+        }
+      ]
+    },
+    {
+      "name": "NetD6_1",
+      "connections": [
+        {
+          "component": "R31",
+          "pin": "-1"
+        },
+        {
+          "component": "D6",
+          "pin": "-1"
+        }
+      ]
+    },
+    {
+      "name": "NetD7_1",
+      "connections": [
+        {
+          "component": "R32",
+          "pin": "-1"
+        },
+        {
+          "component": "D7",
+          "pin": "-1"
+        }
+      ]
+    },
+    {
+      "name": "NetD8_1",
+      "connections": [
+        {
+          "component": "D8",
+          "pin": "-1"
+        },
+        {
+          "component": "R34",
+          "pin": "-1"
+        }
+      ]
+    },
+    {
+      "name": "NetJ4_1",
+      "connections": [
+        {
+          "component": "J4",
+          "pin": "-1"
+        },
+        {
+          "component": "TP1",
+          "pin": "-1"
+        }
+      ]
+    },
+    {
+      "name": "NetJ4_2",
+      "connections": [
+        {
+          "component": "U8",
+          "pin": "-1"
+        },
+        {
+          "component": "J4",
+          "pin": "-2"
+        }
+      ]
+    },
+    {
+      "name": "NetJ4_3",
+      "connections": [
+        {
+          "component": "U8",
+          "pin": "-3"
+        },
+        {
+          "component": "J4",
+          "pin": "-3"
+        }
+      ]
+    },
+    {
+      "name": "NetL1_2",
+      "connections": [
+        {
+          "component": "L1",
+          "pin": "-2"
+        },
+        {
+          "component": "U2",
+          "pin": "-1"
+        },
+        {
+          "component": "L15",
+          "pin": "-1"
+        }
+      ]
+    },
+    {
+      "name": "NetL2_1",
+      "connections": [
+        {
+          "component": "U2",
+          "pin": "-27"
+        },
+        {
+          "component": "L2",
+          "pin": "-1"
+        }
+      ]
+    },
+    {
+      "name": "NetP1_2",
+      "connections": [
+        {
+          "component": "R9",
+          "pin": "-1"
+        },
+        {
+          "component": "P1",
+          "pin": "-2"
+        }
+      ]
+    },
+    {
+      "name": "NetP2_10",
+      "connections": [
+        {
+          "component": "R30",
+          "pin": "-1"
+        },
+        {
+          "component": "P2",
+          "pin": "-10"
+        }
+      ]
+    },
+    {
+      "name": "NetP2_8",
+      "connections": [
+        {
+          "component": "R29",
+          "pin": "-1"
+        },
+        {
+          "component": "P2",
+          "pin": "-8"
+        }
+      ]
+    },
+    {
+      "name": "NetQ1_3",
+      "connections": [
+        {
+          "component": "R12",
+          "pin": "-1"
+        },
+        {
+          "component": "Q1",
+          "pin": "-3"
+        }
+      ]
+    },
+    {
+      "name": "NetQ1_5",
+      "connections": [
+        {
+          "component": "R16",
+          "pin": "-2"
+        },
+        {
+          "component": "Q1",
+          "pin": "-5"
+        },
+        {
+          "component": "Q1",
+          "pin": "-6"
+        }
+      ]
+    },
+    {
+      "name": "NetR1_1",
+      "connections": [
+        {
+          "component": "R2",
+          "pin": "-1"
+        },
+        {
+          "component": "R1",
+          "pin": "-1"
+        },
+        {
+          "component": "U1",
+          "pin": "-60"
+        },
+        {
+          "component": "VIA",
+          "pin": "-"
+        },
+        {
+          "component": "VIA",
+          "pin": "-"
+        }
+      ]
+    },
+    {
+      "name": "NetR33_2",
+      "connections": [
+        {
+          "component": "R33",
+          "pin": "-2"
+        },
+        {
+          "component": "U13",
+          "pin": "-1"
+        }
+      ]
+    },
+    {
+      "name": "NetR4_2",
+      "connections": [
+        {
+          "component": "U5",
+          "pin": "-7"
+        },
+        {
+          "component": "R4",
+          "pin": "-2"
+        }
+      ]
+    },
+    {
+      "name": "NetTP2_1",
+      "connections": [
+        {
+          "component": "U11",
+          "pin": "-4"
+        },
+        {
+          "component": "TP2",
+          "pin": "-1"
+        }
+      ]
+    },
+    {
+      "name": "NetTP3_1",
+      "connections": [
+        {
+          "component": "TP3",
+          "pin": "-1"
+        },
+        {
+          "component": "U2",
+          "pin": "-28"
+        }
+      ]
+    },
+    {
+      "name": "NetU9_5",
+      "connections": [
+        {
+          "component": "U11",
+          "pin": "-11"
+        },
+        {
+          "component": "U9",
+          "pin": "-5"
+        }
+      ]
+    },
+    {
+      "name": "OSC_IN",
+      "connections": [
+        {
+          "component": "Y1",
+          "pin": "-1"
+        },
+        {
+          "component": "U1",
+          "pin": "-5"
+        },
+        {
+          "component": "C13",
+          "pin": "-1"
+        }
+      ]
+    },
+    {
+      "name": "OSC_OUT",
+      "connections": [
+        {
+          "component": "Y1",
+          "pin": "-3"
+        },
+        {
+          "component": "U1",
+          "pin": "-6"
+        },
+        {
+          "component": "C14",
+          "pin": "-1"
+        }
+      ]
+    },
+    {
+      "name": "PMON_A0",
+      "connections": [
+        {
+          "component": "R17",
+          "pin": "-1"
+        },
+        {
+          "component": "U6",
+          "pin": "-5"
+        },
+        {
+          "component": "R24",
+          "pin": "-2"
+        }
+      ]
+    },
+    {
+      "name": "PMON_A1",
+      "connections": [
+        {
+          "component": "R23",
+          "pin": "-1"
+        },
+        {
+          "component": "U6",
+          "pin": "-4"
+        },
+        {
+          "component": "R25",
+          "pin": "-2"
+        }
+      ]
+    },
+    {
+      "name": "PMON_LED",
+      "connections": [
+        {
+          "component": "D4",
+          "pin": "-2"
+        },
+        {
+          "component": "U13",
+          "pin": "-7"
+        }
+      ]
+    },
+    {
+      "name": "PWR_JACK",
+      "connections": [
+        {
+          "component": "J3",
+          "pin": "-1"
+        },
+        {
+          "component": "C43",
+          "pin": "-2"
+        },
+        {
+          "component": "C44",
+          "pin": "-2"
+        },
+        {
+          "component": "U6",
+          "pin": "-12"
+        },
+        {
+          "component": "U6",
+          "pin": "-10"
+        },
+        {
+          "component": "U6",
+          "pin": "-3"
+        },
+        {
+          "component": "U6",
+          "pin": "-2"
+        },
+        {
+          "component": "U6",
+          "pin": "-1"
+        },
+        {
+          "component": "D1",
+          "pin": "-1"
+        }
+      ]
+    },
+    {
+      "name": "RXTX_RF_sx",
+      "connections": [
+        {
+          "component": "U2",
+          "pin": "-20"
+        },
+        {
+          "component": "RN3",
+          "pin": "-1"
+        }
+      ]
+    },
+    {
+      "name": "Regulator_LED",
+      "connections": [
+        {
+          "component": "D5",
+          "pin": "-2"
+        },
+        {
+          "component": "U13",
+          "pin": "-12"
+        }
+      ]
+    },
+    {
+      "name": "SCK_sx",
+      "connections": [
+        {
+          "component": "U2",
+          "pin": "-16"
+        },
+        {
+          "component": "RN2",
+          "pin": "-2"
+        }
+      ]
+    },
+    {
+      "name": "SPI2_MISO",
+      "connections": [
+        {
+          "component": "U5",
+          "pin": "-2"
+        },
+        {
+          "component": "RN3",
+          "pin": "-5"
+        },
+        {
+          "component": "U10",
+          "pin": "-1"
+        },
+        {
+          "component": "U1",
+          "pin": "-35"
+        },
+        {
+          "component": "P2",
+          "pin": "-42"
+        },
+        {
+          "component": "VIA",
+          "pin": "-"
+        },
+        {
+          "component": "VIA",
+          "pin": "-"
+        },
+        {
+          "component": "VIA",
+          "pin": "-"
+        },
+        {
+          "component": "VIA",
+          "pin": "-"
+        },
+        {
+          "component": "VIA",
+          "pin": "-"
+        },
+        {
+          "component": "VIA",
+          "pin": "-"
+        }
+      ]
+    },
+    {
+      "name": "SPI2_MOSI",
+      "connections": [
+        {
+          "component": "U5",
+          "pin": "-5"
+        },
+        {
+          "component": "RN3",
+          "pin": "-6"
+        },
+        {
+          "component": "U10",
+          "pin": "-14"
+        },
+        {
+          "component": "U1",
+          "pin": "-36"
+        },
+        {
+          "component": "P2",
+          "pin": "-44"
+        },
+        {
+          "component": "VIA",
+          "pin": "-"
+        },
+        {
+          "component": "VIA",
+          "pin": "-"
+        },
+        {
+          "component": "VIA",
+          "pin": "-"
+        },
+        {
+          "component": "VIA",
+          "pin": "-"
+        }
+      ]
+    },
+    {
+      "name": "SPI2_SCK",
+      "connections": [
+        {
+          "component": "U5",
+          "pin": "-6"
+        },
+        {
+          "component": "U10",
+          "pin": "-13"
+        },
+        {
+          "component": "U1",
+          "pin": "-34"
+        },
+        {
+          "component": "RN2",
+          "pin": "-7"
+        },
+        {
+          "component": "P2",
+          "pin": "-40"
+        },
+        {
+          "component": "VIA",
+          "pin": "-"
+        },
+        {
+          "component": "VIA",
+          "pin": "-"
+        },
+        {
+          "component": "VIA",
+          "pin": "-"
+        },
+        {
+          "component": "VIA",
+          "pin": "-"
+        }
+      ]
+    },
+    {
+      "name": "SPI_FLASH_CS#",
+      "connections": [
+        {
+          "component": "U5",
+          "pin": "-1"
+        },
+        {
+          "component": "U1",
+          "pin": "-42"
+        }
+      ]
+    },
+    {
+      "name": "SPI_GPIO_CS#",
+      "connections": [
+        {
+          "component": "U1",
+          "pin": "-52"
+        },
+        {
+          "component": "P2",
+          "pin": "-6"
+        }
+      ]
+    },
+    {
+      "name": "SPI_IMU_CS#",
+      "connections": [
+        {
+          "component": "U10",
+          "pin": "-12"
+        },
+        {
+          "component": "U1",
+          "pin": "-38"
+        }
+      ]
+    },
+    {
+      "name": "SPI_LORA_CS#",
+      "connections": [
+        {
+          "component": "RN3",
+          "pin": "-7"
+        },
+        {
+          "component": "U1",
+          "pin": "-25"
+        },
+        {
+          "component": "VIA",
+          "pin": "-"
+        },
+        {
+          "component": "VIA",
+          "pin": "-"
+        }
+      ]
+    },
+    {
+      "name": "USB_N",
+      "connections": [
+        {
+          "component": "U8",
+          "pin": "-6"
+        },
+        {
+          "component": "U1",
+          "pin": "-44"
+        }
+      ]
+    },
+    {
+      "name": "USB_P",
+      "connections": [
+        {
+          "component": "U8",
+          "pin": "-4"
+        },
+        {
+          "component": "U1",
+          "pin": "-45"
+        }
+      ]
+    },
+    {
+      "name": "VCC_RF",
+      "connections": [
+        {
+          "component": "U11",
+          "pin": "-14"
+        },
+        {
+          "component": "R16",
+          "pin": "-1"
+        },
+        {
+          "component": "Q1",
+          "pin": "-4"
+        },
+        {
+          "component": "C57",
+          "pin": "-1"
+        }
+      ]
+    }
+  ]
+}
