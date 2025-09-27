@@ -10,25 +10,10 @@ import sys
 import os
 
 def parse_ipc_file(input_file_path, output_file_path=None, keep_pad_dimensions=True):
-    """
-    Parse IPC file and remove specified fields:
-    - Coordinates (X and Y positions) - ALWAYS REMOVED
-    - Rotation (R field) - ALWAYS REMOVED  
-    - Soldermask (S field) - ALWAYS REMOVED
-    - Drilling hole identifier (D field for through-hole points) - ALWAYS REMOVED
-    - Pad dimensions (optional) - can be kept or removed
-    
-    Args:
-        input_file_path (str): Path to input IPC file
-        output_file_path (str): Path to output file (optional)
-        keep_pad_dimensions (bool): Whether to keep pad dimension information
-    """
-    
     if not os.path.exists(input_file_path):
         print(f"Error: Input file '{input_file_path}' not found.")
         return False
-    
-    # If no output file specified, create one based on input file name
+
     if output_file_path is None:
         base_name = os.path.splitext(input_file_path)[0]
         suffix = "_with_dims" if keep_pad_dimensions else "_clean"
