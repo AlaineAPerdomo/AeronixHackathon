@@ -13,11 +13,7 @@ import sys
 
 # --- CONFIGURATION / FILE PATHS ---
 # Set the specific file paths provided by the user
-D356_NETLIST_FILE = "/Users/alaineperdomo/Desktop/IgniteHackathon/Test Case Files/UNO-TH_Rev3e_netlist.d356"
-BOM_FILE = "/Users/alaineperdomo/Desktop/IgniteHackathon/Test Case Files/UNO-TH_Rev3e_bom.xlsx"
-# The IPC file path from the original code is kept for completeness, 
-# but the D356 and BOM files are the focus of the new 'parse_your_files'
-IPC_FILE = "app/parser/Assembly Testpoint Report for Car-PCB1.ipc"
+
 
 
 # --- DATA MODELS ---
