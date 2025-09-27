@@ -1,9 +1,13 @@
-from flask import Flask, request, jsonify
+from flask import Flask, request, jsonify, send_from_directory
 from flask_cors import CORS
-import os, subprocess, logging
+import os, subprocess
 
 app = Flask(__name__)
 CORS(app, resources={r"/upload": {"origins": "http://localhost:5173"}})
+
+@app.route("/outputs/final.docx", methods=["GET"])
+def download_file():
+    return send_from_directory("./outputs", "final.docx", as_attachment=True)
 
 @app.route("/upload", methods=["POST"])
 def upload():
